@@ -1,0 +1,79 @@
+The gallery system has 3 main pages
+
+These files are in the stock deployment of RHS as plain vanilla pages. 
+
+To view them follow the Gallery link on the main banner.
+
+These active  data containers can be styled to match the theme of the site. 
+
+1) Lobby 
+
+The lobby is a blog that will display all galleries in the system that have their show/hide flag set to show.
+
+It uses an HTML template to display an entry located in the templates directory.
+
+This page is optional but is a good way to present a range of galleries.
+
+2) Thumbs
+
+
+The Thumbs UI has 2 two state buttons, Previous and Next. 
+
+The states of these buttons are used as slices by the code and set as per the page number.
+
+Prepare two banners that represent the enabled and disabled states for the Previous and Next buttons. The two banners must be in registration with one another.
+
+The stock placeholder banners are in the extras/Photoshop Templates/gallery_UI...
+
+The banner can have any number of other nav items that are dependent on the site.
+
+There is a CSS page number based UI that allows selection of pages #1 - n. This ui displays the current page with a different style.
+
+Each Thumbs page displays 8 - 200px thumbnail images with titles.
+
+Galleries can use alternate thumbs pages to allow a different style or functionality on the same site.
+
+3) Image
+
+The Image UI has 2 two state buttons, Previous and Next. 
+
+The states of these buttons are used as slices by the code and set as per the image  number.
+
+There is a single state item, Thumbnails, that returns the user to the thumbnails page that contains the current image.
+
+The stock placeholder banners are in the extras/Photoshop Templates/image_UI...
+
+The image page has two display modes. For Sale and Not For Sale-NFS.
+
+Image info is placed in the Page Title and added to the keywords and description meta tags for SEO.
+
+Image pages have an AJAX rating widget with a star graphic. Careful alteration of that file can change the appearance of the widget.
+
+An example of the stars Vote UI can be found in:
+
+extras/Photoshop Templates/Vote Stars/
+
+The image page can display the following information from the image library:
+
+1) title
+2) location
+3) caption
+4) artist
+
+If in For Sale mode it will display a table of add links that contain:
+
+1) price
+2) size
+3) description 1
+4) description 2
+
+The image page can have a link to the send free e-card pages, compose and preview, that have a simple UI.
+
+An example of that UI can be found in:
+
+extras/Photoshop Templates/Gallery/GalleryECard...
+
+Galleries can use alternate image pages to allow a different style or functionality on the same site.
+
+
+

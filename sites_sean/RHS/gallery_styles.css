@@ -1,0 +1,191 @@
+/* CSS Document */
+.galleryThumbnailCaption {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #666666;
+}
+.galleryImageTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #666666;
+	font-style: normal;
+	font-weight: bold;
+}
+.galleryImageLocation {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #888888;
+	font-style: normal;
+	font-weight: bold;
+}
+.galleryImageType {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #555555;
+	font-style: normal;
+	font-weight: bold;
+}
+.galleryImagePriceHeader {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #222222;
+	font-style: normal;
+	font-weight: bold;
+}
+.galleryImagePrice {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	font-style: normal;
+}
+.galleryImageCaption {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+}
+
+.galleryItemType {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #444444;
+	font-style: normal;
+	font-weight: bold;
+}
+.galleryECardSubHead {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #444444;
+	font-style: normal;
+	font-weight: bold;
+}
+.galleryECardBody {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #444444;
+	font-style: normal;
+}
+.galleryECardPrompt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	font-style: normal;
+	font-weight: bold;
+
+}
+.galleryCopyrightNotice {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #666666;
+}
+.galleryPageTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #999999;
+	font-style: normal;
+	font-weight: bold;
+}
+.galleryLobbyTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	color: #333333;
+	font-style: normal;
+	font-weight: bold;
+}
+.galleryLobbyName {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #555555;
+	font-style: normal;
+	font-weight: bold;
+}
+.galleryLobbyStudio {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #999999;
+	font-style: normal;
+	font-weight: bold;
+}
+.galleryLobbyStatement {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #111111;
+	font-style: normal;
+}
+.galleryLobbyInfo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #999999;
+	font-style: normal;
+}
+a.galleryLobbyEnterLink:link { color: #999999; text-decoration: none; }
+a.galleryLobbyEnterLink:visited { color: #999999; text-decoration: none; }
+a.galleryLobbyEnterLink:hover {font-style: italic; color: #111111; text-decoration: none;}
+a.galleryLobbyEnterLink {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 24px;
+				font-style: normal;
+				line-height: normal;
+				font-weight: bold;
+				color: #333333;
+				text-decoration: none;
+				}
+.galleryLobbyLinkText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #AAAAAA;
+	font-style: normal;
+	font-weight: bold;
+}
+
+a.galleryLobbyLink:link { color: #999999; text-decoration: none; }
+a.galleryLobbyLink:visited { color: #999999; text-decoration: none; }
+a.galleryLobbyLink:hover { color: #111111; text-decoration: none;}
+a.galleryLobbyLink {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				font-style: normal;
+				line-height: normal;
+				font-weight: bold;
+				color: #999999;
+				text-decoration: none;
+				}
+
+a.galleryAddCartLink:link { color: #666666; text-decoration: none; }
+a.galleryAddCartLink:visited { color: #666666; text-decoration: none; }
+a.galleryAddCartLink:hover { color: #000000; text-decoration: none;}
+a.galleryAddCartLink {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 13px;
+				font-style: normal;
+				line-height: normal;
+				font-weight: bold;
+				color: #666666;
+				text-decoration: none;
+				}
+
+a.galleryPageLink:link { color: #999999; text-decoration: none; }
+a.galleryPageLink:visited { color: #999999; text-decoration: none; }
+a.galleryPageLink:hover { color: #111111; text-decoration: none;}
+a.galleryPageLink {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				font-style: normal;
+				line-height: normal;
+				font-weight: bold;
+				color: #999999;
+				text-decoration: none;
+				}
+
+a.galleryCurrentPageLink:link { color: #333333; text-decoration: underline; }
+a.galleryCurrentPageLink:visited { color: #444444; text-decoration: underline; }
+a.galleryCurrentPageLink:hover { color: #111111; text-decoration: underline;}
+a.galleryCurrentPageLink {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				font-style: normal;
+				line-height: normal;
+				font-weight: bold;
+				color: #666666;
+				text-decoration: underline;
+				}
+

@@ -1,0 +1,35 @@
+body{direction:rtl;unicode-bidi:embed}
+.entry-content ul, .entry-content ol, .comment-content ul, .comment-content ol{margin-right:20px !important;margin-left:0 !important}
+.entry-content li:after, .comment-content li:after{content:" -"}
+.entry-content li:before, .comment-content li:before{content:""}
+#sidebar .widget-container ul{margin-right:10px;margin-left:0}
+#branding, #content, #share .fb-like, #share .g-plusone, .error404 #content #searchform, .search #content #searchform, .attachment .nav-previous{float:right}
+.page-template-templatestemplate-sidebar-left-php #content, .post-template-templatestemplate-sidebar-left-post-php #content, .page-template-templatestemplate-sidebar-left-left-php #content, .post-template-templatestemplate-sidebar-left-left-post-php #content, #social, #searchsubmit, .attachment .nav-next{float:left}
+#sidebar{margin-left:2%;margin-left:0;float:left}
+.page-template-templatestemplate-sidebar-left-php #sidebar, .post-template-templatestemplate-sidebar-left-post-php #sidebar{margin-left:0;margin-right:2%;float:right}
+.page-template-templatestemplate-sidebar-left-left-php #content, .post-template-templatestemplate-sidebar-left-left-post-php #content, .page-template-templatestemplate-sidebar-left-left-php #rsidebar-sidebar, .post-template-templatestemplate-sidebar-left-left-post-php #rsidebar-sidebar{margin:0 0 0 2%}
+.page-template-templatestemplate-sidebar-right-right-php #content, .post-template-templatestemplate-sidebar-right-right-post-php #content, .page-template-templatestemplate-sidebar-right-right-php #lsidebar-sidebar, .post-template-templatestemplate-sidebar-right-right-post-php #lsidebar-sidebar{margin:0 2% 0 0}
+#social a img{margin:0 10px 10px 0;float:left}
+#social .details{clear:left}
+nav ul li a{border-left:1px solid #555;border-right:0}
+nav ul.menu{padding-right:4px;padding-right:0}
+nav .parent > a, nav .parent > a:hover{background-image:url(images/arrow-rtl.png);background-position:left}
+nav ul ul .parent > a, nav ul ul .parent:hover > a:hover, nav ul ul li:hover ul .parent > a, nav ul ul li:hover ul .parent > a:hover{background-image:url(images/arrow-right-rtl.png);background-position:left}
+nav ul.menu li a{margin-right:-4px;margin-left:0}
+nav ul > li:first-child a:hover{border-radius:0 5px 5px 0}
+nav li .sub-menu{margin-right:-4px;margin-left:0}
+nav li ul{right:0}
+nav ul ul li:hover ul, nav ul ul ul li:hover ul{left:0;margin:-34px 179px 11px 0}
+#share .twitter-share-button{margin-right:30px;margin-left:0;float:right}
+#respond h3{clear:right}
+nav #searchform{margin:7px 0 0 7px;float:left}
+#wrapper #s{border-left:0;border-right:1px solid #ccc;float:left}
+#container #searchsubmit{border-radius:3px 0 0 3px}
+.single .entry-title{text-align:right}
+.nav-next{text-align:right;float:right}
+.nav-previous{text-align:left;float:left}
+.avatar{margin:5px 0 0 5px;float:right}
+#wp-calendar #prev{text-align:right}
+#wp-calendar #next{text-align:left}
+@media all and (max-width:1000px){#sidebar #s{border-left:1px solid #ccc}}
+@media all and (max-width:320px){header, nav #s, #content, #sidebar, footer{text-align:right}nav ul.menu{padding-right:0}nav ul li a, nav ul li a:hover{margin-right:0 !important}.entry-content{text-align:right}}

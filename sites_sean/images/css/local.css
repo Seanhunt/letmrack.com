@@ -1,0 +1,235 @@
+/* ***************************************************************************
+** local.css
+** 
+// Revision 2.2.0.8
+//
+// © 2008 Rolling Hills Software
+// Author: Ralph Cooksey-Talbott
+// Contact: cooksey@rollinghillssoftware.com
+// Phone: 510-742-0548
+** ************************************************************************* */
+
+@charset "UTF-8";
+
+/* ***************************************************************************
+** Builtin style over-rides
+** ************************************************************************* */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #666;
+	line-height: 14px;
+	background-position: 10px;
+	background-color: #FFF;
+}
+
+a:link 		{ color: #888; text-decoration: underline; font-weight: bold; }
+a:visited 	{ color: #aaa; text-decoration: underline; font-weight: bold; }
+a:hover 	{ color: #111;
+	text-decoration: none;
+	font-style: italic;
+	font-weight: bold;
+}
+a 	{
+	text-decoration: underline;
+	color: #666;
+	font-weight: bold;
+}
+
+a.whiteLink:link 		{ color: #fff; text-decoration: underline; font-weight: bold; }
+a.whiteLink:visited 	{ color: #eee; text-decoration: underline; font-weight: bold; }
+a.whiteLink:hover 	{ color: #666;
+	text-decoration: none;
+	font-style: italic;
+	font-weight: bold;
+}
+.horizontalRule1 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-bottom-width: thin;
+	border-bottom-style: dotted;
+	border-bottom-color: #CCCCCC;
+}
+a.whiteLink 	{
+	text-decoration: underline;
+	color: #666;
+	font-weight: bold;
+}
+
+
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+	padding-left: 15px;
+}
+h2 {
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 15px;
+}
+h3 {
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 15px;
+}
+h4 {
+	font-size: 12px;
+	padding-left: 15px;
+}
+h5 {
+	font-size: 10px;
+	padding-left: 15px;
+	font-weight: normal;
+}
+
+p {
+	padding-left: 10px;
+}
+
+/* ***************************************************************************
+** Class styles
+** ************************************************************************* */
+
+.rhs12BoldRed {
+	font-size: 12px;
+	color: #FF0000;
+	font-weight: bold;
+}
+.rhs14BoldRed {
+	font-size: 14px;
+	color: #FF0000;
+	font-weight: bold;
+}
+.rhs18BoldRed {
+	font-size: 18px;
+	color: #FF0000;
+	font-weight: bold;
+}
+.rhs24BoldRed {
+	font-size: 24px;
+	color: #FF0000;
+	font-weight: bold;
+}
+.rhs9Regular {
+	font-size: 9px;
+	font-weight: normal;
+}
+.rhs9Bold {
+	font-size: 9px;
+	font-weight: bold;
+}
+.rhs10Regular {
+	font-size: 10px;
+	font-weight: normal;
+}
+.rhs10Bold {
+	font-size: 10px;
+	font-weight: bold;
+}
+.rhs11Regular {
+	font-size: 11px;
+	font-weight: normal;
+}
+.rhs11Bold {
+	font-size: 11px;
+	font-weight: bold;
+}
+.rhs12Regular {
+	font-size: 12px;
+	font-weight: normal;
+}
+.rhs12Bold {
+	font-size: 12px;
+	font-weight: bold;
+}
+.rhs14Regular {
+	font-size: 14px;
+}
+.rhs14Bold {
+	font-size: 14px;
+	font-weight: bold;
+}
+.rhs15Regular {
+	font-size: 15px;
+}
+.rhs15Bold {
+	font-size: 15px;
+	font-weight: bold;
+}
+.rhs18BoldWhite {
+	font-size: 18px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.rhs18Bold {
+	font-size: 18px;
+	font-weight: bold;
+}
+.rhs18Regular {
+	font-size: 18px;
+	font-weight: normal;
+}
+.rhs24Bold {
+	font-size: 24px;
+	font-weight: bold;
+}
+.rhs24BoldWhite {
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.rhs24Regular {
+	font-size: 24px;
+	font-weight: normal;
+}
+.rhs30Bold {
+
+	font-size: 30px;
+	font-weight: bold;
+}
+.rhs30Regular {
+	font-size: 30px;
+	font-weight: normal;
+}
+
+/* used in image.php in the e-commerce section */
+
+
+a.galleryAddCartLink:link {  text-decoration: none; }
+a.galleryAddCartLink:visited {  text-decoration: none; }
+a.galleryAddCartLink:hover {  text-decoration: none; font-style: italic; font-size: 14px;}
+a.galleryAddCartLink {
+				font-size: 13px;
+				font-style: normal;
+				line-height: normal;
+				font-weight: bold;
+				text-decoration: none;
+				}
+
+/* output by gallery_lib as the page number UI in the gallery thumbs section */
+
+a.galleryPageLink:link {  text-decoration: none; }
+a.galleryPageLink:visited {  text-decoration: none; }
+a.galleryPageLink:hover {  text-decoration: none;}
+a.galleryPageLink {
+				font-size: 12px;
+				font-style: normal;
+				line-height: normal;
+				font-weight: bold;
+				text-decoration: none;
+				}
+
+a.galleryCurrentPageLink:link {  text-decoration: underline; }
+a.galleryCurrentPageLink:visited {  text-decoration: underline; }
+a.galleryCurrentPageLink:hover {  text-decoration: underline;}
+a.galleryCurrentPageLink {
+				font-size: 12px;
+				font-style: normal;
+				line-height: normal;
+				font-weight: bold;
+				text-decoration: underline;
+				}
+

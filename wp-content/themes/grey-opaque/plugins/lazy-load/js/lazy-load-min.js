@@ -1,0 +1,1 @@
+(function(a){a("img[data-lazy-src]").bind("scrollin",{distance:200},function(){var a=this,b=jQuery(a),c=b.attr("data-lazy-src");b.unbind("scrollin").hide().removeAttr("data-lazy-src").attr("data-lazy-loaded","true");a.src=c;b.fadeIn()})})(jQuery)

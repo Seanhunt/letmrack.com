@@ -1,0 +1,8 @@
+CREATE TABLE `__TABLENAME__` (
+  `blLinkURL` text COMMENT 'The URL of the link',
+  `blName` text COMMENT 'The name of the web site or organization',
+  `blDescription` text COMMENT 'The description of the site',
+  `blPosterID` text NOT NULL COMMENT 'The ID of the poster',
+  `blRecordNumber` int(4) NOT NULL auto_increment COMMENT 'This is the item number',
+  PRIMARY KEY  (`blRecordNumber`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;

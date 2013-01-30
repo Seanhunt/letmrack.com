@@ -1,0 +1,7 @@
+.wrap{font-family:georgia,'times new roman',times,serif}
+.description{font-size:13px;color:#21759B}
+em, input, textarea{font-family:arial,sans-serif}
+th{font-size:14px}
+label em, th em{font-size:12px}
+em{color:#444}
+input[type="text"]{width:200px;margin-bottom:7px}

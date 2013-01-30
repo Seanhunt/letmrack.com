@@ -1,0 +1,1153 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Grey Opaque\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2011-05-30 01:46+0200\n"
+"Last-Translator: Анастасия <existenciya@gmail.com>\n"
+"Language-Team: Exi <existenciya@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: loop.php:227
+#, php-format
+#@ grey-opaque
+msgid "<span class=\"%1$s\">Posted in</span> %2$s"
+msgstr "<span class=\"%1$s\">Рубрика:</span> %2$s"
+
+#: loop.php:235
+#, php-format
+#@ grey-opaque
+msgid "<span class=\"%1$s\">Tagged</span> %2$s"
+msgstr "<span class=\"%1$s\">Метки:</span> %2$s"
+
+#: functions.php:950
+#, php-format
+#@ grey-opaque
+msgid "<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">by</span> %3$s"
+msgstr "<span class=\"%1$s\">Опубликовано</span> %2$s. <span class=\"meta-sep\">Автор:</span> %3$s"
+
+#: functions.php:2246
+#: loop-single.php:61
+#, php-format
+#@ grey-opaque
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Все публикации %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: tag.php:15
+#, php-format
+#@ grey-opaque
+msgid "Tag Archives: %s"
+msgstr "Метка: %s"
+
+#: functions.php:2437
+#@ grey-opaque
+msgid "Skip to content"
+msgstr "К содержанию"
+
+#: loop.php:256
+#@ grey-opaque
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Предыдущие статьи"
+
+#: loop.php:257
+#@ grey-opaque
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Следующие статьи <span class=\"meta-nav\">&rarr;</span>"
+
+#: loop.php:27
+#@ grey-opaque
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr "К сожалению, по вашему запросу ничего не найдено."
+
+#: loop.php:63
+#: loop.php:129
+#: loop.php:130
+#@ grey-opaque
+msgctxt "gallery category slug"
+msgid "gallery"
+msgstr "Галерея"
+
+#: loop.php:67
+#: loop.php:107
+#: loop.php:187
+#, php-format
+#@ grey-opaque
+msgid "Permalink to %s"
+msgstr "Постоянная ссылка: %s"
+
+#: loop.php:130
+#@ grey-opaque
+msgid "View posts in the Gallery category"
+msgstr "Все публикации в рубрике Галереи"
+
+#: loop.php:128
+#: loop.php:130
+#@ grey-opaque
+msgid "More Galleries"
+msgstr "Больше галерей"
+
+#: loop.php:138
+#@ grey-opaque
+msgctxt "asides category slug"
+msgid "asides"
+msgstr "Заметки на полях"
+
+#: search.php:14
+#, php-format
+#@ grey-opaque
+msgid "Search Results for: %s"
+msgstr "Результаты поиска: %s"
+
+#: search.php:26
+#@ grey-opaque
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#: search.php:28
+#@ grey-opaque
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "К сожалению, по вашему запросу ничего не найдено."
+
+#: sidebar.php:28
+#@ grey-opaque
+msgid "Archives"
+msgstr "Архивы"
+
+#: sidebar.php:35
+#@ grey-opaque
+msgid "Meta"
+msgstr "Прочее"
+
+#: functions.php:843
+#@ grey-opaque
+msgid "Secondary Widget Area"
+msgstr "Вторая область виджетов"
+
+#: functions.php:845
+#@ grey-opaque
+msgid "The secondary widget area"
+msgstr "Вторая область виджетов"
+
+#: functions.php:854
+#@ grey-opaque
+msgid "First Footer Widget Area"
+msgstr "Первая область виджетов в подвале"
+
+#: functions.php:856
+#@ grey-opaque
+msgid "The first footer widget area"
+msgstr "Первая область виджетов в подвале"
+
+#: functions.php:865
+#@ grey-opaque
+msgid "Second Footer Widget Area"
+msgstr "Вторая область виджетов в подвале"
+
+#: functions.php:867
+#@ grey-opaque
+msgid "The second footer widget area"
+msgstr "Вторая область виджетов в подвале"
+
+#: functions.php:876
+#@ grey-opaque
+msgid "Third Footer Widget Area"
+msgstr "Третяя область виджетов в подвале"
+
+#: functions.php:878
+#@ grey-opaque
+msgid "The third footer widget area"
+msgstr "Третяя область виджетов в подвале"
+
+#: functions.php:887
+#@ grey-opaque
+msgid "Fourth Footer Widget Area"
+msgstr "Четвертая область виджетов в подвале"
+
+#: functions.php:889
+#@ grey-opaque
+msgid "The fourth footer widget area"
+msgstr "Четвертая область виджетов в подвале"
+
+#: functions.php:834
+#@ grey-opaque
+msgid "The primary widget area"
+msgstr "Первая область виджетов"
+
+#: functions.php:832
+#@ grey-opaque
+msgid "Primary Widget Area"
+msgstr "Первая область виджетов"
+
+#: functions.php:644
+#: functions.php:683
+#@ grey-opaque
+msgid "(Edit)"
+msgstr "(править)"
+
+#. translators: 1: date, 2: time
+#: functions.php:638
+#: functions.php:677
+#, php-format
+#@ grey-opaque
+msgid "%1$s at %2$s"
+msgstr "%1$s в %2$s"
+
+#: functions.php:649
+#@ grey-opaque
+msgid "Your comment is awaiting moderation."
+msgstr "Спасибо! Ваш комментарий ожидает проверки."
+
+#: functions.php:632
+#, php-format
+#@ grey-opaque
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">пишет:</span>"
+
+#: header.php:35
+#, php-format
+#@ grey-opaque
+msgid "Page %s"
+msgstr "Страница %s"
+
+#: comments.php:35
+#: comments.php:90
+#@ grey-opaque
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Новые комментарии <span class=\"meta-nav\">&rarr;</span>"
+
+#: comments.php:102
+#@ grey-opaque
+msgid "Comments are closed."
+msgstr "Обсуждение закрыто."
+
+#: footer.php:31
+#@ grey-opaque
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: footer.php:31
+#@ grey-opaque
+msgid "Semantic Personal Publishing Platform"
+msgstr "Разработано на WordPress — платформе, которая вдохновляет"
+
+#: footer.php:31
+#, php-format
+#@ grey-opaque
+msgid "Proudly powered by %s."
+msgstr "Работает на %s."
+
+#: comments.php:34
+#: comments.php:89
+#@ grey-opaque
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr "<span class=\"meta-nav\">&larr;</span> Старые комментарии"
+
+#: functions.php:217
+#@ grey-opaque
+msgid "Primary Navigation"
+msgstr "Основная навигация"
+
+#: functions.php:2238
+#: loop-single.php:57
+#, php-format
+#@ grey-opaque
+msgid "About %s"
+msgstr "Об авторе %s"
+
+#: category.php:14
+#, php-format
+#@ grey-opaque
+msgid "Category Archives: %s"
+msgstr "Рубрика: %s"
+
+#: comments.php:18
+#@ grey-opaque
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Пожалуйста, введите пароль для просмотра комментариев."
+
+#: comments.php:41
+#, php-format
+#@ grey-opaque
+msgid "One Response to %2$s"
+msgid_plural "%1$s Responses to %2$s"
+msgstr[0] "Один ответ на %2$s"
+msgstr[1] "%1$s ответов на %2$s"
+
+#: author.php:25
+#, php-format
+#@ grey-opaque
+msgid "Author Archives: %s"
+msgstr "Архив автора: %s"
+
+#: loop-attachment.php:90
+#: loop-page.php:45
+#: loop-single.php:45
+#: loop.php:217
+#@ grey-opaque
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: functions.php:959
+#, php-format
+#@ grey-opaque
+msgid "View all posts by %s"
+msgstr "Все публикации: %s"
+
+#. translators: %s - title of parent post
+#: loop-attachment.php:25
+#, php-format
+#@ grey-opaque
+msgid "<span class=\"meta-nav\">&larr;</span> %s"
+msgstr "<span class=\"meta-nav\">&larr;</span> %s"
+
+#: loop-attachment.php:23
+#, php-format
+#@ grey-opaque
+msgid "Return to %s"
+msgstr "Вернуться к %s"
+
+#: archive.php:36
+#, php-format
+#@ grey-opaque
+msgid "Yearly Archives: <span>%s</span>"
+msgstr "Архив по годам: <span>%s</span>"
+
+#: archive.php:34
+#, php-format
+#@ grey-opaque
+msgid "Monthly Archives: <span>%s</span>"
+msgstr "Архив по месяцам: <span>%s</span>"
+
+#: archive.php:32
+#, php-format
+#@ grey-opaque
+msgid "Daily Archives: <span>%s</span>"
+msgstr "Архив по дням: <span>%s</span>"
+
+#: 404.php:17
+#@ grey-opaque
+msgid "Apologies, but the page you requested could not be found. Perhaps searching will help."
+msgstr "К сожалению, по вашему запросу ничего не найдено."
+
+#: 404.php:15
+#: loop.php:25
+#@ grey-opaque
+msgid "Not Found"
+msgstr "Не найдено"
+
+#: functions-deprecated.php:85
+#: functions.php:1095
+#@ grey-opaque
+msgid "Link to full-size image"
+msgstr "Ссылка на полный размер изображения"
+
+#: functions-deprecated.php:93
+#: functions-deprecated.php:289
+#: functions.php:1103
+#@ grey-opaque
+msgid "Edit"
+msgstr "Править"
+
+#: functions.php:486
+#: loop-attachment.php:84
+#: loop-attachment.php:86
+#: loop.php:165
+#: loop.php:167
+#: loop.php:211
+#: loop.php:213
+#@ grey-opaque
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Читать полностью <span class=\"meta-nav\">&rarr;</span>"
+
+#: archive.php:38
+#@ grey-opaque
+msgid "Blog Archives"
+msgstr "Архив сайта"
+
+#: functions.php:976
+#, php-format
+#@ grey-opaque
+msgid "Category(s): %1$s<br />Tags: %2$s"
+msgstr "Рубрики: %1$s<br />Метки: %2$s"
+
+#: functions.php:978
+#, php-format
+#@ grey-opaque
+msgid "Category(s): %1$s"
+msgstr "Рубрики: %1$s"
+
+#: functions.php:1290
+#@ grey-opaque
+msgid "Your settings have been saved."
+msgstr "Ваши настройки были сохранены."
+
+#: documentation.php:19
+#: functions.php:1335
+#@ grey-opaque
+msgid "Theme Options"
+msgstr "Настройки темы"
+
+#: documentation.php:26
+#: functions.php:1357
+#@ grey-opaque
+msgid "Show Branding"
+msgstr "Показывать брендинг"
+
+#: documentation.php:34
+#: functions.php:1369
+#@ grey-opaque
+msgid "Show Headerimage"
+msgstr "Показывать изображение в шапке"
+
+#: documentation.php:85
+#: functions.php:1453
+#@ grey-opaque
+msgid "Authorbox"
+msgstr "Секция об авторе"
+
+#: functions.php:1483
+#@ grey-opaque
+msgid "Profile-Settings"
+msgstr "Настройки профайла"
+
+#: functions.php:1521
+#@ grey-opaque
+msgid "You are displaying the mailicons. The mailadresses will be scrambled in HTML-output, but it is not a 100% security for mailspam."
+msgstr "Будет показана иконка для почты. E-Mail будет зашифрован в HTML-коде, но это не 100% защита от спама."
+
+#: documentation.php:94
+#: functions.php:1467
+#@ grey-opaque
+msgid "Show Authorbox"
+msgstr "Показать блок Об авторе"
+
+#: documentation.php:98
+#: functions.php:1495
+#@ grey-opaque
+msgid "Show Profiles in Authorbox"
+msgstr "Показать профиль в блоке Об авторе"
+
+#: documentation.php:106
+#: functions.php:1508
+#@ grey-opaque
+msgid "Show Mailicon in Authorbox"
+msgstr "Показать иконку почты в блоке Об авторе"
+
+#: documentation.php:123
+#: functions.php:1597
+#@ grey-opaque
+msgid "Smilies"
+msgstr "Смайлики"
+
+#: documentation.php:135
+#: functions.php:1615
+#@ grey-opaque
+msgid "Show Smilies"
+msgstr "Показать смайлики"
+
+#: functions.php:1629
+#@ grey-opaque
+msgid "In content"
+msgstr "В содержании"
+
+#: functions.php:1639
+#@ grey-opaque
+msgid "In comments"
+msgstr "В комментариях"
+
+#: functions.php:1690
+#@ grey-opaque
+msgid "Support the developer :-)"
+msgstr "Поддержать разработчика :-)"
+
+#: functions.php:1692
+#@ grey-opaque
+msgid "This Theme ist completely free without any limitations. But, if you like my work, so please suppport it with a little click."
+msgstr "Эта тема абсолютно бесплатна, без каких-либо ограничений. Но если вы хотите поддержать мою работу, вы можете сделать это одним кликом мышки."
+
+#: functions.php:1715
+#@ grey-opaque
+msgid "Thanks and greetings."
+msgstr "Приветствие и благодарность."
+
+#: functions.php:1723
+#@ grey-opaque
+msgid "Update"
+msgstr "Обновить"
+
+#: functions-deprecated.php:213
+#: functions-deprecated.php:364
+#: functions.php:1792
+#@ grey-opaque
+msgid "Settings"
+msgstr "Настройки"
+
+#: functions.php:2135
+#@ grey-opaque
+msgid "Take a look to my website"
+msgstr "Посетить мой сайт"
+
+#: functions.php:2144
+#@ grey-opaque
+msgid "Get my RSS-Feed"
+msgstr "Получить мою RSS-ленту"
+
+#: functions.php:2155
+#@ grey-opaque
+msgid "Write me a mail"
+msgstr "Написать мне письмо"
+
+#: functions.php:2165
+#@ grey-opaque
+msgid "Follow me on Twitter"
+msgstr "Следить за мной на Twitter"
+
+#: functions.php:2183
+#@ grey-opaque
+msgid "Find me on Facebook"
+msgstr "Найти меня наi Facebook"
+
+#: functions.php:2192
+#@ grey-opaque
+msgid "See my WordPress-Plugins"
+msgstr "Посмотреть мои плагины WordPress"
+
+#: functions.php:2201
+#@ grey-opaque
+msgid "Find me on XING"
+msgstr "Найти меня на XING"
+
+#: functions-deprecated.php:73
+#: functions.php:1083
+#@ grey-opaque
+msgid "by: "
+msgstr "Автор: "
+
+#: functions-deprecated.php:113
+#: functions.php:1124
+#@ grey-opaque
+msgid "share this post"
+msgstr "Поделиться этой записью"
+
+#: functions-deprecated.php:146
+#: functions.php:1154
+#@ grey-opaque
+msgid "comments RSS"
+msgstr "Комментарии RSS"
+
+#: functions-deprecated.php:151
+#: functions.php:1159
+#@ grey-opaque
+msgid "trackback"
+msgstr "Трекбеки"
+
+#: functions-deprecated.php:154
+#: functions.php:1162
+#@ grey-opaque
+msgid "permalink"
+msgstr "Постоянная ссылка"
+
+#: loop.php:106
+#, php-format
+#@ grey-opaque
+msgid "This gallery contains <a %1$s>%2$s photo</a>."
+msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr[0] "В этой галереи <a %1$s>%2$s фото</a>."
+msgstr[1] "В этой галереи <a %1$s>%2$s фото</a>."
+
+#: loop.php:128
+#@ grey-opaque
+msgid "View Galleries"
+msgstr "Посмотреть галереи"
+
+#: functions-deprecated.php:100
+#: functions.php:1111
+#@ grey-opaque
+msgid "comment(s)"
+msgstr "Комментарии"
+
+#: documentation.php:58
+#: functions.php:1393
+#@ grey-opaque
+msgid "Show Themecursor"
+msgstr "Показать Themecursor"
+
+#: documentation.php:62
+#: functions.php:1405
+#@ grey-opaque
+msgid "Show Gravatar Hovercards"
+msgstr "Показать Gravatar Hovercards"
+
+#: documentation.php:66
+#: functions.php:1417
+#@ grey-opaque
+msgid "Get Postthumbnail for Facebook"
+msgstr "Получить миниатюры статей для Facebook"
+
+#: documentation.php:77
+#: functions.php:1429
+#@ grey-opaque
+msgid "Remove automatic Hyperlinks in Comments"
+msgstr "Удалить автоматические ссылки в комментариях"
+
+#: functions.php:1707
+#, php-format
+#@ grey-opaque
+msgid "If you have any ideas, suggestions, bugs or whatever, so feel free to write me a <a href=\"%1$s\">%2$s</a>."
+msgstr "Если у вас есть какие-либо идеи, предложения, или сообщения об ошибках, вы можете написать мне <a href=\"%1$s\">%2$s</a>."
+
+#: functions.php:1709
+#@ grey-opaque
+msgid "message"
+msgstr "Сообщение"
+
+#: functions.php:2219
+#@ grey-opaque
+msgid "Find me on Delicious"
+msgstr "Найти меня на Delicious"
+
+#: functions.php:2228
+#@ grey-opaque
+msgid "Find me on LinkedIn"
+msgstr "Найти меня на LinkedIn"
+
+#: functions.php:2729
+#, php-format
+#@ grey-opaque
+msgid "<p>Page loaded in %2$s seconds with %1$d database-queries.</p>"
+msgstr "<p>Страница загружена за %2$s секунд. %1$d запросов к базе.</p>"
+
+#: functions-deprecated.php:82
+#: functions.php:1092
+#, php-format
+#@ grey-opaque
+msgid "Size: %s px"
+msgstr "Размер: %s px"
+
+#: functions.php:2210
+#@ grey-opaque
+msgid "Find me on Youtube"
+msgstr "Найти меня на Youtube"
+
+#: functions-deprecated.php:116
+#@ grey-opaque
+msgid "Share on BlinkList"
+msgstr "Поделиться на BlinkList"
+
+#: functions-deprecated.php:119
+#: functions.php:1127
+#@ grey-opaque
+msgid "Add to del.icio.us"
+msgstr "Добавить в del.icio.us"
+
+#: functions-deprecated.php:122
+#@ grey-opaque
+msgid "Digg This!"
+msgstr "Добавить в Digg!"
+
+#: functions-deprecated.php:125
+#: functions.php:1130
+#@ grey-opaque
+msgid "Share on Facebook"
+msgstr "Поделиться на Facebook"
+
+#: functions-deprecated.php:128
+#: functions.php:1133
+#@ grey-opaque
+msgid "Share on Reddit"
+msgstr "Поделиться на Reddit"
+
+#: functions-deprecated.php:131
+#: functions.php:1136
+#@ grey-opaque
+msgid "Share on StumbleUpon"
+msgstr "Поделиться на StumbleUpon"
+
+#: functions-deprecated.php:134
+#: functions.php:1139
+#@ grey-opaque
+msgid "Tweet this!"
+msgstr "Добавить твит!"
+
+#: functions-deprecated.php:137
+#: functions.php:1142
+#@ grey-opaque
+msgid "Favourite on Technorati"
+msgstr "Избранное в Technorati"
+
+#: header.php:73
+#@ grey-opaque
+msgid "You are here:"
+msgstr "Вы здесь:"
+
+#: functions.php:1382
+#, php-format
+#@ grey-opaque
+msgid "You can select or upload a new headerimage <a href=\"%1$s\">%2$s</a>."
+msgstr "Вы можете выбрать и загрузить новое изображение ля шапки <a href=\"%1$s\">%2$s</a>."
+
+#: documentation.php:29
+#: functions.php:1384
+#@ grey-opaque
+msgid "here"
+msgstr "здесь"
+
+#: functions.php:1482
+#, php-format
+#@ grey-opaque
+msgid "There is no Information given in \"About You\" on your %1$s. The authorbox will not be shown until there is any information."
+msgstr "Эта информация дана в секции Об авторе тут %1$s. Секция об авторе не будет показана, пока там не будет какой-нибудь информации."
+
+#: functions.php:704
+#@ grey-opaque
+msgid "Twittername <em>(without @)</em>"
+msgstr "Имя в Twitter <em>(без @)</em>"
+
+#: functions.php:709
+#@ grey-opaque
+msgid "Facebook <em>(complete URL)</em>"
+msgstr "Facebook <em>(полный URL)</em>"
+
+#: functions-deprecated.php:105
+#: functions.php:1116
+#@ grey-opaque
+msgid "pingback(s)"
+msgstr "Пинги"
+
+#: functions.php:124
+#, php-format
+#@ grey-opaque
+msgid "Your site is running WordPress Version %1$s. %2$s requires at least %3$s.<br />Please Update.</p><p><a href=\"%4$s\">%5$s</a>"
+msgstr "Версия WordPress %1$s. %2$s требует как минимум %3$s.<br />Пожалуйста, обновитесь.</p><p><a href=\"%4$s\">%5$s</a>"
+
+#: functions.php:129
+#@ grey-opaque
+msgid "Open Dashboard"
+msgstr "Открыть панель управления"
+
+#: functions.php:137
+#, php-format
+#@ grey-opaque
+msgid "<p>Your site is running WordPress Version %1$s. %2$s requires at least %3$s.<br />Please Update.</p>"
+msgstr "<p>Ваш сайт работает на WordPress %1$s. %2$s требует как минимум %3$s.<br />Пожалуйста, обновитесь.</p>"
+
+#: documentation.php:81
+#: functions.php:1441
+#@ grey-opaque
+msgid "Remove Generator-Tag"
+msgstr "Удалить тег Generator"
+
+#: functions-deprecated.php:299
+#@ grey-opaque
+msgid "Move to Trash"
+msgstr "Переместить в корзину"
+
+#: functions-deprecated.php:317
+#, php-format
+#@ grey-opaque
+msgid "Comments %s"
+msgstr "Коментарии (%s)"
+
+#: functions-deprecated.php:346
+#@ grey-opaque
+msgid "Widgets"
+msgstr "Виджеты"
+
+#: functions-deprecated.php:355
+#@ grey-opaque
+msgid "Menus"
+msgstr "Меню"
+
+#: functions-deprecated.php:216
+#: functions-deprecated.php:367
+#@ grey-opaque
+msgid "Open Theme-Settings Page"
+msgstr "Страница настроек"
+
+#: functions-deprecated.php:388
+#@ grey-opaque
+msgid "Shortlink"
+msgstr "Короткая ссылка"
+
+#: functions-deprecated.php:256
+#@ grey-opaque
+msgctxt "admin bar menu group label"
+msgid "Add New"
+msgstr "Добавить новую"
+
+#: functions.php:1654
+#@ grey-opaque
+msgid "Favicon"
+msgstr "Фавиконка"
+
+#: functions.php:1660
+#@ grey-opaque
+msgid "Enter your favicons full url. Leave empty to unset."
+msgstr "Введите полный адрес к фавиконке, оставьте поле пустым, если не хотите использовать."
+
+#: functions-deprecated.php:280
+#@ grey-opaque
+msgctxt "admin bar menu group label"
+msgid "Article"
+msgstr "Статья"
+
+#: functions-deprecated.php:334
+#@ grey-opaque
+msgctxt "admin bar menu group label"
+msgid "Appearance"
+msgstr "Дизайн"
+
+#: documentation.php:110
+#: functions.php:1535
+#@ grey-opaque
+msgid "Admin Bar"
+msgstr "Административное меню"
+
+#: documentation.php:119
+#: functions.php:1552
+#@ grey-opaque
+msgid "Move Admin Bar to Bottom"
+msgstr "Переместить административное горизонтальное меню вниз"
+
+#: functions.php:1566
+#@ grey-opaque
+msgid "Frontend"
+msgstr "Пользовательская часть сайта"
+
+#: functions.php:1579
+#@ grey-opaque
+msgid "Backend"
+msgstr "Админка"
+
+#: functions.php:1672
+#@ grey-opaque
+msgid "Commenters guideline"
+msgstr "Руководство по комментированию"
+
+#: functions.php:1678
+#@ grey-opaque
+msgid "Here you can enter a little guideline for your commenters."
+msgstr "Вы можете добавить краткое руководство для людей, которые хотят оставить комментарий на вашем сайте."
+
+#: functions.php:2505
+#@ grey-opaque
+msgid "Theme"
+msgstr "Тема"
+
+#: functions.php:2506
+#@ grey-opaque
+msgid "by:"
+msgstr "от:"
+
+#: functions.php:2487
+#@ grey-opaque
+msgid "all rights reserved"
+msgstr "Все права защищены"
+
+#: documentation.php:12
+#@ grey-opaque
+msgid "Grey Opaque Documentation"
+msgstr "Документация Grey Opaque"
+
+#: footer.php:30
+#@ grey-opaque
+msgid "Back to top"
+msgstr "Наверх"
+
+#: functions.php:1324
+#@ grey-opaque
+msgid "Grey Opaque Configuration"
+msgstr "Конфигурация Grey Opaque"
+
+#: functions.php:1793
+#@ grey-opaque
+msgid "Documentation"
+msgstr "Документация"
+
+#: functions.php:1792
+#@ grey-opaque
+msgid "Settings for Theme Grey Opaque"
+msgstr "Настройки темы Grey Opaque"
+
+#: functions.php:1793
+#@ grey-opaque
+msgid "Documentation for Theme Grey Opaque"
+msgstr "Документация темы Grey Opaque"
+
+#: documentation.php:15
+#@ grey-opaque
+msgid "Here now a little documatation for your new theme Gray Opaque.<br />This file contains the description of the themesettings and the license for all used images."
+msgstr "Небольшая документация для темы Grey Opaque.<br />В файле описание настроек темы и условия лицензии для всех использованных изображений."
+
+#: documentation.php:22
+#@ grey-opaque
+msgid "In this part of themes setting you'll find the main options."
+msgstr "В этой части находятся основные настройки."
+
+#: documentation.php:28
+#, php-format
+#@ grey-opaque
+msgid "If this option is checked, the branding will be displayed on frontend. The branding contains the blogs name (Site Title) and slogan (Tagline), which can be entered %1$s."
+msgstr "Если эта опция отмечена, на сайте будет использован брендинг. Брендинг представляет собой название сайта и сблоган, которые могут быть введены тут %1$s."
+
+#: documentation.php:36
+#, php-format
+#@ grey-opaque
+msgid "If this option is checked, a headerimage will be displayed on frontend. You can select a headerimage under %1$s. Here you can choose from the given images or upload new. There are two ways to uplaod new headerimages."
+msgstr "Если будет отмечена эта опция, на сайте в шапке будет показано изображение. Вы можете выбрать изображение здесь %1$s. Вы можете выбрать из предоставленных изображений, или загрузить свое собственное."
+
+#: documentation.php:37
+#: documentation.php:45
+#: documentation.php:53
+#@ grey-opaque
+msgid "Appearance -> Header"
+msgstr "Внешний вид -> Заголовок"
+
+#: documentation.php:42
+#@ grey-opaque
+msgid "Using FTP"
+msgstr "Используя FTP"
+
+#: documentation.php:44
+#, php-format
+#@ grey-opaque
+msgid "The headerimages are located in \"images/headers/\" inside the themes directory.<br />If you want to add new images to the list you have to do it here. For each headerimage you'll find here two images. The headerimage itself (960 x 200 pixel) and its thumbnailimage (230 x 48 pixel). The filenames of this two images are important here. Only letters, numbers and the '-' are allowed.<br />e.g.: header.jpg and header-thumbnail.jpg<br />The thumbnail will be found by \"-thumbnail\". These images here will be shown in the list under %1$s."
+msgstr "Изображения для шапки располагаются \"images/headers/\".<br />Если вы хотите добавить новое изображение к списку, вам нужно загрузить его в эту папку. Для каждого изображения там есть две копии: оригинал 960 x 200 и миниатюра 230 x 48 пикселей. Важны названия этих двух изображений. Только буквы, цифры и дефис допустимы.<br />Например: header.jpg и header-thumbnail.jpg<br />Миниатюры находятся в \"-thumbnail\". Миниатюры будут показаны в списке тут %1$s."
+
+#: documentation.php:50
+#@ grey-opaque
+msgid "Using WordPress"
+msgstr "Используя WordPress"
+
+#: documentation.php:52
+#, php-format
+#@ grey-opaque
+msgid "You alse are able to upload a headerimage directly using your WordPress. This function can also be found under %1$s.<br />This will not affect the list of default images."
+msgstr "Вы также можете загрузить свое изображение для шапки сайта используя WordPress. Эта функция также может быть найдена тут %1$s. Это не влияет на список предустановленных изображений."
+
+#: documentation.php:139
+#@ grey-opaque
+msgid "License of used images and graphics"
+msgstr "Лицензия на использованные изображения и графику"
+
+#: documentation.php:59
+#@ grey-opaque
+msgid "If this option is checked, the default curser will be replaced with the themes cursor."
+msgstr "Если эта опция отмечена, стандартные курсоры будут заменены курсорами темы."
+
+#: documentation.php:63
+#@ grey-opaque
+msgid "If this option is checked, all gravatars in the comment area and the authorbox will display some more information if you hover them with your mouse."
+msgstr "Если эта опция отмечена, все граватары в секции комментариев и в секции Об авторе будут показывать немного больше информации, если вы наведете на них мышкой."
+
+#: documentation.php:70
+#, php-format
+#@ grey-opaque
+msgid "If this option is checked, the post thumbnail or the first image of an article is used for interaction with facebook. This if for facebooks like/recommend and share-buttons. The idea for this function is from %1$s with a little modification by %2$s."
+msgstr "Если эта опция отмечена, миниатюра или первое изображение в статье будет использовано для взаимодействия с Facebook. Это для кнопок Facebook нравится/рекомендую. Идея этой функции принадлежит %1$s с небольшой модификацией от %2$s."
+
+#: documentation.php:72
+#@ grey-opaque
+msgid "myself"
+msgstr "Я"
+
+#: documentation.php:78
+#@ grey-opaque
+msgid "By using this option you can stop WordPress from automatically creating hyperlinks from links in your visitors comments. There may be several reasons for doing so but the main purpose is stop all outgoing links you could not control."
+msgstr "Используя эту опцию, вы можете запретить WordPress автоматически создавать ссылки в комментариях пользователей. Это поможет остановить все исходящие ссылки, которые вы не можете контролировать."
+
+#: documentation.php:82
+#@ grey-opaque
+msgid "Use this option to hide your WordPress version from others. If you don't update WordPress directly every time a new version is released, you're not able to brag about it. To prevent hackers hackers from finding out you're on an older WordPress version too easily, you might as well use this option. That way the generator meta tag with your WordPress version won't be shown."
+msgstr "Используйте эту опцию, чтобы спрятать свою версию WordPress от других. Если вы не обновляете WordPress  напрямую, каждый раз, когда выходит новая версия, лучше не показывать это, например, чтобы защитить вас от хакеров. Мета-тег Generator с вашей версией WordPress не будет показан."
+
+#: documentation.php:88
+#, php-format
+#@ grey-opaque
+msgid "Here you can define the settings of your authorbox. WordPress displays the authorbox if you have entered a biographical info in your %1$s. Grey Opaque overrides this settings and the authorbox must be activated seperatly here. If you haven't made any information in your profile, the authorbox will not be shown, whether you checked here."
+msgstr "Вы можете настроить вашу секцию Об авторе. WordPress показывает этот блок если вы ввели информацию о себе %1$s. Grey Opaque Autors unter \"Biografische Angaben\" ein Text hinterlegt wurde. Grey Opaque überschreibt diese Einstellungen und die Autorenbox muss extra aktiviert werden. Natürlich bleibt die Autorenbox weiterhin verborgen, sollten keine Angaben im Profil erfolgt sein."
+
+#: functions.php:1327
+#, php-format
+#@ grey-opaque
+msgid "You find a documentation of these settings under %1$s."
+msgstr "Вы можете найти документацию по этим настройкам здесь %1$s."
+
+#: functions.php:1328
+#@ grey-opaque
+msgid "Appearance -> Documentation"
+msgstr "Внешний вид -> Документация"
+
+#: documentation.php:71
+#@ grey-opaque
+msgid "Sergej M&uuml;ller"
+msgstr "Sergej M&uuml;ller"
+
+#: documentation.php:89
+#: documentation.php:101
+#: documentation.php:114
+#@ grey-opaque
+msgid "profile settings"
+msgstr "Настройки профиля"
+
+#: documentation.php:95
+#@ grey-opaque
+msgid "With this option, you can activate the authorbox. Remember to enter a biographical info in your profile."
+msgstr "Вы можете активировать секцию Об авторе. Не забудьте добавить пару строк об авторе в вашем профиле."
+
+#: documentation.php:100
+#, php-format
+#@ grey-opaque
+msgid "If you have enabled this option, profileicons will be displayed beneath your Gravatar in the authorbox. To can enter the links to this profiles under \"Contact Info\" in your %1$s."
+msgstr "Если эта опция включена, иконки профиля будут показаны под иконкой граватара в секции Об авторе. ВЫ можете ввести ссылки тут %1$s, в секции Контактная информация."
+
+#: documentation.php:107
+#@ grey-opaque
+msgid "This option will add a mailicon to the profiles in your authorbox. It is seperated because it is MAIL. The mailadress will be scrambles in HTML-output, but it is not a 100% security for mailspam. So think twice about it. If you have more authors in your blog, so it is recommend to ask your team before activating this option."
+msgstr "Благодаря этой опции в ваш профиль в секции Об авторе будет добавлена иконка связи по почте. Ваш E-Mail будет закодирован в HTML-коде, но это не 100% защита от спама. Так что подумайте дважды. Если у вас есть несколько авторов в блоге, рекомендуется посоветоваться с командой, перед активацией этой опции."
+
+#: documentation.php:113
+#, php-format
+#@ grey-opaque
+msgid "This options affecting the behaviour of the admin bar if enabled. To enable or disable the admin bar take a look in your %1$s under \"Personal Options\"."
+msgstr "Эта опция влияет на поведение административного меню, если оно включено. Включить или отключить его можно тут %1$s в Личных настройках."
+
+#: documentation.php:120
+#@ grey-opaque
+msgid "With the following settings you can move the admin bar from the default position at the top of the browser to its bottom. It is seperated in frontend and backend."
+msgstr "Благодаря этой настройке вы можете переместить стандартное горизонтальное админ меню в нижнюю  часть сайта. Она разделена на сайте и в админке."
+
+#: documentation.php:128
+#, php-format
+#@ grey-opaque
+msgid "WordPress can use Smilies, but the default ones are not really pretty. So, Grey Opaque has its own smilie-set. For this I choose the free %1$s from %2$s."
+msgstr "WordPress может использовать смайлики, но те, которые используются по-умолчанию, не очень симпатичны. Grey Opaque имеет собственный набор смайликов. Для этого я выбрал бесплатный набор %1$s от %2$s."
+
+#: documentation.php:129
+#@ grey-opaque
+msgid "Simple Smilie-Set"
+msgstr "Простой набор смайликов"
+
+#: documentation.php:130
+#@ grey-opaque
+msgid "Ralf Bohnert"
+msgstr "Ralf Bohnert"
+
+#: documentation.php:136
+#@ grey-opaque
+msgid "Here you can activate the themes own smilie-set. You have the option to show smilies in your blogs content (articles and pages) and/or in comments."
+msgstr "Вы можете активировать собственный набор смайликов этой темы. Также у вас есть опция показа смайликов в содержимом и/или комментариях."
+
+#: documentation.php:141
+#@ grey-opaque
+msgid "The theme Grey Opaque uses several graphics, images and social media icons.<br />The default headerimages are taken from the WordPress default theme TwentyTen, Grey Opaque is based on. All other are made for Grey Opaque and free to use."
+msgstr "Grey Opaque использует некоторую графиук, изображения и иконки социальных медиа.<br />Предустановленные изображения для шапки взяты из стандартной темы WordPress TwentyTen, на которой основана тема Grey Opaque. Все остальное сделано автором темы и свободно для использования."
+
+#: comments.php:68
+#, php-format
+#@ grey-opaque
+msgid "One Response in another blog/article"
+msgid_plural "%1$s Responses in other blogs/articles"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: functions.php:83
+#, php-format
+#@ grey-opaque
+msgid "Your server is running PHP Version %1$s. %2$s requires at least %3$s.<br />Please Update."
+msgstr ""
+
+#: functions.php:94
+#, php-format
+#@ grey-opaque
+msgid "<p>Your server is running PHP Version %1$s. %2$s requires at least %3$s.<br />Please Update.</p>"
+msgstr ""
+
+#: functions.php:714
+#@ grey-opaque
+msgid "Google+ <em>(complete URL)</em>"
+msgstr ""
+
+#: functions.php:1145
+#@ grey-opaque
+msgid "Share on Google+"
+msgstr ""
+
+#: functions.php:1276
+#, php-format
+#@ grey-opaque
+msgid "Your server is running PHP Version %1$s. %2$s recommends at least %3$s.<br />Please Update."
+msgstr ""
+
+#: functions.php:2174
+#@ grey-opaque
+msgid "Find me on Google+"
+msgstr ""
+
+#: functions.php:2657
+#@ grey-opaque
+msgid "Small Thumbnail"
+msgstr ""
+
+#: plugins/color-admin-posts/color-admin-post.php:147
+#@ grey-opaque
+msgid "Drafts Posts"
+msgstr ""
+
+#: plugins/color-admin-posts/color-admin-post.php:152
+#@ grey-opaque
+msgid "Pendings Posts"
+msgstr ""
+
+#: plugins/color-admin-posts/color-admin-post.php:156
+#@ grey-opaque
+msgid "Published Posts"
+msgstr ""
+
+#: plugins/color-admin-posts/color-admin-post.php:160
+#@ grey-opaque
+msgid "Futures Posts"
+msgstr ""
+
+#: plugins/color-admin-posts/color-admin-post.php:164
+#@ grey-opaque
+msgid "Privates Posts"
+msgstr ""
+
+#: plugins/color-admin-posts/color-admin-post.php:239
+#@ grey-opaque
+msgid "Leave \"#\" for the default color."
+msgstr ""
+
+#: plugins/color-admin-posts/color-admin-post.php:264
+#@ grey-opaque
+msgid "Color Admin Posts"
+msgstr ""
+
+#: plugins/color-admin-posts/color-admin-post.php:278
+#@ grey-opaque
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: plugins/color-admin-posts/color-admin-post.php:288
+#@ grey-opaque
+msgid "Save Changes"
+msgstr ""
+
+#: functions.php:2656
+#@ grey-opaque
+msgid "Wide Thumbnail"
+msgstr ""
+

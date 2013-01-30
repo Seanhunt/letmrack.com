@@ -1,0 +1,260 @@
+Changelog:
+= 1.9 (28. 10. 2012) =
+Testet up with WordPress 3.5
+Removed the gravatar hovercard functions. Doesn't work anymore.
+Added translation for Czech language (cs_CZ)
+
+= 1.8.2 (12. 08. 2012) =
+Cleared global namespace (I hope :-))
+Added translation for chinese traditional (zh_TW)
+
+= 1.8.2 (09. 08. 2012) =
+Fixed Themefooter
+Fixed Contact Form
+
+= 1.8.1 (06. 08. 2012) =
+Fixed version compare in functions.php line 56. See http://wordpress.org/support/topic/help-301
+
+= 1.8 (30. 07. 2012) =
+Added template for contact form.
+
+= 1.7.1 (15. 06. 2012) =
+More Fixes to deal with deprecated functions on WordPress 3.4
+Added Check for backward compatibility for the new (WP 3.4) functions for WordPress older than 3.4
+
+= 1.7 (15. 06. 2012) =
+Compatibility-Fix: Custom Background now works on WordPress 3.4
+
+= 1.6 (17. 04. 2012) =
+Added: Italien translation. Thanks to Andrea.
+Added: Romanian translation. Thanks to Web Geek Science.
+Added: clearfix-class to css.
+Added: clearfix-class to entry-content div.
+Removed: float from #site-description
+
+= 1.5 (01. 03. 2012) =
+Patched: Lazy Load class for lazy loading post-thumbnails.
+Patched: Separation from comments and pings.
+Changed: Thumbnailbehaviour.
+Added: Thumbnailsizes to the choice of imagesizes in the medialibrary when adding an image to the post.
+Added: Function to escape html-characters inside the code-block in comments.
+Removed: Articlethumbnail from the blogs header, it will now shown up inside the artice. Looks simply better.
+Minified loaded JavaScripts.
+
+= 1.4 (08. 12. 2011) =
+Marked function for changing the admin bar as deprecated for WP 3.3, because it doesn't work properly.
+Marked function for pinning the admin bar to the bottom of the browser as deprecated for WP 3.3, because it doesn't work properly.
+Added: Lazy-Loading for images in posts.
+Added: Color Admin Posts for a visual highlight in dashboard posts overview.
+Added: Google+ sharelink to infobox.
+
+= 1.3.1 (04. 11. 2011) =
+Updated: Images for profiles
+Patched: Function for displaying profileimages.
+
+= 1.3.0 (25. 10. 2011) =
+Update: Function for adding and saving twitter and facebook in comments.
+Added: JavaScript for resizing textbox in commentarea.
+Added: Google+ to profiles for author and commentor.
+Patched: Seperated function for custom header business for a better override in a child-theme.
+Patched: Random header now works.
+Patched: Function to save Options to prevent blank screen after saving on servers with PHP < 5.2.0.
+Patched: Function for displaying profile-icons in comments.
+Patched: Function to rebuild the admin bar for WordPress 3.2.
+
+= 1.2.0 (14. 06. 2011) =
+Fix: Issue with profile icons from comment authors. Now only displaying twitter and facebook and not any commentmeta-entry from akismet as a facebook-icon.
+
+= 1.1.1 (04. 06. 2011) =
+Fix: Corrected twitterlink in infobox. Now it works well.
+
+= 1.1.0 (04. 06. 2011) =
+Added: Russian translation (thx to http://blogstyle.ru/)
+Added: PHP-Versioncheck to prevent Parse error: syntax error, unexpected T_OBJECT_OPERATOR. PHP 5.0.0 is required at least.
+Patched: PHP Fatal error: Call to undefined function mb_strtolower(). Checking now if the PHP mbstring extension, which is required to handle international character sets, is available. If not, switching back to default string behaviour.
+Fixed: Background on submenues in navigation if not using the default background.
+
+= 1.0.3.7 (26. 05. 2011) =
+Fix: Code in greyopaque_fb_like_thumbnails in functions.php is causing HTML validity errors.
+Fix: There are a few CSS validity parse errors that need attention.
+
+= 1.0.3.6 (22. 05. 2011) =
+Fix: Changing $_POST to $_REQUEST (Hope this is ok so).
+Fix: Required: Theme Options page does not have a nonce check.
+Fix: a little bug in function greyopaque_add_comment_meta().
+
+= 1.0.3.5 (02. 05. 2011) =
+Fix: sanitizing input on settings page.
+Deleted: themes own debug-functions.
+
+= 1.0.3.4 (25. 04. 2011) =
+Fix: Menu for custom header now depends on setting of 'show headerimage' in themes settings.
+Fix: translated 'back to top' link in footer.
+Add: documentation (Appearance -> Documentation).
+Update: german translation file.
+
+= 1.0.3.3 (23. 04. 2011) =
+Fix: Undefined index: show-headerimage on line 1443 of /wp-content/themes/grey-opaque/functions.php
+Fix: Undefined index: replace-in-content on line 1718 of /wp-content/themes/grey-opaque/functions.php
+Fix: Undefined index: replace-in-comments on line 1734 of /wp-content/themes/grey-opaque/functions.php
+
+To theme reviewer:
+Here some words from me in hope someone reads this.
+
+from http://themes.trac.wordpress.org/ticket/3589
+>> Theme Test Data:
+>> Theme does not handle header when custom image is added.
+This I can't reproduce.
+Changing the headerimage works well.
+I select a header from the list -> images is shown.
+I upload a new image as header -> images is shown.
+I add an large image as post thumbnail -> image is shown as header if it's big enough.
+
+So please tell me what espacially is not working.
+
+Thanks.
+
+= 1.0.3.2 (21. 04. 2011) =
+Fix: Turned off the themes own debug-mode :-)
+Fix: The "share this post" box in the left sidebar gets cut off vertically if a post or page has very little content.
+Fix: Notice: wp-content/themes/grey-opaque/loop.php:66 - Undefined variable: class
+Fix: Notice: wp-content/themes/grey-opaque/loop.php:141 - Undefined variable: class
+Fix: Notice: Use of undefined constant greyopaque_remove_wp_generator - assumed 'greyopaque_remove_wp_generator' in wp-content/themes/grey-opaque/functions.php on line 2068
+Fix: Notice: Undefined index: comment-twitter in wp-content/themes/grey-opaque/functions.php on line 636
+Fix: Notice: Undefined index: comment-facebook in wp-content/themes/grey-opaque/functions.php on line 636
+Fix: Notice: wp-content/themes/grey-opaque/functions.php:1148 - Undefined property: stdClass::$term_id
+Fix: Notice: wp-content/themes/grey-opaque/functions.php:1158 - Undefined property: stdClass::$term_id
+Fix: Fail: It uses 2 footer links - guidelines state you may only use one.
+Fix: Menuissue -> http://themes.trac.wordpress.org/attachment/ticket/3524/01menuissue.jpg
+
+To theme reviewer:
+Here some words from me in hope someone reads this.
+
+>> Do we allow donate buttons?
+Why not? I don't read in any document or guideline it is not allowed.
+This theme is completele free, so why not give the users a chance to donate the work?
+If it is not allowed, so please tell me.
+
+>> Are we ok with themes changing the browser cursor? This one does.
+Yes, it does. But it is anly an option in themes settings - unchecked by default.
+If it is not allowed/wanted, so please tell me.
+
+>> NET-enabling start-tag requires SHORTTAG YES
+I don't use any shorttags in themes code !
+
+Thanks.
+
+= 1.0.3.1 (15. 04. 2011) =
+Deleted: old functions.php.
+
+= 1.0.3 (15. 04. 2011) =
+Fix: RECOMMENDED: Screenshot is wrong size! Detected: 400x400px. Maximum allowed size is 320x240px.
+Fix: Notice: Undefined variable: class on line 186 of /wp-content/themes/grey-opaque/loop.php.
+Fix: Notice: Undefined variable: var_sAuthorBox on line 1800 of /wp-content/themes/grey-opaque/functions.php.
+Fix: Undefined variable: post on line 2136 of /wp-content/themes/grey-opaque/functions.php.
+Fix: Notice: Use of undefined constant is_admin_bar_showing - assumed 'is_admin_bar_showing' in /wp-content/themes/grey-opaque/functions.php on line 2356.
+Fix: Notice: Trying to get property of non-object on line 2136 of /wp-content/themes/grey-opaque/functions.php.
+Update: Infobox (404 and search).
+
+= 1.0.2 (13. 04. 2011) =
+Fix: styling of one-column-page.
+Fix: smooth-scroll now returns the anchor in browsers adress-bar.
+Fix: title in share-links in infobox.
+Fix: css nav-below on attachment-view.
+Fix: css infobox.
+Fix: Backgroundoptions - color in settings now effecting the frontend.
+Update: German translation.
+Update: Function to remove generator-tag from headersection in HTML-Code.
+
+= 1.0.1 (24. 03. 2011) =
+Fix: a little bug in smooth scroll.
+Fix: css mainmenu.
+Fix: css comment by post author.
+Fix: css footerwidgets.
+New: move admin bar to bottom added as option in themesettings.
+New: added textfield for a guideline that appears before the commentfields in themesettings.
+New: added facebook open:graph-support.
+New: added file for deprecated functions which will be removed in future versions of the theme or WordPress.
+New: added file for shortcode functions.
+
+= 1.0.0 (15. 03. 2011) =
+First official release :-)
+
+= 1.0.0-beta-5 =
+Option zum Entfernen des Meta Generator Tags in die Themesettings eingebaut.
+Transparent PNG Fix für IE eingebaut, falls sich doch noch mal einer mit nem IE6 ins Netz traut :-)
+Link zu Themeeinstellungen abgesichert, so dass nur User den sehen, die auch dürfen -> if(current_user_can('edit_theme_options'))
+Amin Bar komplett neu aufgebaut und die Menüpunkte sortiert.
+CSS für Kommentarformular überarbeitet.
+CSS für Tabellen überarbeitet. Insbesondere die bei <code> verwendet werden.
+Option für Favicon in die Themesettings eingebunden.
+
+= 1.0.0-beta-4 =
+Suchfeld auf der Suchseite angepasst.
+Bei erfolgloser Suche die Tagcloud in der Infobox anzeigen lassen. (Idee von Martin)
+Tagcloud in der Infobox auf der 404-Seite anzeigen lassen.
+Theme-Minimum ist auf WordPress 3.0 festgesetzt.
+Link zu den Themeeinstellungen in die Admin Bar unter Design eingebaut.
+Browsererkennung wird als Klasse an <head> übergeben. (Für den Fall, dass browserspezifische Anpassungen nötig sein werden.)
+Doppelte CSS-ID nach Artikel ersetzt durch CSS-Klasse.
+Versionsabfrage bei Änderungen der Admin Bar hinzugefügt.
+Escaping von HTML in den Kommentaren bei <pre> hinzugefügt.
+<pre> per CSS mit overflow:auto versehen. So zerreißt der nicht mehr das Layout, sondern generiert einen Scrollbalken, wenns mal wieder etwas länger wird :-)
+Downloadbutton Shortcode hinzugefügt -> http://blog.ppfeufer.de/wordpress-button-fuer-downloads-erzeugen/
+Navigation Seitenschaltung (WP-PageNavi) wieder in die richtige Position gerückt.
+Formatierung der Brotkrumennavigation. (Breadcrumb NavXT)
+Bilddateien in Verzeichnissen geordnet.
+Tests der unterstützten Plugins (WP-PageNavi und Breadcrumb NavXT).
+Test der Formatierungen der Subkategorie erster und zweiter Ebene.
+Artikelnavigation formatiert. (nächster, vorheriger Artikel in der Artikelansicht)
+
+= 1.0.0-beta-3 =
+Untergeordnete Kategorien werden im Kategoriewidget nun um 20px eingerückt.
+Hinweis zu Custom Header Section wenn Headerbild angezeigt werden soll.
+Waybackmachine in greyopaque_setup(); eingefügt. Versionscheck für einige Funktionsaufrufe und Alternativen für ältere WordPress-Versionen erstellt. (Mindestens jedoch WordPress 3.0 vorausgesetzt)
+Kommentarformular überarbeitet. (Twitter und Facebook hinzugefügt.)
+Sanitize für Twitter im Kommentarformular erstellt. (Falls doch mal mehr als nur der Twittername eingegeben wird.)
+Kommentarzähler aufgeteilt in Kommentare und Ping-/Trackbacks.
+Kommentare formatiert.
+Ping-/Trackbacks unter die Kommentare verschoben.
+Ping-/Trackbacks formatiert.
+Tabellen per CSS nachbearbeitet.
+Nächster und vorheriger Artikel in Einzelartikelansicht per CSS formatiert.
+Deutsche Übersetzung vervollständigt.
+
+= 1.0.0-beta-2 =
+Bilder mit Caption haben nun einen Hintergrund
+author.php abgeändert.
+Support für Plugin Breadcrumb NavXT eingearbeitet.
+Support für Plugin WP-PageNavi eingearbeitet.
+Support für Plugin Comment Form Quicktags eingearbeitet.
+Support für Postthumbnails eingearbeitet.
+Layout von Sticky Posts überarbeitet.
+Linke Infobox neu positioniert. Bleibt nun auch bei verschiedenen Browsergrößen da wo sie hingehört.
+
+= 1.0.0-beta-1 =
+Grundgerüst erstellt.
+CSS erstellt.
+Resize für Fullsize-Images überarbeitet.
+Resize für embedded Videos überarbeitet.
+Themesettings in das Dashboard eingebaut.
+loop.php abgeändert.
+loop-attachment.php abgeändert.
+loop-page.php abgeändert.
+loop-single.php abgeändert.
+functions.php erweitert.
+footer.php abgeändert.
+header.php abgeändert.
+Autorenbox komplett überarbeitet.
+Kontaktinformationen im Nutzerprofil erweitert.
+Funktion zur Auswahl des Headerbildes ersetzt.
+Headerbild und Branding an das Theme angepasst.
+Funktion für Hintergrundbild angepasst.
+Option für Cursor in die Themeeinstellungen eingearbeitet.
+Option für Smilies in die Themeeinstellungen eingearbeitet.
+Option für Autorenbox in die Themeeinstellungen eingearbeitet.
+Option für Blogtitel (Branding) in die Themeeinstellungen eingearbeitet.
+Option für Headerbild in die Themeeinstellungen eingearbeitet.
+Option für Gravatar Hovercards in die Themeeinstellungen eingearbeitet.
+Option zum Deaktivieren von automatischen Hyperlinks in den Kommentaren in die Themeeinstellungen eingearbeitet.
+Option für Artikelbild für Facebook in die Temeeinstellungen eingearbeitet.

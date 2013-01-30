@@ -1,0 +1,37 @@
+-- phpMyAdmin SQL Dump
+-- version 2.8.0.1
+-- http://www.phpmyadmin.net
+-- 
+-- Host: fatcow
+-- Generation Time: Nov 25, 2007 at 03:52 PM
+-- Server version: 5.0.45
+-- PHP Version: 4.4.4
+-- 
+-- Database: `cookse`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_Captcha`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_Captcha`;
+CREATE TABLE IF NOT EXISTS `APPDEV_Captcha` (
+  `FileName` text NOT NULL COMMENT 'The captcha filename',
+  `PlainText` text NOT NULL COMMENT 'The text string shown in the file',
+  `Type` enum('small','large') NOT NULL COMMENT 'The type ',
+  `RecordNumber` int(2) NOT NULL auto_increment COMMENT 'The record number',
+  PRIMARY KEY  (`RecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1 COMMENT='This has info on captcha image files for captcha_lib' AUTO_INCREMENT=7 ;
+
+-- 
+-- Dumping data for table `APPDEV_Captcha`
+-- 
+
+INSERT INTO `APPDEV_Captcha` VALUES ('10.gif', 'fnogd', 'small', 1);
+INSERT INTO `APPDEV_Captcha` VALUES ('11.gif', 'ahkpv', 'small', 2);
+INSERT INTO `APPDEV_Captcha` VALUES ('12.gif', 'kdwpu', 'small', 3);
+INSERT INTO `APPDEV_Captcha` VALUES ('14.gif', 'pavo', 'small', 4);
+INSERT INTO `APPDEV_Captcha` VALUES ('1.gif', 'GIRAFFE', 'large', 5);
+INSERT INTO `APPDEV_Captcha` VALUES ('2.gif', 'ELEPHANT', 'large', 6);

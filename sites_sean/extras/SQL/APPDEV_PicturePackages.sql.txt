@@ -1,0 +1,36 @@
+-- 
+-- Table structure for table `APPDEV_PicturePackages`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_PicturePackages`;
+CREATE TABLE IF NOT EXISTS `APPDEV_PicturePackages` (
+  `PackageID` text,
+  `Description` text,
+  `WholesalePrice` text,
+  `RetailPrice` text
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `APPDEV_PicturePackages`
+-- 
+
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('A', '1 - 5 x 7', '7.50', '15.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('B', '1 - 8 x 10', '10.00', '20.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('C', '1 - 11 x 14', '14.00', '28.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('D', '1 - 12 x 15', '16.00', '32.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('E', '1 - 16 x 20', '25.00', '50.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('F', '1 - 5 x 7<br>8 - 2 x 2.5''s', '10.00', '20.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('G', '1 - 5 x 7<br>4 - 2.5 x 3.25''s<br>2 - 1.5 x 2''s', '10.00', '20.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('H', '1 - 5 x 7<br>4 - 2.5 x 3.5''s', '10.00', '20.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('I', '4 - 4 x 5''s', '10.00', '20.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('J', '2 - 4 x 5''s<br>2 - 2.5 x 3.5''s<br>4 - 2 x 2.5''s', '10.00', '20.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('K', '2 - 4 x 5''s<br>8 - 2 x 2.5''s', '10.00', '20.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('L', '2 - 4 x 5''s<br>4 - 2.5 x 3.5''s', '10.00', '20.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('M', '20 - 2 x 1.5''s', '10.00', '20.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('N', '16 - 2 x 2.5''s', '10.00', '20.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('O', '8 - 2.5 x 3.5''s', '10.00', '20.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('P', '4 - 2.5 x 3.5''s<br>8 - 2 x 2.5''s', '10.00', '20.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('Q', '9 - 2.5 x 3.5''s', '10.00', '20.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('R', '2 - 5 x 7''s', '10.00', '20.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('S', '1 - 5 x 7<br>2 -  2.5 x 3.5''s<br>4 - 2 x 2.5''s', '10.00', '20.00');
+INSERT INTO `APPDEV_PicturePackages` (`PackageID`, `Description`, `WholesalePrice`, `RetailPrice`) VALUES ('T', '1 - 5 x 7<br>2 - 3.5 x 5''s', '10.00', '20.00');

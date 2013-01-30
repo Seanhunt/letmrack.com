@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #CCCCCC;
+}
+
+fieldset {  
+		float: left;  
+		clear: left;  
+		width: 100%;  
+		margin: 0 0 1.5em 0;  
+		padding: 0;
+		border: 2px dotted #333333;
+		background-color: #F2EFE9;		
+}
+
+legend {  
+		margin-left: 1em;  
+		color: #000000;  
+		font-size:14px;
+		font-weight: bold;
+		border: thin solid #333333;
+		padding-top: 3px;
+		padding-right: 6px;
+		padding-bottom: 3px;
+		padding-left: 6px;
+		background-color: #FFFFFF;		
+}
+
+fieldset ol {  
+			padding: 1em 1em 0 1em;  
+			list-style: none;
+}
+
+fieldset li {  
+			float: left;  
+			clear: left;  
+			width: 100%;  
+			padding-bottom: 1em;
+}
+
+.text 	{
+		background-color: #FFF;
+		border: thin solid #333333;
+		font-size: 12px;
+		color: #333333;
+		font-weight: normal;
+}
+
+input.text:hover	{
+					border: thin dashed #666666;
+}
+
+fieldset.submit {
+				float: none;
+				width: auto;
+				padding-left: 12em;
+				padding-top: 12px;
+				padding-bottom: 12px;
+				background-color: transparent; 
+				border: none;
+}
+
+.submitButton:hover {
+					border: 1px solid #000000;
+}
+
+.submitButton {
+					border: 1px solid #999999;
+}
+
+fieldset.checkbox {  
+
+}
+
+label {  
+float: left;  
+width: 10em;  
+margin-right: 1em;  
+text-align: right;
+border: thin solid #F2EFE9;
+}
+
+.checkbox label:hover	{
+			border: thin dashed #666666;
+}
+
+
+<link href="test_fieldset_styling_ie.css" rel="stylesheet" type="text/css" />
+-->
+</style>
+
+<!--[if lte IE 7]>  
+<style type="text/css" media="all">  
+@import "test_fieldset_styling_ie.css";   */
+
+</style>
+<![endif]-->
+
+
+</head>
+
+<body>
+
+
+<form action="example.php">  
+<fieldset>  
+<legend>Contact Details</legend>  
+<ol>  
+    <li>  
+        <label for="name">Name:</label>  
+        <input id="name" name="name" class="text" type="text" />  
+    </li>  
+    <li>  
+        <label for="email">Email address:</label>  
+        <input id="email" name="email" class="text" type="text" />  
+    </li>  
+<li>  
+<label for="phone">Telephone is a long label that causes wrapping of the text...</label>  
+<input id="phone" name="phone" class="text" type="text" />  
+</li>  
+</ol>  
+</fieldset>  
+<fieldset>  
+<legend>Delivery Address</legend>  
+<ol>  
+<li>  
+<label for="address1">Address 1:</label>  
+<input id="address1" name="address1" class="text"  
+type="text" />  
+</li>  
+<li>  
+<label for="address2">Address 2:</label>  
+<input id="address2" name="address2" class="text"  
+type="text" />  
+</li>  
+<li>  
+<label for="suburb">Suburb/Town:</label>  
+<input id="suburb" name="suburb" class="text"  
+type="text" />  
+</li>  
+<li>  
+<label for="postcode">Postcode:</label>  
+<input id="postcode" name="postcode"  
+class="text textSmall" type="text" />  
+</li>
+ 
+<li>  
+<label for="country">Country:</label>  
+<input id="country" name="country" class="text"  
+type="text" />  
+</li>  
+</ol>  
+</fieldset> 
+
+
+<fieldset class="checkbox">  
+<legend>Some Random Checkboxes</legend>  
+<ol>  
+    <li>  
+        <label for="cb1">Check Box 1</label>
+        <input type="checkbox" name="cb1" id="cb1" />
+    </li>  
+    <li>  
+        <label for="cb2">Check Box 2</label>
+        <input type="checkbox" name="cb2" id="cb2" />
+    </li>  
+    <li>  
+        <label for="cb3">Check Box 3</label>
+        <input type="checkbox" name="cb3" id="cb3" />
+    </li>  
+
+</ol>  
+</fieldset>  
+
+ 
+<fieldset class="submit">  
+<input class="submitButton" type="submit"  
+value="Submit Form" />  
+</fieldset>
+
+
+
+</form>
+
+</body>
+
+</html>

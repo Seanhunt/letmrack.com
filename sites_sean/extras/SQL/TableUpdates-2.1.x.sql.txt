@@ -1,0 +1,63 @@
+# This needs to be run on 2.0.x blog tables
+
+ALTER TABLE `APPDEV_BLOG_LifoBlog` 
+ADD `blSortType` 
+ENUM( 'RANDOM', 'FIXED' ) NOT NULL 
+DEFAULT 'RANDOM' 
+COMMENT 'This is for Ads it holds the sort type - if fixed refer to blSortOrder',
+ADD `blSortOrder` 
+INT( 2 ) NOT NULL 
+COMMENT 'If SortType is fixed this field has ascending order numbers';
+
+# This needs to be run on 2.0.x APPDEV_BlogHeaders table
+
+ALTER TABLE `APPDEV_BlogHeaders` 
+CHANGE `blBlogType` `blBlogType` 
+ENUM( 'LIFO', 'CALENDAR', 'ORDERED' ) 
+CHARACTER SET latin1 
+COLLATE latin1_swedish_ci NOT NULL 
+DEFAULT 'LIFO' 
+COMMENT 'CALENDAR and ORDERED will display some additional UI widgets in the editor'
+
+# this is for the users table
+
+ALTER TABLE `APPDEV_Users` 
+ADD `RecordNumber` 
+INT( 8 ) UNSIGNED NOT NULL 
+AUTO_INCREMENT 
+PRIMARY KEY 
+COMMENT 'I have added this in 2.1.x';
+
+-- --------------------------------------------------------
+-- --------------------------------------------------------
+-- --------------------------------------------------------
+
+-- This is for the user system
+
+CREATE TABLE `APPDEV_UserPermissions` (
+`pwUserID` TEXT NOT NULL COMMENT 'The UserID from the UserInfo table',
+`pwPermission` TEXT NOT NULL COMMENT 'The table or permission name',
+`pwRecordNumber` INT( 8 ) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT 'The record number'
+) ENGINE = MYISAM COMMENT = 'This holds the users granular permissions';
+
+-- --------------------------------------------------------
+
+-- Table structure for table `APPDEV_UserRights`
+-- 
+
+CREATE TABLE `APPDEV_UserRights` (
+  `pwRightsID` text NOT NULL,
+  `pwRecordNumber` int(8) unsigned NOT NULL auto_increment,
+  PRIMARY KEY  (`pwRecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+CREATE TABLE `APPDEV_UserInfo` (
+  `pwUserID` text NOT NULL,
+  `pwPassword` text NOT NULL,
+  `pwRightsID` enum('Administrator','Blog','SuperUser','Gallery') NOT NULL default 'Administrator' COMMENT 'This syncs with the rights table',
+  `pwEMail` text NOT NULL,
+  `pwFirstName` text NOT NULL,
+  `pwLastName` text NOT NULL,
+  `pwRecordNumber` int(8) unsigned NOT NULL auto_increment COMMENT 'I have added this in 2.1.x',
+  PRIMARY KEY  (`pwRecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=latin1 AUTO_INCREMENT=0 ;

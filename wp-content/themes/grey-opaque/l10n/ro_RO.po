@@ -1,0 +1,1136 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Web Geeks\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#@ grey-opaque
+#: 404.php:15
+#: loop.php:25
+msgid "Not Found"
+msgstr "Nu a fost găsit"
+
+#@ grey-opaque
+#: 404.php:17
+msgid "Apologies, but the page you requested could not be found. Perhaps searching will help."
+msgstr "Ne cerem scuze, dar nu a putut fi găsit pagina aţi solicitat. Probabil căutarea va ajuta."
+
+#@ grey-opaque
+#: archive.php:32
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr "Arhivele de zi cu zi: <span>%s</span>"
+
+#@ grey-opaque
+#: archive.php:34
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr "Arhivele lunare: <span>%s</span>"
+
+#@ grey-opaque
+#: archive.php:36
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr "Arhivele anual: <span>%s</span>"
+
+#@ grey-opaque
+#: archive.php:38
+msgid "Blog Archives"
+msgstr "Blog Archives"
+
+#@ grey-opaque
+#: author.php:25
+#, php-format
+msgid "Author Archives: %s"
+msgstr "Archives Autor: %s"
+
+#@ grey-opaque
+#: category.php:14
+#, php-format
+msgid "Category Archives: %s"
+msgstr "Arhivele de categorie: %s"
+
+#@ grey-opaque
+#: comments.php:18
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Acest post este protejată prin parolă. Introduceţi parola pentru vizualizarea comentariilor."
+
+#@ grey-opaque
+#: comments.php:41
+#, php-format
+msgid "%1$s Responses to %2$s"
+msgstr "%1$ s răspunsuri la %2$ s"
+
+#@ grey-opaque
+#: comments.php:34
+#: comments.php:89
+msgid "<span class=\"meta-nav\">←</span> Older Comments"
+msgstr "<span class=\"meta-nav\">←</span> comentarii mai vechi"
+
+#@ grey-opaque
+#: comments.php:35
+#: comments.php:90
+msgid "Newer Comments <span class=\"meta-nav\">→</span>"
+msgstr "Mai nou Comentarii <span class=\"meta-nav\">→</span>"
+
+#@ grey-opaque
+#: comments.php:102
+msgid "Comments are closed."
+msgstr "Comentariile sunt închise."
+
+#@ grey-opaque
+#: documentation.php:12
+msgid "Grey Opaque Documentation"
+msgstr "Documentația opace gri"
+
+#@ grey-opaque
+#: documentation.php:15
+msgid "Here now a little documatation for your new theme Gray Opaque.<br />This file contains the description of the themesettings and the license for all used images."
+msgstr "Aici acum un pic documatation pentru tema nou gri opac. < br / > acest fişier conţine descrierea a themesettings şi a licenţei pentru toate imaginile."
+
+#@ grey-opaque
+#: documentation.php:19
+#: functions.php:1335
+msgid "Theme Options"
+msgstr "Opţiuni de temă"
+
+#@ grey-opaque
+#: documentation.php:22
+msgid "In this part of themes setting you'll find the main options."
+msgstr "În această parte a teme setarea veţi găsi opţiunile principal."
+
+#@ grey-opaque
+#: documentation.php:26
+#: functions.php:1357
+msgid "Show Branding"
+msgstr "Arată de Branding"
+
+#@ grey-opaque
+#: documentation.php:28
+#, php-format
+msgid "If this option is checked, the branding will be displayed on frontend. The branding contains the blogs name (Site Title) and slogan (Tagline), which can be entered %1$s."
+msgstr "Dacă este selectată această opţiune, branding vor fi afişate de pe front-end. Branding conţine numele de blog-uri (site-ul titlu) şi sloganul (motto), care poate fi introdus %1$ s."
+
+#@ grey-opaque
+#: documentation.php:29
+#: functions.php:1384
+msgid "here"
+msgstr "aici"
+
+#@ grey-opaque
+#: documentation.php:34
+#: functions.php:1369
+msgid "Show Headerimage"
+msgstr "Arată Headerimage"
+
+#@ grey-opaque
+#: documentation.php:36
+#, php-format
+msgid "If this option is checked, a headerimage will be displayed on frontend. You can select a headerimage under %1$s. Here you can choose from the given images or upload new. There are two ways to uplaod new headerimages."
+msgstr "Dacă această opţiune este selectată, o headerimage va fi afişat pe front-end. Aveţi posibilitatea să selectaţi o headerimage în %1$ s. Aici aveţi posibilitatea să alegeţi din imagini dat sau încărcat noi. Există două moduri de a uplaod noi headerimages."
+
+#@ grey-opaque
+#: documentation.php:37
+#: documentation.php:45
+#: documentation.php:53
+msgid "Appearance -> Header"
+msgstr "Aspect-> antet"
+
+#@ grey-opaque
+#: documentation.php:42
+msgid "Using FTP"
+msgstr "Utilizând FTP"
+
+#@ grey-opaque
+#: documentation.php:44
+#, php-format
+msgid "The headerimages are located in \"images/headers/\" inside the themes directory.<br />If you want to add new images to the list you have to do it here. For each headerimage you'll find here two images. The headerimage itself (960 x 200 pixel) and its thumbnailimage (230 x 48 pixel). The filenames of this two images are important here. Only letters, numbers and the '-' are allowed.<br />e.g.: header.jpg and header-thumbnail.jpg<br />The thumbnail will be found by \"-thumbnail\". These images here will be shown in the list under %1$s."
+msgstr "Cele headerimages sunt situate în \"imagini/anteturi/\" în interiorul directorul de teme. <br /> Dacă doriţi să adăugaţi noi imagini pentru a lista pe care trebuie să o fac aici. Pentru fiecare headerimage veţi găsi aici două imagini.Headerimage în sine (960 x 200 pixeli) şi thumbnailimage sa (230 x 48 pixeli). Numele fisierelor aceste două imagini sunt importante aici. Doar litere, cifre şi \"-\" <br /> de exemplu, sunt permise:. Header.jpg şi antet-thumbnail.jpg <br /> miniatura va fi găsit de \"-miniatura\". Aceste imagini aici vor fi afişate în lista de sub %1$ s."
+
+#@ grey-opaque
+#: documentation.php:50
+msgid "Using WordPress"
+msgstr "Folosind WordPress"
+
+#@ grey-opaque
+#: documentation.php:52
+#, php-format
+msgid "You alse are able to upload a headerimage directly using your WordPress. This function can also be found under %1$s.<br />This will not affect the list of default images."
+msgstr "Altceva vă sunt capabili să încărcaţi un headerimage direct folosind WordPress dumneavoastră. Această funcţie, de asemenea, pot fi găsite în %1$s.<br / > aceasta nu va afecta lista de imagini implicit."
+
+#@ grey-opaque
+#: documentation.php:58
+#: functions.php:1393
+msgid "Show Themecursor"
+msgstr "Arată Themecursor"
+
+#@ grey-opaque
+#: documentation.php:59
+msgid "If this option is checked, the default curser will be replaced with the themes cursor."
+msgstr "Dacă este selectată această opţiune, cursor implicit va fi înlocuit cu cursorul de teme."
+
+#@ grey-opaque
+#: documentation.php:62
+#: functions.php:1405
+msgid "Show Gravatar Hovercards"
+msgstr "Arată Gravatar Hovercards"
+
+#@ grey-opaque
+#: documentation.php:63
+msgid "If this option is checked, all gravatars in the comment area and the authorbox will display some more information if you hover them with your mouse."
+msgstr "Dacă este selectată această opţiune, toate gravatars în zona comentariu şi authorbox va afişa mai multe informaţii, dacă tu le treceţi cu mouse-ul."
+
+#@ grey-opaque
+#: documentation.php:66
+#: functions.php:1417
+msgid "Get Postthumbnail for Facebook"
+msgstr "Obţine Postthumbnail pentru Facebook"
+
+#@ grey-opaque
+#: documentation.php:70
+#, php-format
+msgid "If this option is checked, the post thumbnail or the first image of an article is used for interaction with facebook. This if for facebooks like/recommend and share-buttons. The idea for this function is from %1$s with a little modification by %2$s."
+msgstr "Dacă este selectată această opţiune, miniatura post sau prima imagine de un articol este utilizat pentru interacţiunea cu facebook. Dacă această pentru facebooks ca/recomanda şi share-butoane. Ideea pentru această funcţie este de %1$ s cu modificarea un pic de %2$ s."
+
+#@ grey-opaque
+#: documentation.php:71
+msgid "Sergej Müller"
+msgstr "Sergej Müller"
+
+#@ grey-opaque
+#: documentation.php:72
+msgid "myself"
+msgstr "mine"
+
+#@ grey-opaque
+#: documentation.php:77
+#: functions.php:1429
+msgid "Remove automatic Hyperlinks in Comments"
+msgstr "Eliminarea hyperlink-uri automate în Comentarii"
+
+#@ grey-opaque
+#: documentation.php:78
+msgid "By using this option you can stop WordPress from automatically creating hyperlinks from links in your visitors comments. There may be several reasons for doing so but the main purpose is stop all outgoing links you could not control."
+msgstr "Utilizând această opţiune puteţi opri WordPress la crearea automată de hyperlink-uri la link-uri la comentariile dumneavoastră vizitatori. Pot exista mai multe motive, dar scopul principal este opri toate ieşire link-uri vă nu ar putea controla."
+
+#@ grey-opaque
+#: documentation.php:81
+#: functions.php:1441
+msgid "Remove Generator-Tag"
+msgstr "Eliminaţi Generator-tag-ul"
+
+#@ grey-opaque
+#: documentation.php:82
+msgid "Use this option to hide your WordPress version from others. If you don't update WordPress directly every time a new version is released, you're not able to brag about it. To prevent hackers hackers from finding out you're on an older WordPress version too easily, you might as well use this option. That way the generator meta tag with your WordPress version won't be shown."
+msgstr "Utilizaţi această opţiune pentru a ascunde versiunea WordPress de la alţii. Dacă nu actualizaţi WordPress direct de fiecare dată când o nouă versiune este lansat, nu sunteţi capabil să te lauda despre el. Pentru a împiedica hackerii hackeri găsirea out sunteţi pe o versiune mai veche de WordPress prea uşor, s-ar putea, precum şi utilizaţi această opţiune. În acest fel generator meta tag-ul cu versiunea de WordPress nu va fi indicat."
+
+#@ grey-opaque
+#: documentation.php:85
+#: functions.php:1453
+msgid "Authorbox"
+msgstr "Authorbox"
+
+#@ grey-opaque
+#: documentation.php:88
+#, php-format
+msgid "Here you can define the settings of your authorbox. WordPress displays the authorbox if you have entered a biographical info in your %1$s. Grey Opaque overrides this settings and the authorbox must be activated seperatly here. If you haven't made any information in your profile, the authorbox will not be shown, whether you checked here."
+msgstr "Aici se poate defini setările dumneavoastră authorbox. WordPress afişează authorbox dacă aţi introdus un informaţii biografice în dumneavoastră %1$ s. opace gri suprascrie setările acest şi authorbox trebuie să fie activat seperatly aici. Dacă nu aţi făcut orice informaţii în profilul dvs., authorbox nu va fi indicat, dacă aţi verificat aici."
+
+#@ grey-opaque
+#: documentation.php:89
+#: documentation.php:101
+#: documentation.php:114
+msgid "profile settings"
+msgstr "Profil setări"
+
+#@ grey-opaque
+#: documentation.php:94
+#: functions.php:1467
+msgid "Show Authorbox"
+msgstr "Arată Authorbox"
+
+#@ grey-opaque
+#: documentation.php:95
+msgid "With this option, you can activate the authorbox. Remember to enter a biographical info in your profile."
+msgstr "Cu această opţiune, puteţi să activaţi authorbox. Amintiţi-vă să introduceţi un informaţii biografice în profilul dvs."
+
+#@ grey-opaque
+#: documentation.php:98
+#: functions.php:1495
+msgid "Show Profiles in Authorbox"
+msgstr "Afişare profiluri în Authorbox"
+
+#@ grey-opaque
+#: documentation.php:100
+#, php-format
+msgid "If you have enabled this option, profileicons will be displayed beneath your Gravatar in the authorbox. To can enter the links to this profiles under \"Contact Info\" in your %1$s."
+msgstr "Dacă aţi activat această opţiune, profileicons va fi afişat sub Gravatar în authorbox. Pentru a putea introduce link-urile de la aceste profiluri sub \"Contact\" în %1$ s."
+
+#@ grey-opaque
+#: documentation.php:106
+#: functions.php:1508
+msgid "Show Mailicon in Authorbox"
+msgstr "Arată Mailicon în Authorbox"
+
+#@ grey-opaque
+#: documentation.php:107
+msgid "This option will add a mailicon to the profiles in your authorbox. It is seperated because it is MAIL. The mailadress will be scrambles in HTML-output, but it is not a 100% security for mailspam. So think twice about it. If you have more authors in your blog, so it is recommend to ask your team before activating this option."
+msgstr "Această opţiune va adăuga un mailicon la profilurile în authorbox dumneavoastră. Este separate pentru că este poştă electronică. Mailadress va fi distorsionează în HTML-ieşire, dar nu este o garanție de 100% pentru mailspam. Deci, cred că de două ori despre asta. Dacă aveţi mai multe autori în blog-ul, deci este recomanda să ceară echipa înainte activating această opţiune."
+
+#@ grey-opaque
+#: documentation.php:110
+#: functions.php:1535
+msgid "Admin Bar"
+msgstr "Admin Bar"
+
+#@ grey-opaque
+#: documentation.php:113
+#, php-format
+msgid "This options affecting the behaviour of the admin bar if enabled. To enable or disable the admin bar take a look in your %1$s under \"Personal Options\"."
+msgstr "Această opţiune afectează comportamentul de bara de admin daca este activat. Pentru a activa sau dezactiva bara de admin să ia o privire în %1$s \"în conformitate cu opţiunile personale\"."
+
+#@ grey-opaque
+#: documentation.php:119
+#: functions.php:1552
+msgid "Move Admin Bar to Bottom"
+msgstr "Mutare Admin Bar în jos"
+
+#@ grey-opaque
+#: documentation.php:120
+msgid "With the following settings you can move the admin bar from the default position at the top of the browser to its bottom. It is seperated in frontend and backend."
+msgstr "Cu următoarele setări aveţi posibilitatea să mutaţi bara de admin din poziția implicit la partea de sus a browser-ului său jos. Este separate în frontend şi backend."
+
+#@ grey-opaque
+#: documentation.php:123
+#: functions.php:1597
+msgid "Smilies"
+msgstr "Smilies"
+
+#@ grey-opaque
+#: documentation.php:128
+#, php-format
+msgid "WordPress can use Smilies, but the default ones are not really pretty. So, Grey Opaque has its own smilie-set. For this I choose the free %1$s from %2$s."
+msgstr "WordPress puteţi utiliza Smilies, dar cele implicite nu sunt într-adevăr destul. Deci, gri opace are propriul smilie-set. Pentru acest lucru aleg gratuit %1$ s la %2$ s."
+
+#@ grey-opaque
+#: documentation.php:129
+msgid "Simple Smilie-Set"
+msgstr "Smilie simplu-Set"
+
+#@ grey-opaque
+#: documentation.php:130
+msgid "Ralf Bohnert"
+msgstr "Ralf Bohnert"
+
+#@ grey-opaque
+#: documentation.php:135
+#: functions.php:1615
+msgid "Show Smilies"
+msgstr "Smilies Arată"
+
+#@ grey-opaque
+#: documentation.php:136
+msgid "Here you can activate the themes own smilie-set. You have the option to show smilies in your blogs content (articles and pages) and/or in comments."
+msgstr "Aici aveţi posibilitatea să activaţi teme proprii smilie-set. Aveţi opţiunea de a Arată smilies în conţinutul de blog-uri (articole şi pagini) sau în comentarii."
+
+#@ grey-opaque
+#: documentation.php:139
+msgid "License of used images and graphics"
+msgstr "Licenţă de imagini utilizate şi grafică"
+
+#@ grey-opaque
+#: documentation.php:141
+msgid "The theme Grey Opaque uses several graphics, images and social media icons.<br />The default headerimages are taken from the WordPress default theme TwentyTen, Grey Opaque is based on. All other are made for Grey Opaque and free to use."
+msgstr "Tema opace gri utilizează mai multe grafice, imagini şi social media icoane. < br / > implicit headerimages sunt luate de la implicit WordPress tema TwentyTen, opac gri se bazează pe. Toate celelalte sunt făcute pentru gri opace şi libertatea de a folosi."
+
+#@ grey-opaque
+#: footer.php:30
+msgid "Back to top"
+msgstr "Back to top"
+
+#@ grey-opaque
+#: footer.php:31
+msgid "http://wordpress.org/"
+msgstr "http://WordPress.org/"
+
+#@ grey-opaque
+#: footer.php:31
+msgid "Semantic Personal Publishing Platform"
+msgstr "Semantică personale publicarea platformă"
+
+#@ grey-opaque
+#: footer.php:31
+#, php-format
+msgid "Proudly powered by %s."
+msgstr "Proudly powered by % s."
+
+#@ grey-opaque
+#: functions-deprecated.php:73
+#: functions.php:1083
+msgid "by: "
+msgstr "de: "
+
+#@ grey-opaque
+#: functions-deprecated.php:82
+#: functions.php:1092
+#, php-format
+msgid "Size: %s px"
+msgstr "Dimensiune: %s px"
+
+#@ grey-opaque
+#: functions-deprecated.php:85
+#: functions.php:1095
+msgid "Link to full-size image"
+msgstr "Link la imagine full-size"
+
+#@ grey-opaque
+#: functions-deprecated.php:93
+#: functions-deprecated.php:289
+#: functions.php:1103
+msgid "Edit"
+msgstr "Editare"
+
+#@ grey-opaque
+#: functions-deprecated.php:100
+#: functions.php:1111
+msgid "comment(s)"
+msgstr "comment (s)"
+
+#@ grey-opaque
+#: functions-deprecated.php:105
+#: functions.php:1116
+msgid "pingback(s)"
+msgstr "Pingback(s)"
+
+#@ grey-opaque
+#: functions-deprecated.php:113
+#: functions.php:1124
+msgid "share this post"
+msgstr "Partajaţi acest post"
+
+#@ grey-opaque
+#: functions-deprecated.php:116
+msgid "Share on BlinkList"
+msgstr "Share on BlinkList"
+
+#@ grey-opaque
+#: functions-deprecated.php:119
+#: functions.php:1127
+msgid "Add to del.icio.us"
+msgstr "Adauga la del.icio.us"
+
+#@ grey-opaque
+#: functions-deprecated.php:122
+msgid "Digg This!"
+msgstr "Digg acest lucru!"
+
+#@ grey-opaque
+#: functions-deprecated.php:125
+#: functions.php:1130
+msgid "Share on Facebook"
+msgstr "Partajaţi pe Facebook"
+
+#@ grey-opaque
+#: functions-deprecated.php:128
+#: functions.php:1133
+msgid "Share on Reddit"
+msgstr "Partajaţi pe Reddit"
+
+#@ grey-opaque
+#: functions-deprecated.php:131
+#: functions.php:1136
+msgid "Share on StumbleUpon"
+msgstr "Partajaţi pe StumbleUpon"
+
+#@ grey-opaque
+#: functions-deprecated.php:134
+#: functions.php:1139
+msgid "Tweet this!"
+msgstr "Tweet acest!"
+
+#@ grey-opaque
+#: functions-deprecated.php:137
+#: functions.php:1142
+msgid "Favourite on Technorati"
+msgstr "Favorit la Technorati"
+
+#@ grey-opaque
+#: functions-deprecated.php:146
+#: functions.php:1154
+msgid "comments RSS"
+msgstr "Comments RSS"
+
+#@ grey-opaque
+#: functions-deprecated.php:151
+#: functions.php:1159
+msgid "trackback"
+msgstr "Trackback"
+
+#@ grey-opaque
+#: functions-deprecated.php:154
+#: functions.php:1162
+msgid "permalink"
+msgstr "permalink"
+
+#@ grey-opaque
+#: functions.php:83
+#, php-format
+msgid "Your server is running PHP Version %1$s. %2$s requires at least %3$s.<br />Please Update."
+msgstr "Serverul rulează PHP versiunea %1$ s. %2$ s necesită cel puţin %3$s.<br / > vă rugăm să actualizare."
+
+#@ grey-opaque
+#: functions.php:94
+#, php-format
+msgid "<p>Your server is running PHP Version %1$s. %2$s requires at least %3$s.<br />Please Update.</p>"
+msgstr "<p>Serverul se execută versiunea PHP %1$ s. %2$ s necesită cel puţin %3$s.<br / > vă rugăm să actualizare.</p>"
+
+#@ grey-opaque
+#: functions.php:124
+#, php-format
+msgid "Your site is running WordPress Version %1$s. %2$s requires at least %3$s.<br />Please Update.</p><p><a href=\"%4$s\">%5$s</a>"
+msgstr "Site-ul dvs. se execută WordPress versiunea %1$s. %2$s necesită cel puţin %3$s. <br /> Te rog Update. </p> <p><a href=\"%4$s\"> %5$s</a>"
+
+#@ grey-opaque
+#: functions.php:129
+msgid "Open Dashboard"
+msgstr "Tabloul de bord deschise"
+
+#@ grey-opaque
+#: functions.php:137
+#, php-format
+msgid "<p>Your site is running WordPress Version %1$s. %2$s requires at least %3$s.<br />Please Update.</p>"
+msgstr "<p>Site-ul se execută WordPress versiunea %1$ s. %2$ s necesită cel puţin %3$s.<br / > vă rugăm să actualizare.</p>"
+
+#@ grey-opaque
+#: functions.php:217
+msgid "Primary Navigation"
+msgstr "Navigare primare"
+
+#@ grey-opaque
+#: functions.php:486
+#: loop-attachment.php:84
+#: loop-attachment.php:86
+#: loop.php:165
+#: loop.php:167
+#: loop.php:211
+#: loop.php:213
+msgid "Continue reading <span class=\"meta-nav\">→</span>"
+msgstr "Continuaţi lectură <span class=\"meta-nav\">→</span>"
+
+#@ grey-opaque
+#: functions.php:632
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">spune:</span>"
+
+#@ grey-opaque
+#. translators: 1: date, 2: time
+#: functions.php:638
+#: functions.php:677
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$ s în %2$ s"
+
+#@ grey-opaque
+#: functions.php:644
+#: functions.php:683
+msgid "(Edit)"
+msgstr "(Editare)"
+
+#@ grey-opaque
+#: functions.php:649
+msgid "Your comment is awaiting moderation."
+msgstr "Comentariu este în aşteptarea moderaţie."
+
+#@ grey-opaque
+#: functions.php:704
+msgid "Twittername <em>(without @)</em>"
+msgstr "Twittername <em>(without @)</em>"
+
+#@ grey-opaque
+#: functions.php:709
+msgid "Facebook <em>(complete URL)</em>"
+msgstr "Facebook <em>(URL-ul complet)</em>"
+
+#@ grey-opaque
+#: functions.php:832
+msgid "Primary Widget Area"
+msgstr "Zona Widget primare"
+
+#@ grey-opaque
+#: functions.php:834
+msgid "The primary widget area"
+msgstr "Zona widget primare"
+
+#@ grey-opaque
+#: functions.php:843
+msgid "Secondary Widget Area"
+msgstr "Domeniu secundar Widget"
+
+#@ grey-opaque
+#: functions.php:845
+msgid "The secondary widget area"
+msgstr "Zona widget secundare"
+
+#@ grey-opaque
+#: functions.php:854
+msgid "First Footer Widget Area"
+msgstr "Prima zonă de Widget subsol"
+
+#@ grey-opaque
+#: functions.php:856
+msgid "The first footer widget area"
+msgstr "Prima zonă widget subsol"
+
+#@ grey-opaque
+#: functions.php:865
+msgid "Second Footer Widget Area"
+msgstr "Al doilea subsol Widget zona"
+
+#@ grey-opaque
+#: functions.php:867
+msgid "The second footer widget area"
+msgstr "Zona de subsol doilea widget"
+
+#@ grey-opaque
+#: functions.php:876
+msgid "Third Footer Widget Area"
+msgstr "Terțe subsol Widget zona"
+
+#@ grey-opaque
+#: functions.php:878
+msgid "The third footer widget area"
+msgstr "Zona de subsol terțe widget"
+
+#@ grey-opaque
+#: functions.php:887
+msgid "Fourth Footer Widget Area"
+msgstr "Al patrulea subsol Widget zona"
+
+#@ grey-opaque
+#: functions.php:889
+msgid "The fourth footer widget area"
+msgstr "Zona patra de widget subsol"
+
+#@ grey-opaque
+#: functions.php:950
+#, php-format
+msgid "<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">by</span> %3$s"
+msgstr "<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">de</span> %3$ s"
+
+#@ grey-opaque
+#: functions.php:959
+#, php-format
+msgid "View all posts by %s"
+msgstr "Vezi toate posturile de %s"
+
+#@ grey-opaque
+#: functions.php:976
+#, php-format
+msgid "Category(s): %1$s<br />Tags: %2$s"
+msgstr "Category(s): %1$ s < br / > Tag-uri: %2$ s"
+
+#@ grey-opaque
+#: functions.php:978
+#, php-format
+msgid "Category(s): %1$s"
+msgstr "Category(s): %1$ s"
+
+#@ grey-opaque
+#: functions-deprecated.php:256
+msgctxt "admin bar menu group label"
+msgid "Add New"
+msgstr "Adăugare nou"
+
+#@ grey-opaque
+#: functions-deprecated.php:280
+msgctxt "admin bar menu group label"
+msgid "Article"
+msgstr "Articolul"
+
+#@ grey-opaque
+#: functions-deprecated.php:299
+msgid "Move to Trash"
+msgstr "Mutaţi în coşul de gunoi"
+
+#@ grey-opaque
+#: functions-deprecated.php:317
+#, php-format
+msgid "Comments %s"
+msgstr "Comentarii %s"
+
+#@ grey-opaque
+#: functions-deprecated.php:334
+msgctxt "admin bar menu group label"
+msgid "Appearance"
+msgstr "Aspectul"
+
+#@ grey-opaque
+#: functions-deprecated.php:346
+msgid "Widgets"
+msgstr "Widget-uri"
+
+#@ grey-opaque
+#: functions-deprecated.php:355
+msgid "Menus"
+msgstr "Meniuri"
+
+#@ grey-opaque
+#: functions-deprecated.php:213
+#: functions-deprecated.php:364
+#: functions.php:1792
+msgid "Settings"
+msgstr "Setări"
+
+#@ grey-opaque
+#: functions-deprecated.php:216
+#: functions-deprecated.php:367
+msgid "Open Theme-Settings Page"
+msgstr "Deschide pagina tema-setările"
+
+#@ grey-opaque
+#: functions-deprecated.php:388
+msgid "Shortlink"
+msgstr "Shortlink"
+
+#@ grey-opaque
+#: functions.php:1290
+msgid "Your settings have been saved."
+msgstr "Setările au fost salvate."
+
+#@ grey-opaque
+#: functions.php:1324
+msgid "Grey Opaque Configuration"
+msgstr "Configurare opace gri"
+
+#@ grey-opaque
+#: functions.php:1327
+#, php-format
+msgid "You find a documentation of these settings under %1$s."
+msgstr "Găsiţi o documentaţie de aceste setări în %1$ s."
+
+#@ grey-opaque
+#: functions.php:1328
+msgid "Appearance -> Documentation"
+msgstr "Aspect-> documentaţia"
+
+#@ grey-opaque
+#: functions.php:1382
+#, php-format
+msgid "You can select or upload a new headerimage <a href=\"%1$s\">%2$s</a>."
+msgstr "Aveţi posibilitatea să selectaţi sau încărcaţi un nou headerimage <a href=\"%1$s\">%2$s</a>."
+
+#@ grey-opaque
+#: functions.php:1482
+#, php-format
+msgid "There is no Information given in \"About You\" on your %1$s. The authorbox will not be shown until there is any information."
+msgstr " pe %1$ s. Authorbox nu vor fi afişate până când nu există informaţii."
+
+#@ grey-opaque
+#: functions.php:1483
+msgid "Profile-Settings"
+msgstr "Setările de profil"
+
+#@ grey-opaque
+#: functions.php:1521
+msgid "You are displaying the mailicons. The mailadresses will be scrambled in HTML-output, but it is not a 100% security for mailspam."
+msgstr "Îl afişaţi mailicons. Mailadresses va fi amestecate în HTML-ieşire, dar nu este o garanție de 100% pentru mailspam."
+
+#@ grey-opaque
+#: functions.php:1566
+msgid "Frontend"
+msgstr "Frontend"
+
+#@ grey-opaque
+#: functions.php:1579
+msgid "Backend"
+msgstr "Backend"
+
+#@ grey-opaque
+#: functions.php:1629
+msgid "In content"
+msgstr "În conţinut"
+
+#@ grey-opaque
+#: functions.php:1639
+msgid "In comments"
+msgstr "În Comentarii"
+
+#@ grey-opaque
+#: functions.php:1654
+msgid "Favicon"
+msgstr "Favicon"
+
+#@ grey-opaque
+#: functions.php:1660
+msgid "Enter your favicons full url. Leave empty to unset."
+msgstr "Introduceţi dumneavoastră favicons URL-ul complet. Lăsaţi necompletat pentru anulare."
+
+#@ grey-opaque
+#: functions.php:1672
+msgid "Commenters guideline"
+msgstr "Commenters orientarea"
+
+#@ grey-opaque
+#: functions.php:1678
+msgid "Here you can enter a little guideline for your commenters."
+msgstr "Aici se poate introduce un pic de orientare pentru dumneavoastră commenters."
+
+#@ grey-opaque
+#: functions.php:1690
+msgid "Support the developer :-)"
+msgstr "Sprijini dezvoltatorului:-)"
+
+#@ grey-opaque
+#: functions.php:1692
+msgid "This Theme ist completely free without any limitations. But, if you like my work, so please suppport it with a little click."
+msgstr "Această temă ist complet liber fără orice limitări. Dar, dacă vă place munca mea, deci vă rugăm să suppport cu faceţi clic pe un pic."
+
+#@ grey-opaque
+#: functions.php:1707
+#, php-format
+msgid "If you have any ideas, suggestions, bugs or whatever, so feel free to write me a <a href=\"%1$s\">%2$s</a>."
+msgstr "Dacă aveţi orice idei, sugestii, bug-uri sau orice altceva, deci nu ezitaţi să-mi scrie un <a href=\"%1$s\">%2$s</a>."
+
+#@ grey-opaque
+#: functions.php:1709
+msgid "message"
+msgstr "mesaj"
+
+#@ grey-opaque
+#: functions.php:1715
+msgid "Thanks and greetings."
+msgstr "Vă mulţumim şi salutări."
+
+#@ grey-opaque
+#: functions.php:1723
+msgid "Update"
+msgstr "Actualizare"
+
+#@ grey-opaque
+#: functions.php:1792
+msgid "Settings for Theme Grey Opaque"
+msgstr "Setările pentru temă gri opacă"
+
+#@ grey-opaque
+#: functions.php:1793
+msgid "Documentation for Theme Grey Opaque"
+msgstr "Documentația pentru tema gri opacă"
+
+#@ grey-opaque
+#: functions.php:1793
+msgid "Documentation"
+msgstr "Documentaţia"
+
+#@ grey-opaque
+#: functions.php:2135
+msgid "Take a look to my website"
+msgstr "Aruncati o privire la site-ul meu"
+
+#@ grey-opaque
+#: functions.php:2144
+msgid "Get my RSS-Feed"
+msgstr "A lua meu RSS-Feed"
+
+#@ grey-opaque
+#: functions.php:2155
+msgid "Write me a mail"
+msgstr "Scrie-mi un mail"
+
+#@ grey-opaque
+#: functions.php:2165
+msgid "Follow me on Twitter"
+msgstr "Urmaţi-mă pe stare de nervozitate"
+
+#@ grey-opaque
+#: functions.php:2183
+msgid "Find me on Facebook"
+msgstr "Găsiţi-mă pe Facebook"
+
+#@ grey-opaque
+#: functions.php:2192
+msgid "See my WordPress-Plugins"
+msgstr "A se vedea meu WordPress-plugin-uri"
+
+#@ grey-opaque
+#: functions.php:2201
+msgid "Find me on XING"
+msgstr "Găsiţi-mă pe XING"
+
+#@ grey-opaque
+#: functions.php:2210
+msgid "Find me on Youtube"
+msgstr "Găsiţi-mă pe Youtube"
+
+#@ grey-opaque
+#: functions.php:2219
+msgid "Find me on Delicious"
+msgstr "Găsiţi-mă pe Delicious"
+
+#@ grey-opaque
+#: functions.php:2228
+msgid "Find me on LinkedIn"
+msgstr "Găsiţi-mă pe LinkedIn"
+
+#@ grey-opaque
+#: functions.php:2238
+#: loop-single.php:57
+#, php-format
+msgid "About %s"
+msgstr "Despre %s"
+
+#@ grey-opaque
+#: functions.php:2246
+#: loop-single.php:61
+#, php-format
+msgid "View all posts by %s <span class=\"meta-nav\">→</span>"
+msgstr "Vezi toate mesajele lui %s <span class=\"meta-nav\">→</span>"
+
+#@ grey-opaque
+#: functions.php:2437
+msgid "Skip to content"
+msgstr "Sari la continut"
+
+#@ grey-opaque
+#: functions.php:2487
+msgid "all rights reserved"
+msgstr "toate drepturile rezervate"
+
+#@ grey-opaque
+#: functions.php:2505
+msgid "Theme"
+msgstr "Temă"
+
+#@ grey-opaque
+#: functions.php:2506
+msgid "by:"
+msgstr "de:"
+
+#@ grey-opaque
+#: functions.php:2729
+#, php-format
+msgid "<p>Page loaded in %2$s seconds with %1$d database-queries.</p>"
+msgstr "<p>Pagina încărcată în %2$ s secunde cu %1$ d date-interogări.</p>"
+
+#@ grey-opaque
+#: header.php:35
+#, php-format
+msgid "Page %s"
+msgstr "Pagina %s"
+
+#@ grey-opaque
+#: header.php:73
+msgid "You are here:"
+msgstr "Sunteţi aici:"
+
+#@ grey-opaque
+#: loop-attachment.php:23
+#, php-format
+msgid "Return to %s"
+msgstr "Reveni la %s"
+
+#@ grey-opaque
+#. translators: %s - title of parent post
+#: loop-attachment.php:25
+#, php-format
+msgid "<span class=\"meta-nav\">←</span> %s"
+msgstr "<span class=\"meta-nav\">←</span> %s"
+
+#@ grey-opaque
+#: loop-attachment.php:90
+#: loop-page.php:45
+#: loop-single.php:45
+#: loop.php:217
+msgid "Pages:"
+msgstr "Pagini:"
+
+#@ grey-opaque
+#: loop.php:27
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr "Ne cerem scuze, dar rezultatele nu au fost găsite la Arhiva solicitate. Probabil căutarea va ajuta să găsiţi un post legate."
+
+#@ grey-opaque
+#: loop.php:63
+#: loop.php:129
+#: loop.php:130
+msgctxt "gallery category slug"
+msgid "gallery"
+msgstr "Galerie"
+
+#@ grey-opaque
+#: loop.php:67
+#: loop.php:107
+#: loop.php:187
+#, php-format
+msgid "Permalink to %s"
+msgstr "Permalink la %s"
+
+#@ grey-opaque
+#: loop.php:106
+#, php-format
+msgid "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr "Această galerie conţine <a %1$s> %2$ s fotografii</a>."
+
+#@ grey-opaque
+#: loop.php:128
+msgid "View Galleries"
+msgstr "Vizualizare galerii"
+
+#@ grey-opaque
+#: loop.php:128
+#: loop.php:130
+msgid "More Galleries"
+msgstr "Mai multe galerii"
+
+#@ grey-opaque
+#: loop.php:130
+msgid "View posts in the Gallery category"
+msgstr "Vezi posts în categoria Galerie"
+
+#@ grey-opaque
+#: loop.php:138
+msgctxt "asides category slug"
+msgid "asides"
+msgstr "Asides"
+
+#@ grey-opaque
+#: loop.php:227
+#, php-format
+msgid "<span class=\"%1$s\">Posted in</span> %2$s"
+msgstr "<span class=\"%1$s\">Postat în</span> %2$ s"
+
+#@ grey-opaque
+#: loop.php:235
+#, php-format
+msgid "<span class=\"%1$s\">Tagged</span> %2$s"
+msgstr "<span class=\"%1$s\">Tagged</span> %2$ s"
+
+#@ grey-opaque
+#: loop.php:256
+msgid "<span class=\"meta-nav\">←</span> Older posts"
+msgstr "<span class=\"meta-nav\">←</span> posturi mai vechi"
+
+#@ grey-opaque
+#: loop.php:257
+msgid "Newer posts <span class=\"meta-nav\">→</span>"
+msgstr "Mesaje noi <span class=\"meta-nav\">→</span>"
+
+#@ grey-opaque
+#: search.php:14
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Rezultatele cautarii pentru: %s"
+
+#@ grey-opaque
+#: search.php:26
+msgid "Nothing Found"
+msgstr "Nimic găsit"
+
+#@ grey-opaque
+#: search.php:28
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Ne pare rau, dar nimic potrivite criteriile de căutare. Vă rugăm să încercaţi din nou cu unele cuvinte cheie diferite."
+
+#@ grey-opaque
+#: sidebar.php:28
+msgid "Archives"
+msgstr "Arhivele"
+
+#@ grey-opaque
+#: sidebar.php:35
+msgid "Meta"
+msgstr "Meta"
+
+#@ grey-opaque
+#: tag.php:15
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "Tag Archives: %s"
+
+#@ grey-opaque
+#: functions.php:714
+msgid "Google+ <em>(complete URL)</em>"
+msgstr "Google + <em>(URL-ul complet)</em>"
+
+#@ grey-opaque
+#: functions.php:1145
+msgid "Share on Google+"
+msgstr "Share on Google +"
+
+#@ grey-opaque
+#: functions.php:1276
+#, php-format
+msgid "Your server is running PHP Version %1$s. %2$s recommends at least %3$s.<br />Please Update."
+msgstr "Serverul rulează PHP versiunea %1$ s. %2$ s recomandă cel puțin %3$s.<br / > vă rugăm să actualizare."
+
+#@ grey-opaque
+#: functions.php:2174
+msgid "Find me on Google+"
+msgstr "Găsiţi-mă pe Google +"
+
+#@ grey-opaque
+#: functions.php:2657
+msgid "Small Thumbnail"
+msgstr "Miniatură mică"
+
+#@ grey-opaque
+#: plugins/color-admin-posts/color-admin-post.php:147
+msgid "Drafts Posts"
+msgstr "Posturi de proiecte"
+
+#@ grey-opaque
+#: plugins/color-admin-posts/color-admin-post.php:152
+msgid "Pendings Posts"
+msgstr "Pendings mesajele"
+
+#@ grey-opaque
+#: plugins/color-admin-posts/color-admin-post.php:156
+msgid "Published Posts"
+msgstr "Mesajele publicate"
+
+#@ grey-opaque
+#: plugins/color-admin-posts/color-admin-post.php:160
+msgid "Futures Posts"
+msgstr "Futures Posts"
+
+#@ grey-opaque
+#: plugins/color-admin-posts/color-admin-post.php:164
+msgid "Privates Posts"
+msgstr "Privates Posts"
+
+#@ grey-opaque
+#: plugins/color-admin-posts/color-admin-post.php:239
+msgid "Leave \"#\" for the default color."
+msgstr " pentru culoarea implicită."
+
+#@ grey-opaque
+#: plugins/color-admin-posts/color-admin-post.php:264
+msgid "Color Admin Posts"
+msgstr "Culoarea Admin Posts"
+
+#@ grey-opaque
+#: plugins/color-admin-posts/color-admin-post.php:278
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Nu aveţi permisiuni suficiente pentru a accesa această pagină."
+
+#@ grey-opaque
+#: plugins/color-admin-posts/color-admin-post.php:288
+msgid "Save Changes"
+msgstr "Salvaţi modificările"
+
+#@ grey-opaque
+#: comments.php:68
+#, php-format
+msgid "%1$s Responses in other blogs/articles"
+msgstr "%1$ s răspunsuri în alte bloguri/articole"
+
+#@ grey-opaque
+#: functions.php:2656
+msgid "Wide Thumbnail"
+msgstr "Miniatură largă"
+

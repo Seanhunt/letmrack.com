@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Recovered Password from _SITE_NAME subscription</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.body12 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+}
+.bodyBold12 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	font-weight: bold;
+
+}
+a.boldLink10:link { color: #666666; text-decoration: underline }
+a.boldLink10:visited { color: #444444; text-decoration: underline }
+a.boldLink10:hover { color: #111111; text-decoration: none; font-size: 10px;}
+a.boldLink10 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #666666;
+}
+a.boldLink12:link { color: #666666; text-decoration: underline }
+a.boldLink12:visited { color: #444444; text-decoration: underline }
+a.boldLink12:hover { color: #111111; text-decoration: none; font-size: 12px;}
+a.boldLink12 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #666666;
+}
+
+-->
+</style>
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="10">
+  <tr>
+    <td><p class="body12">_SALUTATION _TITLE _FIRST_NAME _LAST_NAME,</p>
+      <p class="body12">To manage your subscriptions use the following link:</p>
+      <p class="body12"><a href="_SITE_URL/mail_sub_manage.php?E-MailAddress=_EMAIL&Password=_PASSWORD" class="boldLink12">_SITE_URL/mail_sub_manage.php?E-MailAddress=_EMAIL&amp;Password=_PASSWORD</a></p>
+      <p class="body12">To Opt-Out of your subscription use this link:</p>
+      <p class="body12"><a href="_SITE_URL/RHS/mail_sub_services.php?Mode=OptOut&E-MailAddress=_EMAIL&Password=_PASSWORD" class="boldLink12">_SITE_URL/RHS/mail_sub_services.php?Mode=OptOut&amp;E-MailAddress=_EMAIL&amp;Password=_PASSWORD</a></p>
+      <p class="body12">Here is the User ID and Password for your subscription:</p>
+      <p class="body12"><b>User ID: _EMAIL</b></p>
+      <p class="body12"><b>Password: _PASSWORD</b></p>
+      <p class="body12">We are looking forward to hearing from you in the future.</p>
+      <p class="body12">Sincerely,</p>
+      <p class="body12">_SITE_OWNER</p>
+</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,1295 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Grey Opaque v1.8.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2012-08-12 02:00:30+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#. translators: 1: date, 2: time
+#: functions.php:704
+#: functions.php:743
+#, php-format
+#@ grey-opaque
+msgid "%1$s at %2$s"
+msgstr "%1$s 在 %2$s"
+
+#: functions.php:698
+#, php-format
+#@ grey-opaque
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">說：</span>"
+
+#: functions.php:710
+#: functions.php:749
+#@ grey-opaque
+msgid "(Edit)"
+msgstr "（編輯）"
+
+#: contact-form.php:140
+#: contact-form.php:150
+#: contact-form.php:165
+#: contact-form.php:177
+#@ grey-opaque
+msgid "*required"
+msgstr "*必填"
+
+#: functions.php:2830
+#, php-format
+#@ grey-opaque
+msgid "<p>Page loaded in %2$s seconds with %1$d database-queries.</p>"
+msgstr "<p>使用 %1$s 資料庫查詢，讀取頁面消耗 %2$s 秒。</p>"
+
+#: functions.php:106
+#, php-format
+#@ grey-opaque
+msgid "<p>Your server is running PHP Version %1$s. %2$s requires at least %3$s.<br />Please Update.</p>"
+msgstr "<p>你的伺服器正在使用 PHP %1$s 版本。%2$s 至少需要 %3$s 版本。<br />請升級。</p>"
+
+#: functions.php:149
+#, php-format
+#@ grey-opaque
+msgid "<p>Your site is running WordPress Version %1$s. %2$s requires at least %3$s.<br />Please Update.</p>"
+msgstr "<p>你的網站正在使用WordPress %1$s 版本。%2$s 至少需要 %3$s 版本。<br />請升級。</p>"
+
+#: loop.php:227
+#, php-format
+#@ grey-opaque
+msgid "<span class=\"%1$s\">Posted in</span> %2$s"
+msgstr "<span class=\"%1$s\">分類：</span>%2$s"
+
+#: functions.php:1016
+#, php-format
+#@ grey-opaque
+msgid "<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">by</span> %3$s"
+msgstr "<span class=\"%1$s\">發佈於</span> %2$s <span class=\"meta-sep\">作者為</span> %3$s"
+
+#: loop.php:235
+#, php-format
+#@ grey-opaque
+msgid "<span class=\"%1$s\">Tagged</span> %2$s"
+msgstr "<span class=\"%1$s\">標籤：</span>%2$s"
+
+#: comments.php:34
+#: comments.php:89
+#@ grey-opaque
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr "<span class=\"meta-nav\">&larr;</span> 較舊的迴響"
+
+#: loop.php:256
+#@ grey-opaque
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> 較舊的文章"
+
+#: functions.php:2304
+#: loop-single.php:57
+#, php-format
+#@ grey-opaque
+msgid "About %s"
+msgstr "關於 %s"
+
+#: functions-deprecated.php:119
+#: functions.php:1193
+#@ grey-opaque
+msgid "Add to del.icio.us"
+msgstr "加入到 del.icio.us"
+
+#: documentation.php:110
+#: functions.php:1601
+#@ grey-opaque
+msgid "Admin Bar"
+msgstr "管理列"
+
+#: loop.php:27
+#@ grey-opaque
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr "抱歉，但沒有符合您要求的檔案。或許搜尋可以幫助您找到。"
+
+#: 404.php:17
+#@ grey-opaque
+msgid "Apologies, but the page you requested could not be found. Perhaps searching will help."
+msgstr "抱歉，找不到您所要求的頁面，或許搜尋可以找到"
+
+#: functions.php:1394
+#@ grey-opaque
+msgid "Appearance -> Documentation"
+msgstr "外觀 → 使用說明"
+
+#: documentation.php:37
+#: documentation.php:45
+#: documentation.php:53
+#@ grey-opaque
+msgid "Appearance -> Header"
+msgstr "外觀 → 頁首"
+
+#: sidebar.php:28
+#@ grey-opaque
+msgid "Archives"
+msgstr "彙整"
+
+#: author.php:25
+#, php-format
+#@ grey-opaque
+msgid "Author Archives: %s"
+msgstr "作者檔案：%s"
+
+#: documentation.php:85
+#: functions.php:1519
+#@ grey-opaque
+msgid "Authorbox"
+msgstr "作者欄："
+
+#: footer.php:30
+#@ grey-opaque
+msgid "Back to top"
+msgstr "回到最上層"
+
+#: functions.php:1645
+#@ grey-opaque
+msgid "Backend"
+msgstr "末端"
+
+#: archive.php:38
+#@ grey-opaque
+msgid "Blog Archives"
+msgstr "部落格檔案"
+
+#: documentation.php:78
+#@ grey-opaque
+msgid "By using this option you can stop WordPress from automatically creating hyperlinks from links in your visitors comments. There may be several reasons for doing so but the main purpose is stop all outgoing links you could not control."
+msgstr "透過使用這個選項，您可以停止在您的訪客迴響裡的WordPress自動新增超連結的連結。這樣做可能是因為幾個原因，但這樣做主要是停止所有您無法控制的外向連結。"
+
+#: contact-form.php:110
+#@ grey-opaque
+msgid "CC:"
+msgstr "CC："
+
+#: category.php:14
+#, php-format
+#@ grey-opaque
+msgid "Category Archives: %s"
+msgstr "分類彙整：%s"
+
+#: functions.php:1044
+#, php-format
+#@ grey-opaque
+msgid "Category(s): %1$s"
+msgstr "分類：%1$s"
+
+#: functions.php:1042
+#, php-format
+#@ grey-opaque
+msgid "Category(s): %1$s<br />Tags: %2$s"
+msgstr "分類：%1$s<br />標籤：%2$s"
+
+#: plugins/color-admin-posts/color-admin-post.php:264
+#@ grey-opaque
+msgid "Color Admin Posts"
+msgstr "後台文章分類顏色"
+
+#: functions.php:1738
+#@ grey-opaque
+msgid "Commenters guideline"
+msgstr "迴響者指引"
+
+#: functions-deprecated.php:317
+#, php-format
+#@ grey-opaque
+msgid "Comments %s"
+msgstr "%s迴響"
+
+#: comments.php:102
+#@ grey-opaque
+msgid "Comments are closed."
+msgstr "迴響已關閉"
+
+#: contact-form.php:85
+#@ grey-opaque
+msgid "Contact request from"
+msgstr "通訊請求來自"
+
+#: functions.php:552
+#: loop-attachment.php:84
+#: loop-attachment.php:86
+#: loop.php:165
+#: loop.php:167
+#: loop.php:211
+#: loop.php:213
+#@ grey-opaque
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "繼續閱讀 <span class=\"meta-nav\">&rarr;</span>"
+
+#: archive.php:32
+#, php-format
+#@ grey-opaque
+msgid "Daily Archives: <span>%s</span>"
+msgstr "每日彙整：<span>%s</span>"
+
+#: functions-deprecated.php:122
+#@ grey-opaque
+msgid "Digg This!"
+msgstr "發佈至Digg！"
+
+#: functions.php:1859
+#@ grey-opaque
+msgid "Documentation"
+msgstr "使用說明"
+
+#: functions.php:1859
+#@ grey-opaque
+msgid "Documentation for Theme Grey Opaque"
+msgstr "Grey Opaque 主題使用說明"
+
+#: plugins/color-admin-posts/color-admin-post.php:147
+#@ grey-opaque
+msgid "Drafts Posts"
+msgstr "草稿文章"
+
+#: contact-form.php:150
+#@ grey-opaque
+msgid "E-mail address"
+msgstr "E-mail地址"
+
+#: contact-form.php:87
+#@ grey-opaque
+msgid "E-mail:"
+msgstr "E-mail："
+
+#: functions-deprecated.php:93
+#: functions-deprecated.php:289
+#: functions.php:1169
+#@ grey-opaque
+msgid "Edit"
+msgstr "編輯"
+
+#: functions.php:1726
+#@ grey-opaque
+msgid "Enter your favicons full url. Leave empty to unset."
+msgstr "輸入您圖示的完整網址。空白為取消。"
+
+#: functions.php:775
+#@ grey-opaque
+msgid "Facebook <em>(complete URL)</em>"
+msgstr "Facebook <em>（完整網址）</em>"
+
+#: functions.php:1720
+#@ grey-opaque
+msgid "Favicon"
+msgstr "圖示"
+
+#: functions-deprecated.php:137
+#: functions.php:1208
+#@ grey-opaque
+msgid "Favourite on Technorati"
+msgstr "加入我的最愛至Technorati"
+
+#: functions.php:2285
+#@ grey-opaque
+msgid "Find me on Delicious"
+msgstr "在Delicious找我"
+
+#: functions.php:2249
+#@ grey-opaque
+msgid "Find me on Facebook"
+msgstr "在Facebook找我"
+
+#: functions.php:2240
+#@ grey-opaque
+msgid "Find me on Google+"
+msgstr "在 Google+ 上找我"
+
+#: functions.php:2294
+#@ grey-opaque
+msgid "Find me on LinkedIn"
+msgstr "在Linkedln找我"
+
+#: functions.php:2267
+#@ grey-opaque
+msgid "Find me on XING"
+msgstr "在XING找我"
+
+#: functions.php:2276
+#@ grey-opaque
+msgid "Find me on Youtube"
+msgstr "在Youtube找我"
+
+#: functions.php:920
+#@ grey-opaque
+msgid "First Footer Widget Area"
+msgstr "第一頁尾欄"
+
+#: functions.php:2231
+#@ grey-opaque
+msgid "Follow me on Twitter"
+msgstr "在Twitter上追蹤我"
+
+#: functions.php:953
+#@ grey-opaque
+msgid "Fourth Footer Widget Area"
+msgstr "第四頁尾欄"
+
+#: functions.php:1632
+#@ grey-opaque
+msgid "Frontend"
+msgstr "前端"
+
+#: plugins/color-admin-posts/color-admin-post.php:160
+#@ grey-opaque
+msgid "Futures Posts"
+msgstr "排程文章"
+
+#: documentation.php:66
+#: functions.php:1483
+#@ grey-opaque
+msgid "Get Postthumbnail for Facebook"
+msgstr "取得Facebook簡介"
+
+#: functions.php:2210
+#@ grey-opaque
+msgid "Get my RSS-Feed"
+msgstr "取得我的RSS頻道"
+
+#: functions.php:780
+#@ grey-opaque
+msgid "Google+ <em>(complete URL)</em>"
+msgstr "Google+ <em>(完整 URL)</em>"
+
+#: functions.php:1390
+#@ grey-opaque
+msgid "Grey Opaque Configuration"
+msgstr "Grey Opaque 選項"
+
+#: documentation.php:12
+#@ grey-opaque
+msgid "Grey Opaque Documentation"
+msgstr "Grey Opaque 使用說明"
+
+#: documentation.php:15
+#@ grey-opaque
+msgid "Here now a little documatation for your new theme Gray Opaque.<br />This file contains the description of the themesettings and the license for all used images."
+msgstr "這裡是一些關於您的新主題 Gray Opaque 的使用說明。.<br />這個檔案包括主題設定和所有使用圖像之許可的說明。"
+
+#: documentation.php:136
+#@ grey-opaque
+msgid "Here you can activate the themes own smilie-set. You have the option to show smilies in your blogs content (articles and pages) and/or in comments."
+msgstr "這裡你可以啟動您自己的主題表情符號，您可以選擇是否顯示表情符號至您部落格中（文章和分頁）的迴響。"
+
+#: documentation.php:88
+#, php-format
+#@ grey-opaque
+msgid "Here you can define the settings of your authorbox. WordPress displays the authorbox if you have entered a biographical info in your %1$s. Grey Opaque overrides this settings and the authorbox must be activated seperatly here. If you haven't made any information in your profile, the authorbox will not be shown, whether you checked here."
+msgstr "這裡您可以定義作者欄的設定。如果您輸入一些傳記資料至您的%1$s，WordPress會顯示作者欄。Grey Opaque 無視這個設定以及作者欄必須個別在這裡啟動。如果您沒有輸入任何資訊到您的個人資料，作者欄將不會顯示，不管您是否有確認。"
+
+#: functions.php:1744
+#@ grey-opaque
+msgid "Here you can enter a little guideline for your commenters."
+msgstr "這裡您可以輸入一些指引給您的迴響者。"
+
+#: contact-form.php:89
+#@ grey-opaque
+msgid "IP:"
+msgstr "IP："
+
+#: documentation.php:36
+#, php-format
+#@ grey-opaque
+msgid "If this option is checked, a headerimage will be displayed on frontend. You can select a headerimage under %1$s. Here you can choose from the given images or upload new. There are two ways to uplaod new headerimages."
+msgstr "如果確認這個選項，頁首圖片將會顯示在上頭。<br/>你可以在%1$s選擇頁首圖片。<br/>這裡你可以選擇已經存在的圖片或上傳新圖片。<br/>有兩種方法可以上傳新頁首圖片。"
+
+#: documentation.php:63
+#@ grey-opaque
+msgid "If this option is checked, all gravatars in the comment area and the authorbox will display some more information if you hover them with your mouse."
+msgstr "如果確認這個選項，當你使用你的滑鼠停留在迴響區域和作者欄時，所有的gravatars和更多資訊將會顯示。"
+
+#: documentation.php:28
+#, php-format
+#@ grey-opaque
+msgid "If this option is checked, the branding will be displayed on frontend. The branding contains the blogs name (Site Title) and slogan (Tagline), which can be entered %1$s."
+msgstr "如果確認這個選項，標題將會顯示在前端。標題將會加入%1$s所撰寫的資料，包括部落格名稱和敘述。"
+
+#: documentation.php:59
+#@ grey-opaque
+msgid "If this option is checked, the default curser will be replaced with the themes cursor."
+msgstr "如果確認這個選項，預設游標將會換成主題游標。"
+
+#: documentation.php:70
+#, php-format
+#@ grey-opaque
+msgid "If this option is checked, the post thumbnail or the first image of an article is used for interaction with facebook. This if for facebooks like/recommend and share-buttons. The idea for this function is from %1$s with a little modification by %2$s."
+msgstr "如果確認這個選項，文章摘要或是文章圖片將會同步至Facebook。這就像是Facebook的「讚」或「推薦」按鈕。這個功能的構想是來自 %1$s 加上 %2$s 一點點的修改。"
+
+#: functions.php:1773
+#, php-format
+#@ grey-opaque
+msgid "If you have any ideas, suggestions, bugs or whatever, so feel free to write me a <a href=\"%1$s\">%2$s</a>."
+msgstr "如果您擁有任何點子、建議、BUG或任何問題，可以隨意寫給我一個<a href=\"%1$s\">%2$s</a>."
+
+#: documentation.php:100
+#, php-format
+#@ grey-opaque
+msgid "If you have enabled this option, profileicons will be displayed beneath your Gravatar in the authorbox. To can enter the links to this profiles under \"Contact Info\" in your %1$s."
+msgstr "如果你啟用這個選項，個人圖示將顯示在您作者欄的Gravatar下方。可以在你的%1$s輸入連結至這個簡介的 \"聯絡資訊\"。"
+
+#: functions.php:1705
+#@ grey-opaque
+msgid "In comments"
+msgstr "在迴響"
+
+#: functions.php:1695
+#@ grey-opaque
+msgid "In content"
+msgstr "在內容"
+
+#: documentation.php:22
+#@ grey-opaque
+msgid "In this part of themes setting you'll find the main options."
+msgstr "在這個主題設定的部份裡，你可以找到主要選項。"
+
+#: plugins/color-admin-posts/color-admin-post.php:239
+#@ grey-opaque
+msgid "Leave \"#\" for the default color."
+msgstr "若想保留預設，請輸入\"#\""
+
+#: documentation.php:139
+#@ grey-opaque
+msgid "License of used images and graphics"
+msgstr "圖像和圖形的使用授權"
+
+#: functions-deprecated.php:85
+#: functions.php:1161
+#@ grey-opaque
+msgid "Link to full-size image"
+msgstr "連結到圖片實際大小"
+
+#: functions-deprecated.php:355
+#@ grey-opaque
+msgid "Menus"
+msgstr "選單"
+
+#: contact-form.php:177
+#@ grey-opaque
+msgid "Message"
+msgstr "訊息"
+
+#: contact-form.php:90
+#@ grey-opaque
+msgid "Message:"
+msgstr "訊息："
+
+#: sidebar.php:35
+#@ grey-opaque
+msgid "Meta"
+msgstr "其他"
+
+#: archive.php:34
+#, php-format
+#@ grey-opaque
+msgid "Monthly Archives: <span>%s</span>"
+msgstr "每月彙整：<span>%s</span>"
+
+#: loop.php:128
+#: loop.php:130
+#@ grey-opaque
+msgid "More Galleries"
+msgstr "更多畫廊"
+
+#: documentation.php:119
+#: functions.php:1618
+#@ grey-opaque
+msgid "Move Admin Bar to Bottom"
+msgstr "移動管理列至底部"
+
+#: functions-deprecated.php:299
+#@ grey-opaque
+msgid "Move to Trash"
+msgstr "移動至回收桶"
+
+#: contact-form.php:140
+#@ grey-opaque
+msgid "Name"
+msgstr "名稱"
+
+#: contact-form.php:86
+#@ grey-opaque
+msgid "Name:"
+msgstr "名稱："
+
+#: comments.php:35
+#: comments.php:90
+#@ grey-opaque
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr "較新的迴響 <span class=\"meta-nav\">&rarr;</span>"
+
+#: loop.php:257
+#@ grey-opaque
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "較新的文章 <span class=\"meta-nav\">&rarr;</span>"
+
+#: 404.php:15
+#: loop.php:25
+#@ grey-opaque
+msgid "Not Found"
+msgstr "找不到"
+
+#: search.php:26
+#@ grey-opaque
+msgid "Nothing Found"
+msgstr "找不到任何相關"
+
+#: comments.php:68
+#, php-format
+#@ grey-opaque
+msgid "One Response in another blog/article"
+msgid_plural "%1$s Responses in other blogs/articles"
+msgstr[0] "1 則來自其他部落格/文章的迴響"
+msgstr[1] "%1$s 則來自其他部落格/文章的迴響"
+
+#: comments.php:41
+#, php-format
+#@ grey-opaque
+msgid "One Response to %2$s"
+msgid_plural "%1$s Responses to %2$s"
+msgstr[0] "1 則在 %2$s 的迴響"
+msgstr[1] "%1$s 則在 %2$s 的迴響"
+
+#: functions.php:141
+#@ grey-opaque
+msgid "Open Dashboard"
+msgstr "開啟控制台"
+
+#: functions-deprecated.php:216
+#: functions-deprecated.php:367
+#@ grey-opaque
+msgid "Open Theme-Settings Page"
+msgstr "開啟主題設定頁面"
+
+#: header.php:35
+#, php-format
+#@ grey-opaque
+msgid "Page %s"
+msgstr "頁面 %s"
+
+#: loop-attachment.php:90
+#: loop-page.php:45
+#: loop-single.php:45
+#: loop.php:217
+#@ grey-opaque
+msgid "Pages:"
+msgstr "頁面："
+
+#: plugins/color-admin-posts/color-admin-post.php:152
+#@ grey-opaque
+msgid "Pendings Posts"
+msgstr "置頂文章"
+
+#: loop.php:67
+#: loop.php:107
+#: loop.php:187
+#, php-format
+#@ grey-opaque
+msgid "Permalink to %s"
+msgstr "連結到%s"
+
+#: contact-form.php:75
+#@ grey-opaque
+msgid "Please enter a message."
+msgstr "請輸入訊息。"
+
+#: contact-form.php:70
+#@ grey-opaque
+msgid "Please enter a subject."
+msgstr "請輸入一個主題。"
+
+#: contact-form.php:65
+#@ grey-opaque
+msgid "Please enter a valid e-mail adress."
+msgstr "請輸入有效的E-mail地址。"
+
+#: contact-form.php:62
+#@ grey-opaque
+msgid "Please enter your e-mail adress."
+msgstr "請輸入您的E-mail地址。"
+
+#: contact-form.php:56
+#@ grey-opaque
+msgid "Please enter your name."
+msgstr "請輸入您的名稱。"
+
+#: functions.php:229
+#@ grey-opaque
+msgid "Primary Navigation"
+msgstr "主要導航"
+
+#: functions.php:898
+#@ grey-opaque
+msgid "Primary Widget Area"
+msgstr "主要側邊欄"
+
+#: plugins/color-admin-posts/color-admin-post.php:164
+#@ grey-opaque
+msgid "Privates Posts"
+msgstr "私密文章"
+
+#: functions.php:1549
+#@ grey-opaque
+msgid "Profile-Settings"
+msgstr "個人資料設定"
+
+#: plugins/color-admin-posts/color-admin-post.php:156
+#@ grey-opaque
+msgid "Published Posts"
+msgstr "公開文章"
+
+#: contact-form.php:188
+#@ grey-opaque
+msgid "Receive a copy of this message?"
+msgstr "收到此訊息的副本嗎？"
+
+#: documentation.php:81
+#: functions.php:1507
+#@ grey-opaque
+msgid "Remove Generator-Tag"
+msgstr "移除標籤產生器"
+
+#: documentation.php:77
+#: functions.php:1495
+#@ grey-opaque
+msgid "Remove automatic Hyperlinks in Comments"
+msgstr "移除迴響中的自動高速連結"
+
+#: loop-attachment.php:23
+#, php-format
+#@ grey-opaque
+msgid "Return to %s"
+msgstr "回到 %s"
+
+#: plugins/color-admin-posts/color-admin-post.php:288
+#@ grey-opaque
+msgid "Save Changes"
+msgstr "儲存修改"
+
+#: search.php:14
+#, php-format
+#@ grey-opaque
+msgid "Search Results for: %s"
+msgstr "搜尋結果：%s"
+
+#: functions.php:931
+#@ grey-opaque
+msgid "Second Footer Widget Area"
+msgstr "第二頁尾欄"
+
+#: functions.php:909
+#@ grey-opaque
+msgid "Secondary Widget Area"
+msgstr "次要側邊欄"
+
+#: functions.php:2258
+#@ grey-opaque
+msgid "See my WordPress-Plugins"
+msgstr "前往我的WordPress-Plugins"
+
+#: footer.php:31
+#@ grey-opaque
+msgid "Semantic Personal Publishing Platform"
+msgstr "個人語義出版平台"
+
+#: contact-form.php:199
+#@ grey-opaque
+msgid "Send e-mail &rarr;"
+msgstr "寄送郵件 &rarr;"
+
+#: functions-deprecated.php:213
+#: functions-deprecated.php:364
+#: functions.php:1858
+#@ grey-opaque
+msgid "Settings"
+msgstr "Grey Opaque 選項"
+
+#: functions.php:1858
+#@ grey-opaque
+msgid "Settings for Theme Grey Opaque"
+msgstr "Grey Opaque 主題設定"
+
+#: functions-deprecated.php:116
+#@ grey-opaque
+msgid "Share on BlinkList"
+msgstr "分享至BlinkList"
+
+#: functions-deprecated.php:125
+#: functions.php:1196
+#@ grey-opaque
+msgid "Share on Facebook"
+msgstr "分享至Facebook"
+
+#: functions.php:1211
+#@ grey-opaque
+msgid "Share on Google+"
+msgstr "分享至 Google+"
+
+#: functions-deprecated.php:128
+#: functions.php:1199
+#@ grey-opaque
+msgid "Share on Reddit"
+msgstr "分享至Reddit"
+
+#: functions-deprecated.php:131
+#: functions.php:1202
+#@ grey-opaque
+msgid "Share on StumbleUpon"
+msgstr "分享至StumbleUpon"
+
+#: functions-deprecated.php:388
+#@ grey-opaque
+msgid "Shortlink"
+msgstr "縮網址"
+
+#: documentation.php:94
+#: functions.php:1533
+#@ grey-opaque
+msgid "Show Authorbox"
+msgstr "顯示作者欄"
+
+#: documentation.php:26
+#: functions.php:1423
+#@ grey-opaque
+msgid "Show Branding"
+msgstr "顯示標題"
+
+#: documentation.php:62
+#: functions.php:1471
+#@ grey-opaque
+msgid "Show Gravatar Hovercards"
+msgstr "顯示Gravatar Hovercards"
+
+#: documentation.php:34
+#: functions.php:1435
+#@ grey-opaque
+msgid "Show Headerimage"
+msgstr "顯示頁首圖片"
+
+#: documentation.php:106
+#: functions.php:1574
+#@ grey-opaque
+msgid "Show Mailicon in Authorbox"
+msgstr "在作者欄顯示郵件圖示"
+
+#: documentation.php:98
+#: functions.php:1561
+#@ grey-opaque
+msgid "Show Profiles in Authorbox"
+msgstr "在作者欄內顯示個人資料"
+
+#: documentation.php:135
+#: functions.php:1681
+#@ grey-opaque
+msgid "Show Smilies"
+msgstr "顯示表情符號"
+
+#: documentation.php:58
+#: functions.php:1459
+#@ grey-opaque
+msgid "Show Themecursor"
+msgstr "顯示主題游標"
+
+#: documentation.php:129
+#@ grey-opaque
+msgid "Simple Smilie-Set"
+msgstr "簡易表情設定"
+
+#: functions-deprecated.php:82
+#: functions.php:1158
+#, php-format
+#@ grey-opaque
+msgid "Size: %s px"
+msgstr "尺寸：%s 像素"
+
+#: functions.php:2503
+#@ grey-opaque
+msgid "Skip to content"
+msgstr "直接前往內容"
+
+#: functions.php:2723
+#@ grey-opaque
+msgid "Small Thumbnail"
+msgstr "小型縮圖"
+
+#: documentation.php:123
+#: functions.php:1663
+#@ grey-opaque
+msgid "Smilies"
+msgstr "表情符號"
+
+#: search.php:28
+#@ grey-opaque
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "抱歉，找不到任何符合您的搜尋條件。請換個關鍵字再試一次。"
+
+#: contact-form.php:192
+#@ grey-opaque
+msgid "Spam protection"
+msgstr "垃圾郵件防護"
+
+#: contact-form.php:50
+#@ grey-opaque
+msgid "Spammer? The spam protection field needs to be empty."
+msgstr "垃圾機器人？垃圾保護區需要淨空。"
+
+#: contact-form.php:165
+#@ grey-opaque
+msgid "Subject"
+msgstr "主題"
+
+#: functions.php:1756
+#@ grey-opaque
+msgid "Support the developer :-)"
+msgstr "幫助開發人員 :-)"
+
+#: tag.php:15
+#, php-format
+#@ grey-opaque
+msgid "Tag Archives: %s"
+msgstr "標籤彙整：%s"
+
+#: functions.php:2201
+#@ grey-opaque
+msgid "Take a look to my website"
+msgstr "前往參觀我的網站"
+
+#: contact-form.php:134
+#@ grey-opaque
+msgid "Thank you for leaving a message."
+msgstr "感謝您留下訊息。"
+
+#: functions.php:1781
+#@ grey-opaque
+msgid "Thanks and greetings."
+msgstr "感謝與迎接中"
+
+#: functions.php:922
+#@ grey-opaque
+msgid "The first footer widget area"
+msgstr "第一頁尾欄區域"
+
+#: functions.php:955
+#@ grey-opaque
+msgid "The fourth footer widget area"
+msgstr "第四頁尾欄區域"
+
+#: documentation.php:44
+#, php-format
+#@ grey-opaque
+msgid "The headerimages are located in \"images/headers/\" inside the themes directory.<br />If you want to add new images to the list you have to do it here. For each headerimage you'll find here two images. The headerimage itself (960 x 200 pixel) and its thumbnailimage (230 x 48 pixel). The filenames of this two images are important here. Only letters, numbers and the '-' are allowed.<br />e.g.: header.jpg and header-thumbnail.jpg<br />The thumbnail will be found by \"-thumbnail\". These images here will be shown in the list under %1$s."
+msgstr "頁首圖片在主題位置的 \"images/headers/\" 裡面。<br />如果您想要新增圖片到列表，你需要在此做到。<br/>對所有的頁首圖片，你會在這裡發現兩張圖片。<br/>頁首圖片大小必須是 960 x 200 像素以及它的縮圖必須是 230 x 48 像素。<br/>兩張圖片的檔案名稱非常重要。只能是文字、數字以及'-'。<br />例如：header.jpg 和 header-thumbnail.jpg<br />縮圖必須在檔案名後面加入 \"-thumbnail\" 才會找到。這些圖片列表將會出現在%1$s裡。"
+
+#: functions.php:900
+#@ grey-opaque
+msgid "The primary widget area"
+msgstr "主要側邊欄區域"
+
+#: functions.php:933
+#@ grey-opaque
+msgid "The second footer widget area"
+msgstr "第二頁尾欄區域"
+
+#: functions.php:911
+#@ grey-opaque
+msgid "The secondary widget area"
+msgstr "次要側邊欄區域"
+
+#: documentation.php:141
+#@ grey-opaque
+msgid "The theme Grey Opaque uses several graphics, images and social media icons.<br />The default headerimages are taken from the WordPress default theme TwentyTen, Grey Opaque is based on. All other are made for Grey Opaque and free to use."
+msgstr "本主題 Grey Opaque 使用數個圖形、圖片和社交媒體圖示。<br />預設頁首是來自 WordPress 之預設主題 TwentyTen ，Grey Opaque 以此為基礎。其他所有的物件都是免費供 Grey Opaque 使用。"
+
+#: functions.php:944
+#@ grey-opaque
+msgid "The third footer widget area"
+msgstr "第三頁尾欄區域"
+
+#: functions.php:2571
+#@ grey-opaque
+msgid "Theme"
+msgstr "主題"
+
+#: documentation.php:19
+#: functions.php:1401
+#@ grey-opaque
+msgid "Theme Options"
+msgstr "主題選項"
+
+#: functions.php:1548
+#, php-format
+#@ grey-opaque
+msgid "There is no Information given in \"About You\" on your %1$s. The authorbox will not be shown until there is any information."
+msgstr "在您的%1$s裡，沒有任何資訊在 \"關於你\" 之中。作者欄將不會顯示直到擁有任何資訊。"
+
+#: functions.php:942
+#@ grey-opaque
+msgid "Third Footer Widget Area"
+msgstr "第三頁尾欄"
+
+#: functions.php:1758
+#@ grey-opaque
+msgid "This Theme ist completely free without any limitations. But, if you like my work, so please suppport it with a little click."
+msgstr "這個主題是完全免費的且沒有任何限制。但是，如果您喜歡我的作品，能否請您點擊一下支援它。"
+
+#: loop.php:106
+#, php-format
+#@ grey-opaque
+msgid "This gallery contains <a %1$s>%2$s photo</a>."
+msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr[0] "這個畫廊包括 <a %1$s>%2$s 張圖片</a>."
+msgstr[1] "這個畫廊包括 <a %1$s>%2$s 張圖片</a>."
+
+#: documentation.php:107
+#@ grey-opaque
+msgid "This option will add a mailicon to the profiles in your authorbox. It is seperated because it is MAIL. The mailadress will be scrambles in HTML-output, but it is not a 100% security for mailspam. So think twice about it. If you have more authors in your blog, so it is recommend to ask your team before activating this option."
+msgstr "這個選項將加入郵件圖示到作者欄內的簡介。因為它是郵件，所以是分離的。郵件地址將會被HTML-輸出所打亂，但這並不能100%防護垃圾郵件。所以三思而後行。如果您有更多的作者在您的部落格，建議先詢問您的團隊在決定是否啟動這個選項。"
+
+#: documentation.php:113
+#, php-format
+#@ grey-opaque
+msgid "This options affecting the behaviour of the admin bar if enabled. To enable or disable the admin bar take a look in your %1$s under \"Personal Options\"."
+msgstr "如果啟用這個選項，將會影響到管理列的作用。啟用或不啟用管理列，到您在 %1$s 的\"個人選項\"看看。"
+
+#: comments.php:18
+#@ grey-opaque
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "本文章受到密碼保護。請輸入密碼瀏覽所有迴響"
+
+#: functions-deprecated.php:134
+#: functions.php:1205
+#@ grey-opaque
+msgid "Tweet this!"
+msgstr "發佈至Twitter！"
+
+#: functions.php:770
+#@ grey-opaque
+msgid "Twittername <em>(without @)</em>"
+msgstr "Twitter名稱 <em>（不含 @）</em>"
+
+#: functions.php:1789
+#@ grey-opaque
+msgid "Update"
+msgstr "更新"
+
+#: documentation.php:82
+#@ grey-opaque
+msgid "Use this option to hide your WordPress version from others. If you don't update WordPress directly every time a new version is released, you're not able to brag about it. To prevent hackers hackers from finding out you're on an older WordPress version too easily, you might as well use this option. That way the generator meta tag with your WordPress version won't be shown."
+msgstr "使用這個選項將隱藏您的WordPress版本。如果您不是在每次WordPress發佈新版時更新，你無法吹牛。為了防止駭客太容易找出您的舊版WordPress，您盡量開啟這個選項。這可以讓您WordPress版本的標籤產生器不會顯示。"
+
+#: documentation.php:42
+#@ grey-opaque
+msgid "Using FTP"
+msgstr "使用FTP"
+
+#: documentation.php:50
+#@ grey-opaque
+msgid "Using WordPress"
+msgstr "使用WordPress"
+
+#: loop.php:128
+#@ grey-opaque
+msgid "View Galleries"
+msgstr "瀏覽畫廊"
+
+#: functions.php:1025
+#, php-format
+#@ grey-opaque
+msgid "View all posts by %s"
+msgstr "瀏覽所有來自 %s 的文章"
+
+#: functions.php:2312
+#: loop-single.php:61
+#, php-format
+#@ grey-opaque
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "瀏覽所有 %s 發佈的文章 <span class=\"meta-nav\">&rarr;</span>"
+
+#: loop.php:130
+#@ grey-opaque
+msgid "View posts in the Gallery category"
+msgstr "在畫廊分類裡瀏覽文章"
+
+#: contact-form.php:160
+#@ grey-opaque
+msgid "Website"
+msgstr "網站"
+
+#: functions.php:2722
+#@ grey-opaque
+msgid "Wide Thumbnail"
+msgstr "寬版縮圖"
+
+#: functions-deprecated.php:346
+#@ grey-opaque
+msgid "Widgets"
+msgstr "模組"
+
+#: documentation.php:120
+#@ grey-opaque
+msgid "With the following settings you can move the admin bar from the default position at the top of the browser to its bottom. It is seperated in frontend and backend."
+msgstr "透過追蹤設定，您可以將管理列位置從預設的瀏覽器頂部移動至底部。它個別在前端和末端。"
+
+#: documentation.php:95
+#@ grey-opaque
+msgid "With this option, you can activate the authorbox. Remember to enter a biographical info in your profile."
+msgstr "使用此選項，您可以啟動作者欄。記得輸入傳記資料至您的個人資料。"
+
+#: documentation.php:128
+#, php-format
+#@ grey-opaque
+msgid "WordPress can use Smilies, but the default ones are not really pretty. So, Grey Opaque has its own smilie-set. For this I choose the free %1$s from %2$s."
+msgstr "WordPress可以使用表情符號，但預設的並不是真的很好看。所以，Grey Opaque 擁有它的表情符號設定。為此，我選擇免費的 %1$s 和 %2$s。"
+
+#: functions.php:2221
+#@ grey-opaque
+msgid "Write me a mail"
+msgstr "寫給我一封信"
+
+#: archive.php:36
+#, php-format
+#@ grey-opaque
+msgid "Yearly Archives: <span>%s</span>"
+msgstr "每年彙整：<span>%s</span>"
+
+#: documentation.php:52
+#, php-format
+#@ grey-opaque
+msgid "You alse are able to upload a headerimage directly using your WordPress. This function can also be found under %1$s.<br />This will not affect the list of default images."
+msgstr "您一樣可以使用WordPress上傳頁首圖片。此功能也可以在%1$s裡找到。<br />這不會影響到預設圖片列表。"
+
+#: functions.php:1587
+#@ grey-opaque
+msgid "You are displaying the mailicons. The mailadresses will be scrambled in HTML-output, but it is not a 100% security for mailspam."
+msgstr "您正在顯示郵件圖示。郵件地址將會被HTML-輸出所打亂，但這並不能100%防護垃圾郵件。"
+
+#: header.php:73
+#@ grey-opaque
+msgid "You are here:"
+msgstr "你在這裡："
+
+#: functions.php:1448
+#, php-format
+#@ grey-opaque
+msgid "You can select or upload a new headerimage <a href=\"%1$s\">%2$s</a>."
+msgstr "您可以選擇或上傳新的頁首圖片 <a href=\"%1$s\">%2$s</a>."
+
+#: plugins/color-admin-posts/color-admin-post.php:278
+#@ grey-opaque
+msgid "You do not have sufficient permissions to access this page."
+msgstr "您沒有足夠的權限訪問此頁面。"
+
+#: functions.php:1393
+#, php-format
+#@ grey-opaque
+msgid "You find a documentation of these settings under %1$s."
+msgstr "您從 %1$s 找到一個這些設定的說明"
+
+#: functions.php:715
+#@ grey-opaque
+msgid "Your comment is awaiting moderation."
+msgstr "您的迴響正在等待審核"
+
+#: contact-form.php:166
+#@ grey-opaque
+msgid "Your concern"
+msgstr "您的關注"
+
+#: contact-form.php:178
+#@ grey-opaque
+msgid "Your message &#x0085;"
+msgstr "您的訊息 &#x0085;"
+
+#: contact-form.php:141
+#@ grey-opaque
+msgid "Your name"
+msgstr "您的名稱"
+
+#: functions.php:1342
+#, php-format
+#@ grey-opaque
+msgid "Your server is running PHP Version %1$s. %2$s recommends at least %3$s.<br />Please Update."
+msgstr "您的伺服器正在執行的PHP版本為 %1$s ，%2$s 建議至少需要 %3$s ，請更新"
+
+#: functions.php:95
+#, php-format
+#@ grey-opaque
+msgid "Your server is running PHP Version %1$s. %2$s requires at least %3$s.<br />Please Update."
+msgstr "你的伺服器正在使用 PHP %1$s 版本。%2$s 至少需要 %3$s 版本。<br />請升級。"
+
+#: functions.php:1356
+#@ grey-opaque
+msgid "Your settings have been saved."
+msgstr "您的設定已經儲存。"
+
+#: functions.php:136
+#, php-format
+#@ grey-opaque
+msgid "Your site is running WordPress Version %1$s. %2$s requires at least %3$s.<br />Please Update.</p><p><a href=\"%4$s\">%5$s</a>"
+msgstr "你的網站正在使用WordPress %1$s 版本。%2$s 至少需要 %3$s 版本。<br />請升級。</p><p><a href=\"%4$s\">%5$s</a>"
+
+#: functions-deprecated.php:256
+#@ grey-opaque
+msgctxt "admin bar menu group label"
+msgid "Add New"
+msgstr "新增"
+
+#: functions-deprecated.php:334
+#@ grey-opaque
+msgctxt "admin bar menu group label"
+msgid "Appearance"
+msgstr "外觀"
+
+#: functions-deprecated.php:280
+#@ grey-opaque
+msgctxt "admin bar menu group label"
+msgid "Article"
+msgstr "文章"
+
+#: functions.php:2553
+#@ grey-opaque
+msgid "all rights reserved"
+msgstr "保留所有權利"
+
+#: loop.php:138
+#@ grey-opaque
+msgctxt "asides category slug"
+msgid "asides"
+msgstr "旁白"
+
+#: functions.php:2572
+#@ grey-opaque
+msgid "by:"
+msgstr "作者為："
+
+#: functions-deprecated.php:73
+#: functions.php:1149
+#@ grey-opaque
+msgid "by: "
+msgstr "作者："
+
+#: functions-deprecated.php:100
+#: functions.php:1177
+#@ grey-opaque
+msgid "comment(s)"
+msgstr "則迴響"
+
+#: functions-deprecated.php:146
+#: functions.php:1220
+#@ grey-opaque
+msgid "comments RSS"
+msgstr "RSS 迴響"
+
+#: loop.php:63
+#: loop.php:129
+#: loop.php:130
+#@ grey-opaque
+msgctxt "gallery category slug"
+msgid "gallery"
+msgstr "畫廊"
+
+#: documentation.php:29
+#: functions.php:1450
+#@ grey-opaque
+msgid "here"
+msgstr "這裡"
+
+#: functions.php:1775
+#@ grey-opaque
+msgid "message"
+msgstr "訊息"
+
+#: documentation.php:72
+#@ grey-opaque
+msgid "myself"
+msgstr "我自己"
+
+#: functions-deprecated.php:154
+#: functions.php:1228
+#@ grey-opaque
+msgid "permalink"
+msgstr "固定連結"
+
+#: functions-deprecated.php:105
+#: functions.php:1182
+#@ grey-opaque
+msgid "pingback(s)"
+msgstr "次引用"
+
+#: documentation.php:89
+#: documentation.php:101
+#: documentation.php:114
+#@ grey-opaque
+msgid "profile settings"
+msgstr "個人資料設定"
+
+#: functions-deprecated.php:113
+#: functions.php:1190
+#@ grey-opaque
+msgid "share this post"
+msgstr "分享這篇文章"
+
+#: functions-deprecated.php:151
+#: functions.php:1225
+#@ grey-opaque
+msgid "trackback"
+msgstr "引用"
+
+#: contact-form.php:88
+#@ grey-opaque
+msgid "Website:"
+msgstr ""
+
+#: contact-form.php:151
+#@ grey-opaque
+msgid "you@yourdomain.net"
+msgstr ""
+
+#: contact-form.php:161
+#@ grey-opaque
+msgid "http://yourdomain.net"
+msgstr ""
+
+#: documentation.php:71
+#@ grey-opaque
+msgid "Sergej M&uuml;ller"
+msgstr ""
+
+#: documentation.php:130
+#@ grey-opaque
+msgid "Ralf Bohnert"
+msgstr ""
+
+#: footer.php:31
+#@ grey-opaque
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:31
+#, php-format
+#@ grey-opaque
+msgid "Proudly powered by %s."
+msgstr ""
+
+#. translators: %s - title of parent post
+#: loop-attachment.php:25
+#, php-format
+#@ grey-opaque
+msgid "<span class=\"meta-nav\">&larr;</span> %s"
+msgstr ""
+

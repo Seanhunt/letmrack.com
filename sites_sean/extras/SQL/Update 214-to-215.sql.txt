@@ -1,0 +1,18 @@
+
+-- Updates from 2.1.4 to 2.1.5x
+-- added enum type MUSIC
+
+ALTER TABLE `APPDEV_BlogHeaders` CHANGE `blBlogType` `blBlogType` ENUM( 'LIFO', 'CALENDAR', 'ORDERED', 'MUSIC' ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'LIFO' COMMENT 'CALENDAR and ORDERED will display some additional UI widgets in the editor'
+
+-- Top Downloads table is new to 2.1.5
+
+DROP TABLE IF EXISTS `APPDEV_TopDownloads`;
+CREATE TABLE IF NOT EXISTS `APPDEV_TopDownloads` (
+  `Title` text NOT NULL,
+  `Path` text NOT NULL,
+  `FileName` text NOT NULL COMMENT 'The filename of the asset',
+  `Type` text NOT NULL,
+  `Score` int(8) NOT NULL default '0' COMMENT 'How many times the asset has been downloaded',
+  `RecordNumber` int(4) unsigned NOT NULL auto_increment,
+  PRIMARY KEY  (`RecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;

@@ -1,0 +1,659 @@
+-- --------------------------------------------------------
+-- 
+-- RHS 2.1.1 
+-- 
+-- (c) 2007 Cooksey-Talbott Studio 
+--  cooksey@cookseytalbottstudio.com
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_AdminSpecials`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_AdminSpecials`;
+CREATE TABLE IF NOT EXISTS `APPDEV_AdminSpecials` (
+  `PageName` text NOT NULL,
+  `PageFileName` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='This will hold site specific pages to be displayed on admin_';
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_BLOG_AdOne`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_BLOG_AdOne`;
+CREATE TABLE IF NOT EXISTS `APPDEV_BLOG_AdOne` (
+  `blHeadline` text NOT NULL,
+  `blSubHead` text NOT NULL,
+  `blCopy` text NOT NULL COMMENT 'This contains the body of the post',
+  `blPosterID` text NOT NULL COMMENT 'This is the User ID of the poster',
+  `blPostingDate` timestamp NOT NULL default CURRENT_TIMESTAMP,
+  `blEventDate` date default NULL COMMENT 'This is the event date if BlogType is CALENDAR',
+  `blEventTime` text COMMENT 'This has a text string of the event time range',
+  `blItemType` enum('TEXT','HTML') NOT NULL default 'TEXT' COMMENT 'Indicates if the item is text or HTML text has the cr stripped',
+  `blVisibility` enum('SHOW','HIDE') NOT NULL default 'SHOW' COMMENT 'This is for moderated blogs',
+  `blRecordNumber` int(4) NOT NULL auto_increment COMMENT 'Auto inc record ID',
+  `blSortType` enum('RANDOM','FIXED') NOT NULL default 'RANDOM' COMMENT 'This is for Ads it holds the sort type - if fixed refer to blSortOrder',
+  `blSortOrder` int(2) NOT NULL default '0' COMMENT 'If SortType is fixed this field has ascending order numbers',
+  PRIMARY KEY  (`blRecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
+
+-- 
+-- Dumping data for table `APPDEV_BLOG_AdOne`
+-- 
+
+INSERT INTO `APPDEV_BLOG_AdOne` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('Random #3', 'Random #3', 'It can contain HTML text and pictures...', 'clark', '2007-03-25 20:25:05', '0000-00-00', '', 'TEXT', 'SHOW', 0, 'RANDOM', 19);
+INSERT INTO `APPDEV_BLOG_AdOne` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('Random #2', 'Random #2', 'It can contain HTML text and pictures...', 'clark', '2007-03-25 20:25:05', '0000-00-00', '', 'TEXT', 'SHOW', 3, 'RANDOM', 13);
+INSERT INTO `APPDEV_BLOG_AdOne` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('Random #1', 'Random #1', 'It can contain HTML text and pictures...', 'clark', '2007-03-25 20:25:05', '0000-00-00', '', 'TEXT', 'SHOW', 5, 'RANDOM', 31);
+INSERT INTO `APPDEV_BLOG_AdOne` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('Fixed #1', 'Fixed #1', 'It can contain HTML text and pictures...', 'clark', '2007-03-28 15:17:23', NULL, NULL, 'TEXT', 'SHOW', 6, 'FIXED', 28);
+INSERT INTO `APPDEV_BLOG_AdOne` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('Fixed #2', 'Fixed #2', 'It can contain HTML text and pictures...', 'clark', '2007-03-28 15:17:23', NULL, NULL, 'TEXT', 'SHOW', 7, 'FIXED', 29);
+INSERT INTO `APPDEV_BLOG_AdOne` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('Graphic Ad', '', '<a target="_blank" href="http://cookseytalbottstudio.com/">\r\n						<img border="0" src="http://www.cookseytalbottgallery.com/Testing/AppDev/images/ads/DisplayAdPlaceholder4.jpg"></a>', 'clark', '2007-03-28 21:19:14', '0000-00-00', '', 'HTML', 'SHOW', 19, 'FIXED', 27);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_BLOG_CalendarBlog`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_BLOG_CalendarBlog`;
+CREATE TABLE IF NOT EXISTS `APPDEV_BLOG_CalendarBlog` (
+  `blHeadline` text NOT NULL,
+  `blSubHead` text NOT NULL,
+  `blCopy` text NOT NULL COMMENT 'This contains the body of the post',
+  `blPosterID` text NOT NULL COMMENT 'This is the User ID of the poster',
+  `blPostingDate` timestamp NOT NULL default CURRENT_TIMESTAMP,
+  `blEventDate` date default NULL COMMENT 'This is the event date if BlogType is CALENDAR',
+  `blEventTime` text COMMENT 'This has a text string of the event time range',
+  `blItemType` enum('TEXT','HTML') NOT NULL default 'TEXT' COMMENT 'Indicates if the item is text or HTML text has the cr stripped',
+  `blVisibility` enum('SHOW','HIDE') NOT NULL default 'SHOW' COMMENT 'This is for moderated blogs',
+  `blRecordNumber` int(4) NOT NULL auto_increment COMMENT 'Auto inc record ID',
+  `blSortType` enum('RANDOM','FIXED') NOT NULL default 'RANDOM' COMMENT 'This is for Ads it holds the sort type - if fixed refer to blSortOrder',
+  `blSortOrder` int(2) NOT NULL default '0' COMMENT 'If SortType is fixed this field has ascending order numbers',
+  PRIMARY KEY  (`blRecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=39 DEFAULT CHARSET=latin1 AUTO_INCREMENT=39 ;
+
+-- 
+-- Dumping data for table `APPDEV_BLOG_CalendarBlog`
+-- 
+
+INSERT INTO `APPDEV_BLOG_CalendarBlog` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('Oh... I see.it.is.football.and.not...', '80 freekin minutes....', '/grrrrrrr', 'testerc1', '2007-01-21 22:13:47', '2007-09-21', '7:00 PM', 'TEXT', 'SHOW', 14, 'RANDOM', 0);
+INSERT INTO `APPDEV_BLOG_CalendarBlog` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('My wonderful birthday!!!!', 'Its a gas...', 'I am old and dying slowly...', 'testerc2', '2007-01-21 17:33:46', '2007-10-25', 'All Day', 'TEXT', 'SHOW', 11, 'RANDOM', 0);
+INSERT INTO `APPDEV_BLOG_CalendarBlog` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('The day befoe my bday...', 'This post should come before...', 'La la la~', 'testerc2', '2007-01-21 17:41:07', '2007-10-24', 'Anyfreekin time!!!', 'TEXT', 'SHOW', 12, 'RANDOM', 0);
+INSERT INTO `APPDEV_BLOG_CalendarBlog` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('Day after de brfdays', 'I will be dazed and cornfused...', 'Ohhhh my head!!!!!', 'testerc2', '2007-01-21 17:42:17', '2007-10-26', 'Not too early!!!!', 'TEXT', 'SHOW', 13, 'RANDOM', 0);
+INSERT INTO `APPDEV_BLOG_CalendarBlog` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('Yesterday', '', 'moobar', 'clark', '2007-04-07 21:11:25', '2007-04-06', 'All Day', 'TEXT', 'SHOW', 36, 'RANDOM', 0);
+INSERT INTO `APPDEV_BLOG_CalendarBlog` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('Today', '', 'fubar', 'clark', '2007-04-07 21:10:55', '2007-04-07', '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%', 'TEXT', 'SHOW', 35, 'RANDOM', 0);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_BLOG_LifoBlog`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_BLOG_LifoBlog`;
+CREATE TABLE IF NOT EXISTS `APPDEV_BLOG_LifoBlog` (
+  `blHeadline` text NOT NULL,
+  `blSubHead` text NOT NULL,
+  `blCopy` text NOT NULL COMMENT 'This contains the body of the post',
+  `blPosterID` text NOT NULL COMMENT 'This is the User ID of the poster',
+  `blPostingDate` timestamp NOT NULL default CURRENT_TIMESTAMP,
+  `blEventDate` date default NULL COMMENT 'This is the event date if BlogType is CALENDAR',
+  `blEventTime` text COMMENT 'This has a text string of the event time range',
+  `blItemType` enum('TEXT','HTML') NOT NULL default 'TEXT' COMMENT 'Indicates if the item is text or HTML text has the cr stripped',
+  `blVisibility` enum('SHOW','HIDE') NOT NULL default 'SHOW' COMMENT 'This is for moderated blogs',
+  `blRecordNumber` int(4) NOT NULL auto_increment COMMENT 'Auto inc record ID',
+  `blSortType` enum('RANDOM','FIXED') NOT NULL default 'RANDOM' COMMENT 'This is for Ads it holds the sort type - if fixed refer to blSortOrder',
+  `blSortOrder` int(2) NOT NULL default '0' COMMENT 'If SortType is fixed this field has ascending order numbers',
+  PRIMARY KEY  (`blRecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+
+-- 
+-- Dumping data for table `APPDEV_BLOG_LifoBlog`
+-- 
+
+INSERT INTO `APPDEV_BLOG_LifoBlog` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('I am Clark...', 'I am the super user...', 'I can change anything...', 'clark', '2007-01-21 16:29:43', '0000-00-00', '', 'TEXT', 'SHOW', 1, 'RANDOM', 0);
+INSERT INTO `APPDEV_BLOG_LifoBlog` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('I am tester 2', 'I can only post and edit my entries...', 'This is how we did it when I was a kid and WE LIKED IT!', 'testerl2', '2007-01-21 16:30:48', '0000-00-00', '', 'TEXT', 'SHOW', 2, 'RANDOM', 0);
+INSERT INTO `APPDEV_BLOG_LifoBlog` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('I am tester 1', 'Really the other guy is lying...', 'Im telling clark!!!!!', 'testerl1', '2007-01-21 16:32:48', '0000-00-00', '', 'TEXT', 'SHOW', 3, 'RANDOM', 0);
+INSERT INTO `APPDEV_BLOG_LifoBlog` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('Odd How things work out', 'What Happened to US intelligence (non-governmental question)', 'So how does it work that our (US) actors guild and entertainment producers create and support shows that depict women as mother figures for all the men who never grow up or even have a discerning brain? And these are comedies?  I thought these where sit coms, but theyre actually socio-anthropological statements about our culture.\r\n\r\nA case in point is the recent DVD release of You, Me, and Dupree. It isnt really a bad movie.  What rankles the sensibilities is the premise . . .\r\n\r\nmore blog to follow . . .\r\n\r\nNice spell checker!!!\r\n\r\nEasy to type.\r\n\r\nUsing Firefox 2.0.0.1, XP Home, and no brain what so ever!~\r\n\r\nSo If I continue this from IE 7.0 it looks - exactly the same!! Nice.  So far so good . . .\r\n\r\nYou might consider putting a log out link a little closer to this editor than away out at the beginning.  Dont know if you can do that . . .', 'mikeblog', '2007-01-22 00:01:21', '0000-00-00', '', 'HTML', 'SHOW', 4, 'RANDOM', 0);
+INSERT INTO `APPDEV_BLOG_LifoBlog` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('But thats not all', 'Theres more', '. . .  from blog 1 . . .<br><br>premise that an architect could complete 5 or 6 years of college and not be smart enough to know that a man who barges into his nuptual bedroom in order to dump a stinky one (talking the audience through it) shouldnt be removed from the house at once - and who is not your friend.<br><br>This wild character has no redeeming features, physical, spiritual, emotional . . .<br><br>but hdkow thre astoij - - -  In Navigator 7.2 I dont have a spell checker anymore. . . dayng<br><br>Everything else looks great!', 'mikeblog', '2007-01-22 00:11:20', '0000-00-00', '', 'TEXT', 'SHOW', 5, 'RANDOM', 0);
+INSERT INTO `APPDEV_BLOG_LifoBlog` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('But with Opera 9.02', '', 'Well <br><br>Alls well in plain text - sdfk  eoslt  - I dont spell check with Opera either - must be a browser thing.<br><br>Ill try the same with HTML tomorrow - - looks great Cooksey!!<br><br>Nice wk.<br><br>Mike', 'mikeblog', '2007-01-22 00:13:56', '0000-00-00', '', 'TEXT', 'SHOW', 6, 'RANDOM', 0);
+INSERT INTO `APPDEV_BLOG_LifoBlog` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('Front to back test', 'At the Goat Hall In SF', 'fubarb rubarb rubabrb pie.', 'cookseyt', '2007-03-03 18:14:03', '0000-00-00', '', 'TEXT', 'SHOW', 7, 'RANDOM', 0);
+INSERT INTO `APPDEV_BLOG_LifoBlog` (`blHeadline`, `blSubHead`, `blCopy`, `blPosterID`, `blPostingDate`, `blEventDate`, `blEventTime`, `blItemType`, `blVisibility`, `blRecordNumber`, `blSortType`, `blSortOrder`) VALUES ('All those people dancing...', 'And everyone is still havin a good time!', 'This is a test of the file share - download posting...\r\n<br>\r\n<br>\r\nMono<br>\r\n<br>\r\n<br>\r\nLake<br>\r\n<br>\r\n<br>\r\nBIGSKY!!!!<br>\r\n<br><br><a TARGET="_blank" href="/Testing/AppDev/shared/177-MonoLake.jpg">Click here to Download 177-MonoLake.jpg</a><br><br>', 'clark', '2007-03-25 18:04:09', '0000-00-00', '', 'HTML', 'SHOW', 12, 'RANDOM', 0);
+
+-- --------------------------------------------------------
+
+
+-- 
+-- Table structure for table `APPDEV_BlogHeaders`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_BlogHeaders`;
+CREATE TABLE IF NOT EXISTS `APPDEV_BlogHeaders` (
+  `blName` text NOT NULL COMMENT 'The name of the blog',
+  `blDescription` text NOT NULL COMMENT 'A description of the blog',
+  `blTable` text NOT NULL COMMENT 'The name of the table this header is for',
+  `blBlogType` enum('LIFO','CALENDAR','ORDERED') NOT NULL default 'LIFO' COMMENT 'CALENDAR and ORDERED will display some additional UI widgets in the editor',
+  `blRecordNumber` int(4) NOT NULL auto_increment,
+  PRIMARY KEY  (`blRecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1 COMMENT='This contains header information for the V2 blogs' AUTO_INCREMENT=10 ;
+
+-- 
+-- Dumping data for table `APPDEV_BlogHeaders`
+-- 
+
+INSERT INTO `APPDEV_BlogHeaders` (`blName`, `blDescription`, `blTable`, `blBlogType`, `blRecordNumber`) VALUES ('Calendar', 'This list will sort in date order with the most recent dates on the top of the list.\r\n<br><br>\r\n', 'APPDEV_BLOG_CalendarBlog', 'CALENDAR', 1);
+INSERT INTO `APPDEV_BlogHeaders` (`blName`, `blDescription`, `blTable`, `blBlogType`, `blRecordNumber`) VALUES ('LIFO', 'This blog will does not have the date and time info.\r\n<br><br>\r\nIt will sort in LIFO order. The most recent item will be displayed on top.', 'APPDEV_BLOG_LifoBlog', 'LIFO', 2);
+INSERT INTO `APPDEV_BlogHeaders` (`blName`, `blDescription`, `blTable`, `blBlogType`, `blRecordNumber`) VALUES ('Ads', 'This has advertising group 1 in it...', 'APPDEV_BLOG_AdOne', 'ORDERED', 8);
+
+-- --------------------------------------------------------
+
+
+
+-- 
+-- Table structure for table `APPDEV_ChronProcess`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_ChronProcess`;
+CREATE TABLE IF NOT EXISTS `APPDEV_ChronProcess` (
+  `ProcessID` text NOT NULL COMMENT 'The ID of the caller',
+  `UpdateDate` timestamp NOT NULL default '0000-00-00 00:00:00' on update CURRENT_TIMESTAMP COMMENT 'The date of the last update',
+  `foo` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='This holds update info on faux chron processes';
+
+-- 
+-- Dumping data for table `APPDEV_ChronProcess`
+-- 
+
+INSERT INTO `APPDEV_ChronProcess` (`ProcessID`, `UpdateDate`, `foo`) VALUES ('CALENDAR', '2007-04-08 23:32:27', '');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_Debug`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_Debug`;
+CREATE TABLE IF NOT EXISTS `APPDEV_Debug` (
+  `message` text NOT NULL COMMENT 'One of many lines of debug message',
+  `function` text NOT NULL,
+  `line` text NOT NULL,
+  `module` text NOT NULL,
+  `time_stamp` timestamp NOT NULL default CURRENT_TIMESTAMP,
+  `id_number` int(4) unsigned NOT NULL auto_increment,
+  PRIMARY KEY  (`id_number`)
+) ENGINE=MyISAM AUTO_INCREMENT=73 DEFAULT CHARSET=latin1 COMMENT='This is the table for debug_lib.php' AUTO_INCREMENT=73 ;
+
+-- 
+-- Dumping data for table `APPDEV_Debug`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_FileDelivery`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_FileDelivery`;
+CREATE TABLE IF NOT EXISTS `APPDEV_FileDelivery` (
+  `IpAddress` text NOT NULL,
+  `Domain` text NOT NULL,
+  `FileName` text NOT NULL,
+  `TimeStamp` timestamp NOT NULL default CURRENT_TIMESTAMP,
+  `Index` int(12) NOT NULL auto_increment,
+  PRIMARY KEY  (`Index`)
+) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=latin1 COMMENT='This is data from file_delivery.php' AUTO_INCREMENT=16 ;
+
+-- 
+-- Dumping data for table `APPDEV_FileDelivery`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_FileLocations`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_FileLocations`;
+CREATE TABLE IF NOT EXISTS `APPDEV_FileLocations` (
+  `GUID` text NOT NULL COMMENT 'Unique ID',
+  `Location` text NOT NULL COMMENT 'File name and path',
+  `Index` int(8) NOT NULL auto_increment,
+  KEY `Index` (`Index`)
+) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=latin1 COMMENT='This matches GUIDS to file locs and names for the FTP delive' AUTO_INCREMENT=24 ;
+
+-- 
+-- Dumping data for table `APPDEV_FileLocations`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_GALLERY_cookseytalbott`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_GALLERY_cookseytalbott`;
+CREATE TABLE IF NOT EXISTS `APPDEV_GALLERY_cookseytalbott` (
+  `FileName` text NOT NULL,
+  `RecordNumber` int(4) unsigned NOT NULL auto_increment,
+  PRIMARY KEY  (`RecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=latin1 COMMENT='This is a gallery table template' AUTO_INCREMENT=19 ;
+
+-- 
+-- Dumping data for table `APPDEV_GALLERY_cookseytalbott`
+-- 
+
+INSERT INTO `APPDEV_GALLERY_cookseytalbott` (`FileName`, `RecordNumber`) VALUES ('568-Fern.jpg', 1);
+INSERT INTO `APPDEV_GALLERY_cookseytalbott` (`FileName`, `RecordNumber`) VALUES ('108-WaterOnMossB2.jpg', 2);
+INSERT INTO `APPDEV_GALLERY_cookseytalbott` (`FileName`, `RecordNumber`) VALUES ('213-CloudsAndSunlightB.jpg', 3);
+INSERT INTO `APPDEV_GALLERY_cookseytalbott` (`FileName`, `RecordNumber`) VALUES ('127-DomeInTheFog.jpg', 4);
+INSERT INTO `APPDEV_GALLERY_cookseytalbott` (`FileName`, `RecordNumber`) VALUES ('033-GlacierAndMountain.jpg', 5);
+INSERT INTO `APPDEV_GALLERY_cookseytalbott` (`FileName`, `RecordNumber`) VALUES ('126-SantaBarbaraWaterfall.jpg', 6);
+INSERT INTO `APPDEV_GALLERY_cookseytalbott` (`FileName`, `RecordNumber`) VALUES ('200-LongRidgeInSunsetB.jpg', 7);
+INSERT INTO `APPDEV_GALLERY_cookseytalbott` (`FileName`, `RecordNumber`) VALUES ('031-BlueMountainLake.jpg', 8);
+INSERT INTO `APPDEV_GALLERY_cookseytalbott` (`FileName`, `RecordNumber`) VALUES ('177-MonoLake.jpg', 9);
+INSERT INTO `APPDEV_GALLERY_cookseytalbott` (`FileName`, `RecordNumber`) VALUES ('171-RockCreekSunset.jpg', 10);
+INSERT INTO `APPDEV_GALLERY_cookseytalbott` (`FileName`, `RecordNumber`) VALUES ('286-TreeInMeadow.jpg', 11);
+INSERT INTO `APPDEV_GALLERY_cookseytalbott` (`FileName`, `RecordNumber`) VALUES ('133-Granite-Head.jpg', 12);
+INSERT INTO `APPDEV_GALLERY_cookseytalbott` (`FileName`, `RecordNumber`) VALUES ('285-RyanOnAGlacier.jpg', 13);
+INSERT INTO `APPDEV_GALLERY_cookseytalbott` (`FileName`, `RecordNumber`) VALUES ('035-FracturedRockWall.jpg', 14);
+INSERT INTO `APPDEV_GALLERY_cookseytalbott` (`FileName`, `RecordNumber`) VALUES ('frame-h.jpg', 18);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_GalleryProfiles`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_GalleryProfiles`;
+CREATE TABLE IF NOT EXISTS `APPDEV_GalleryProfiles` (
+  `FileName` text NOT NULL,
+  `Title` text NOT NULL,
+  `Statement` text NOT NULL,
+  `Website` text NOT NULL,
+  `ArtistName` text NOT NULL,
+  `StudioName` text NOT NULL,
+  `EMailAddress` text NOT NULL,
+  `StreetAddress` text NOT NULL,
+  `City` text NOT NULL,
+  `State` text NOT NULL,
+  `Zip` text NOT NULL,
+  `Phone` text NOT NULL,
+  `ArtistID` text NOT NULL,
+  `Flag` enum('SHOW','HIDE') NOT NULL default 'SHOW' COMMENT 'This is set by the administrator to hide or show this gallery',
+  `Type` enum('FORSALE','NFS') NOT NULL default 'FORSALE' COMMENT 'This will en-dis ecommerce options',
+  `SortOrder` int(4) NOT NULL default '0' COMMENT 'This will allow the admin to reorder the galleries in the lobby display',
+  `RecordNumber` int(4) NOT NULL auto_increment,
+  KEY `RecordNumber` (`RecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=latin1 COMMENT='This holds all of the gallery descriptions' AUTO_INCREMENT=15 ;
+
+-- 
+-- Dumping data for table `APPDEV_GalleryProfiles`
+-- 
+
+INSERT INTO `APPDEV_GalleryProfiles` (`FileName`, `Title`, `Statement`, `Website`, `ArtistName`, `StudioName`, `EMailAddress`, `StreetAddress`, `City`, `State`, `Zip`, `Phone`, `ArtistID`, `Flag`, `Type`, `SortOrder`, `RecordNumber`) VALUES ('723-CookseyAtHorsetailFallsC.jpg', 'Landscape Photographs of the Sierras', 'Ralph Cooksey-Talbott Thomas has been working as a photographer since 1972 when he moved to California from Michigan.<br><br>During the 1970’s he studied under Ansel Adams in Yosemite. Ansel published one of his photographs in the portfolio section of his book Polaroid Technique Manual. <br><br>Ansel and Orah Moore, another of Ansel’s students, suggested that he shorten his name to Cooksey-Talbott, and that is the name he has worked under since. <br><br>Cooksey also studied at the San Francisco Art Institute and the San Francisco Academy of Art. He has lectured in photography at the U.C. Berkeley Extension, Studio One in Oakland and at Santa Barbara City College. ', 'cookseytalbottgallery.com', 'Cooksey-Talbott', 'Cooksey-Talbott Gallery', 'cooksey@cookseytalbottgallery.com', '34670 Calcutta Dr. #12', 'Fremont', 'CA', '94555', '510-742-0548', 'cookseytalbott', 'SHOW', 'FORSALE', 0, 1);
+INSERT INTO `APPDEV_GalleryProfiles` (`FileName`, `Title`, `Statement`, `Website`, `ArtistName`, `StudioName`, `EMailAddress`, `StreetAddress`, `City`, `State`, `Zip`, `Phone`, `ArtistID`, `Flag`, `Type`, `SortOrder`, `RecordNumber`) VALUES ('No300xPhoto.jpg', 'Untitled Gallery', '', '', '', '', '', '', '', '', '', '', 'gallerytester2', 'HIDE', 'FORSALE', 0, 14);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_ImageLibrary`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_ImageLibrary`;
+CREATE TABLE IF NOT EXISTS `APPDEV_ImageLibrary` (
+  `FileName` text COMMENT 'The name of the file',
+  `Title` text COMMENT 'The title of the piece',
+  `Location` text COMMENT 'This is the location of the picture',
+  `Caption` text COMMENT 'The caption and description of the work',
+  `Artist` text COMMENT 'The artists name',
+  `ArtistID` varchar(128) NOT NULL default '' COMMENT 'This references all of this artists work in the library',
+  `Media` text COMMENT 'The type of media',
+  `Orientation` enum('V','H') NOT NULL default 'V' COMMENT 'The orientation of the piece square is called H',
+  `RecordNumber` int(4) unsigned NOT NULL auto_increment COMMENT 'the auto inc item number',
+  PRIMARY KEY  (`RecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=32 DEFAULT CHARSET=latin1 AUTO_INCREMENT=32 ;
+
+-- 
+-- Dumping data for table `APPDEV_ImageLibrary`
+-- 
+
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('108-WaterOnMossB2.jpg', 'Water on Moss', 'Ansel Adams Wilderness', 'How green is green ?<br><br>The saturated color of this print is just wonderful!<br><br>Crystalline water trickles over a bed of incredibly lush green moss at the side of a waterfall.<br><br>I found this near Shadow Lake in the Ansel Adams Wilderness Area.<br><br>This photograph was taken on Kodak VPS film with a 127mm lens using a Mamiya RB67 camera.', 'Cooksey-Talbott', 'cookseytalbott', 'Photograph', 'V', 14);
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('033-GlacierAndMountain.jpg', 'Small Crevasse', 'Ansel Adams Wilderness', 'A small crevasse in a glacier...\r\n\r\n', 'Cooksey-Talbott', 'cookseytalbott', 'Photograph', 'H', 6);
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('031-BlueMountainLake.jpg', 'Blue Mountain Lake foo', 'Ansel Adams Wilderness', 'Somewhere above lake Ediza in the Ansel Adams Wilderness Area I found this dramatic rocky lake and meadow.<br><br>The contrast of the cool blue water with the verdant green meadow against the black rock mountain really moved me…<br><br>We sat here and had a nice lunch and then walked on.<br><br>This photograph was taken on Kodak VPS film with a 127mm lens using a Mamiya RB67 camera.', 'Cooksey-Talbott', 'cookseytalbott', 'Photograph', 'H', 15);
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('126-SantaBarbaraWaterfall.jpg', 'Santa Barbara Waterfall', 'Montecito', 'A waterfall on the tunnel trail.', 'Cooksey-Talbott', 'cookseytalbott', 'Photograph', 'H', 10);
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('027-TumblingWaterfall.jpg', 'Hurricane Deck Sunrise', 'Figuroa Mountain', 'This was a wild place... It looks calm here...', 'Cooksey-Talbott', 'testfeebo3', 'Photograph', 'V', 21);
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('106-BladesOfGrassC.jpg', 'Blades of grass', 'sdfsdf', 'My wondeful captn', 'Cooksey-Talbott', 'testfeebo3', 'Photograph', 'H', 22);
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('286-TreeInMeadow.jpg', 'Yosemite Meadow', 'Yosemite Valley - California', ' Early morning in Yosemite Valley is a time when the landscape comes alive with the first light of day.<br><br>The acute angle of the light trans-illuminates the valley floor and makes the meadows come alive with color, form and texture.<br><br><br><br>I photographed this tree and then sat under it and enjoyed the first warmth of the morning sun.<br><br><br><br>The small 35mm film format creates a very painterly feeling.<br><br><br><br>This photograph was taken on Kodak VPS 160 film with a 50mm lens using a Pentax 35mm camera. ', 'Cooksey-Talbott', 'cookseytalbott', 'Photograph', 'V', 23);
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('012-Hurricane-Deck---SB.jpg', 'Hurricane Deck Sunrise', 'Figuroa Mountain', 'This was a wild place... It looks calm here...', 'Cooksey-Talbott', '', 'Photograph', 'V', 20);
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('127-DomeInTheFog.jpg', 'Solitary Tree', 'Tuolumne High Country', 'High above Yosemite Valley is the Yosemite high country and Tuolumne, a land of exfoliating granite domes, fragrant meadows and high mountain lakes.Walking across the domes in the fog I came to this tree standing by itself surrounded by soft yellow grasses and lichen encrusted granite.Inclement weather and rapidly changing conditions are an integral part of the high country experience. In this case the atmospheric effect of the clouds served to separate this tree from its companions.This photograph was taken on Kodak 4x5 Super-XX with a 135mm Schneider lens using a Graphic View II camera.', 'Cooksey-Talbott', 'cookseytalbott', 'Photograph', 'V', 13);
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('200-LongRidgeInSunsetB.jpg', 'Long Ridge in Sunset', 'Trinity Alps', 'Twilight is a magical time of day, I love it when the sky darkens and we pass the boundary from day into night.<br><br>In the mountains with out the ever present light contamination of the city the delicate tones of the night sky become clear.<br><br>This is a long exposure in the late twilight high in the Trinity Alps. Note the trails from the first of the evening stars caused by the earths rotation during the exposure.<br><br>This photograph was taken on Kodak 4x5 Kodak VPS with a 150mm Schneider lens using a Graphic View II camera.', 'Cooksey-Talbott', 'cookseytalbott', 'Photograph', 'H', 16);
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('213-CloudsAndSunlightB.jpg', 'Clouds and Sunlight', 'Sword Lake - Sonora Pass', 'I ran out to Sword Lake near Dardanelles and sat on a large boulder to rest overlooking the lake.<br><br>When I leaned back on my pack I saw beautiful clouds radiant in the afternoons light. Myriad rays of sunlight streaming from the clouds edge. A sky so blue it was overwhelming.<br><br>I try to always remember to look up.<br><br>This photograph was taken on Kodak Portra VC 160 film with a 127mm lens using a Mamiya RB67 camera. ', 'Cooksey-Talbott', 'cookseytalbott', 'Photograph', 'H', 17);
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('177-MonoLake.jpg', 'Big Sky', 'Mono Lake', 'At Mono Lake everything is expansive, the lake stretches for miles like a vast inland sea and the sky goes on forever.<br><br>The shoreline is dotted with very delicate tufa formations and the littoral regions of the lake are alive with myriad forms of insect life.<br><br>On this day the clouds were marching across the lake building up towards an afternoon thunder shower.<br><br>This photograph was taken on Kodak VPS 160 film with a 90mm lens using a Mamiya RB67 camera. ', 'Cooksey-Talbott', 'cookseytalbott', 'Photograph', 'H', 18);
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('568-Fern.jpg', 'Fern', 'Lake Tahoe', 'The early season this year had abundant water and everything was very moist. The extra water was good for the ferns growing in a quiet deeply shaded glade beneath Horsetail Falls. In this image the wonderful complexity of the ferns edge and the verdant green color are caught in stark contrast against the dark loam in the shadows. This was in the Pyramid Creek watershed just outside of Lake Tahoe. This photograph was taken on Kodak VC 160 film with a 90mm lens using a Mamiya RB67 camera. ', 'Cooksey-Talbott', 'cookseytalbott', 'Photograph', 'V', 19);
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('171-RockCreekSunset.jpg', 'Rock Creek Sunset', 'Toms Place - Little Lakes Valley - California', 'This was a quiet evening at Chickenfoot Lake...', 'Cooksey-Talbott', 'cookseytalbott', 'Photograph', 'H', 24);
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('133-Granite-Head.jpg', 'Granite Head', 'Tuolumne High Country - Yosemite', 'This is a wonderfully abstract 4x5 shot...', 'Cooksey-Talbott', 'cookseytalbott', 'Painting', 'H', 25);
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('285-RyanOnAGlacier.jpg', 'Ryan climbing on a glacier', 'St Mays Pass - Sonora Pass - California', 'Walking in St. Marys pass we made it up to the small glacier in the saddle.<br><br>Ryan had to go to the top and slide down 96 times...', 'Cooksey-Talbott', 'cookseytalbott', 'Photograph', 'V', 26);
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('035-FracturedRockWall.jpg', 'Fractured Rock Wall', 'Ansel Adams Wilderness', 'The stress was just too much for it and it cracked up... heh!', 'Cooksey-Talbott', 'cookseytalbott', 'Photograph', 'H', 27);
+INSERT INTO `APPDEV_ImageLibrary` (`FileName`, `Title`, `Location`, `Caption`, `Artist`, `ArtistID`, `Media`, `Orientation`, `RecordNumber`) VALUES ('frame-h.jpg', 'Title foo', '', '', 'Cooksey-Talbott', 'cookseytalbott', 'Photograph', '', 31);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_ImageSizes`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_ImageSizes`;
+CREATE TABLE IF NOT EXISTS `APPDEV_ImageSizes` (
+  `FileName` text NOT NULL COMMENT 'The name of the sample image file',
+  `ArtistID` varchar(128) NOT NULL default '' COMMENT 'The artists system UID',
+  `Size` text NOT NULL COMMENT 'The size of the piece',
+  `Price` text NOT NULL COMMENT 'The price of the piece',
+  `Description` text NOT NULL COMMENT 'The description of that size',
+  `EditionType` text NOT NULL COMMENT 'The type of edition',
+  `RecordNumber` int(4) NOT NULL auto_increment COMMENT 'The auto recno',
+  PRIMARY KEY  (`RecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=56 DEFAULT CHARSET=latin1 COMMENT='This holds the sizes for the GALLERY image library' AUTO_INCREMENT=56 ;
+
+-- 
+-- Dumping data for table `APPDEV_ImageSizes`
+-- 
+
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('568-Fern.jpg', 'cookseytalbott', '24 x 31', '300.00', 'deep wrapped canvas print', 'Limited Edition', 36);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('177-MonoLake.jpg', 'cookseytalbott', '31 x 24', '300.00', 'deep wrapped canvas print', 'Limited Edition', 35);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('213-CloudsAndSunlightB.jpg', 'cookseytalbott', '31 x 24', '300.00', 'deep wrapped canvas print', 'Limited Edition', 38);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('108-WaterOnMossB2.jpg', 'cookseytalbott', '24 x 31', '300.00', 'deep wrapped canvas print', 'Limited Edition', 21);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('031-BlueMountainLake.jpg', 'cookseytalbott', '8 x 10', '35.00', 'print on fine art paper', 'Open Edition', 44);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('031-BlueMountainLake.jpg', 'cookseytalbott', '31 x 24', '300.00', 'deep wrapped canvas print', 'Limited Edition', 43);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('200-LongRidgeInSunsetB.jpg', 'cookseytalbott', '31 x 24', '300.00', 'ready to hang deep gallery wrapped canvas print', 'Limited Edition', 31);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('200-LongRidgeInSunsetB.jpg', 'cookseytalbott', '22 x 18', '175.00', 'print on fine art paper in 24 x 30 mat', 'Limited Edition', 32);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('200-LongRidgeInSunsetB.jpg', 'cookseytalbott', '10 x 8', '35.00', 'raw print on fine art paper', 'Open Edition', 33);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('033-GlacierAndMountain.jpg', 'cookseytalbott', '24 x 31', '300.00', 'ready to hang deep gallery wrapped canvas print', 'Limited Edition', 49);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('568-Fern.jpg', 'cookseytalbott', '8 x 10', '35.00', 'print on fine art paper', 'Open Edition', 37);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('171-RockCreekSunset.jpg', 'cookseytalbott', '31 x 24', '300.00', 'deep wrapped canvas print', 'Limited Edition', 46);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('286-TreeInMeadow.jpg', 'cookseytalbott', '24 x 31', '300.00', 'deep wrapped canvas print', 'Limited Edition', 45);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('126-SantaBarbaraWaterfall.jpg', 'cookseytalbott', '31 x 24', '300.00', 'deep wrapped canvas print', 'Limited Edition', 26);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('126-SantaBarbaraWaterfall.jpg', 'cookseytalbott', '40 x 30', '600.00', 'deep wrapped canvas print', 'Limited Edition', 28);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('126-SantaBarbaraWaterfall.jpg', 'cookseytalbott', '10 x 8', '35.00', 'print on fine art paper', 'Limited Edition', 27);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('095-IronStainedRockFace.jpg', 'cookseytalbott', '', '100.00', 'Matted print', 'Original - One of One', 19);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('127-DomeInTheFog.jpg', 'cookseytalbott', '24 x 31', '300.00', 'deep wrapped canvas print', 'Limited Edition', 20);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('133-Granite-Head.jpg', 'cookseytalbott', '18 x 22', '175.00', 'print on fine art paper', 'Limited Edition', 47);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('133-Granite-Head.jpg', 'cookseytalbott', '24 x 31', '300.00', 'deep wrapped canvas print', 'Limited Edition', 48);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('285-RyanOnAGlacier.jpg', 'cookseytalbott', '24 x 30', '300.00', 'deep wrapped canvas print', 'Limited Edition', 50);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('035-FracturedRockWall.jpg', 'cookseytalbott', '31 x 24', '300.00', 'deep wrapped canvas print', 'Limited Edition', 51);
+INSERT INTO `APPDEV_ImageSizes` (`FileName`, `ArtistID`, `Size`, `Price`, `Description`, `EditionType`, `RecordNumber`) VALUES ('frame-h.jpg', 'cookseytalbott', '13 x 15', '100.00', 'fubar', 'Open Edition', 55);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_LINKS_CalendarBlog`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_LINKS_CalendarBlog`;
+CREATE TABLE IF NOT EXISTS `APPDEV_LINKS_CalendarBlog` (
+  `blLinkURL` text COMMENT 'The URL of the link',
+  `blName` text COMMENT 'The name of the web site or organization',
+  `blDescription` text COMMENT 'The description of the site',
+  `blPosterID` text NOT NULL COMMENT 'The ID of the poster',
+  `blRecordNumber` int(4) NOT NULL auto_increment COMMENT 'This is the item number',
+  PRIMARY KEY  (`blRecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+-- 
+-- Dumping data for table `APPDEV_LINKS_CalendarBlog`
+-- 
+
+INSERT INTO `APPDEV_LINKS_CalendarBlog` (`blLinkURL`, `blName`, `blDescription`, `blPosterID`, `blRecordNumber`) VALUES ('epicurious.com', 'Goon Vittles', 'Hoot goon vittles!!!!', 'clark', 1);
+INSERT INTO `APPDEV_LINKS_CalendarBlog` (`blLinkURL`, `blName`, `blDescription`, `blPosterID`, `blRecordNumber`) VALUES ('www.rdvproductions.com', 'Wyans Webby Site!', 'Most eggsalad!!!!!', 'clark', 2);
+INSERT INTO `APPDEV_LINKS_CalendarBlog` (`blLinkURL`, `blName`, `blDescription`, `blPosterID`, `blRecordNumber`) VALUES ('www.fox.com', 'Those People', 'The gang of 500 is ruining the place... <br><br>Tirebiters! LEROY!!!!!!', 'clark', 3);
+INSERT INTO `APPDEV_LINKS_CalendarBlog` (`blLinkURL`, `blName`, `blDescription`, `blPosterID`, `blRecordNumber`) VALUES ('yahoo.com', 'Yahooooo', 'A bunch of yobbo''s if I ever seed dem dere.', 'cookseyt', 4);
+INSERT INTO `APPDEV_LINKS_CalendarBlog` (`blLinkURL`, `blName`, `blDescription`, `blPosterID`, `blRecordNumber`) VALUES ('google.com', 'oogle', 'G', 'clark', 5);
+INSERT INTO `APPDEV_LINKS_CalendarBlog` (`blLinkURL`, `blName`, `blDescription`, `blPosterID`, `blRecordNumber`) VALUES ('dailykos.com', 'Danger Will Robinson DANGER!!!!', 'oppps!!! errrr~', 'testerc1', 6);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_LINKS_LifoBlog`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_LINKS_LifoBlog`;
+CREATE TABLE IF NOT EXISTS `APPDEV_LINKS_LifoBlog` (
+  `blLinkURL` text COMMENT 'The URL of the link',
+  `blName` text COMMENT 'The name of the web site or organization',
+  `blDescription` text COMMENT 'The description of the site',
+  `blPosterID` text NOT NULL COMMENT 'The ID of the poster',
+  `blRecordNumber` int(4) NOT NULL auto_increment COMMENT 'This is the item number',
+  PRIMARY KEY  (`blRecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+-- 
+-- Dumping data for table `APPDEV_LINKS_LifoBlog`
+-- 
+
+INSERT INTO `APPDEV_LINKS_LifoBlog` (`blLinkURL`, `blName`, `blDescription`, `blPosterID`, `blRecordNumber`) VALUES ('google.com', 'The Grand Googinal', 'What do they do and why ?\r\n\r\nFilm at 11...', 'testerl2', 1);
+INSERT INTO `APPDEV_LINKS_LifoBlog` (`blLinkURL`, `blName`, `blDescription`, `blPosterID`, `blRecordNumber`) VALUES ('fatcow.com/', 'Fat Cow Web Hosting', 'The web host I use and recommend. Nice folks with great support.', 'clark', 4);
+INSERT INTO `APPDEV_LINKS_LifoBlog` (`blLinkURL`, `blName`, `blDescription`, `blPosterID`, `blRecordNumber`) VALUES ('dev.mysql.com/tech-resources/', 'MySQL Tech Resources Center', 'A geeky place to hang out...', 'clark', 5);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_MailDatabase`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_MailDatabase`;
+CREATE TABLE IF NOT EXISTS `APPDEV_MailDatabase` (
+  `title` text COMMENT 'Mr-Ms etc...',
+  `first_name` text COMMENT 'First Name',
+  `last_name` text COMMENT 'Last Name',
+  `street_address` text COMMENT 'Street Address Line 1',
+  `street_address_2` text COMMENT 'Street Address Line 2',
+  `city` text COMMENT 'City',
+  `state` text COMMENT '2 Letter State ID',
+  `zip` text COMMENT 'Zip or Zip+4',
+  `email_address` text COMMENT 'E-Mail Address',
+  `password` varchar(100) NOT NULL default 'password' COMMENT 'Password',
+  `subscribed1` enum('Y','N') NOT NULL default 'N' COMMENT 'List Subscription Flag 1',
+  `subscribed2` enum('Y','N') NOT NULL default 'N' COMMENT 'List Subscription Flag 2',
+  `subscribed3` enum('Y','N') NOT NULL default 'N' COMMENT 'List Subscription Flag 3',
+  `ip_address` text COMMENT 'IP of Joiner Station',
+  `host_name` text COMMENT 'Host Name of Joiner Station',
+  `creation_date` text COMMENT 'Record Creation Time',
+  `confirmed` enum('Y','N') NOT NULL default 'Y' COMMENT 'This Y when the user has confirmed their subscription',
+  `mailing_flag` text COMMENT 'This is marked up when the message is sent',
+  `item_number` int(11) unsigned NOT NULL auto_increment,
+  PRIMARY KEY  (`item_number`)
+) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=latin1 AUTO_INCREMENT=24 ;
+
+-- 
+-- Dumping data for table `APPDEV_MailDatabase`
+-- 
+
+INSERT INTO `APPDEV_MailDatabase` (`title`, `first_name`, `last_name`, `street_address`, `street_address_2`, `city`, `state`, `zip`, `email_address`, `password`, `subscribed1`, `subscribed2`, `subscribed3`, `ip_address`, `host_name`, `creation_date`, `confirmed`, `mailing_flag`, `item_number`) VALUES ('Mr', 'Fubar', 'Freddie', '1234 Goober terrace', 'BOHICA 666 Gafarga Barga Wy.', 'Any Town', '--', '48823', 'cooksey@californiafriends.org', '1taxes', 'Y', 'N', 'N', 'Added by Admin', 'Added by Admin', '', 'Y', 'New Record', 22);
+INSERT INTO `APPDEV_MailDatabase` (`title`, `first_name`, `last_name`, `street_address`, `street_address_2`, `city`, `state`, `zip`, `email_address`, `password`, `subscribed1`, `subscribed2`, `subscribed3`, `ip_address`, `host_name`, `creation_date`, `confirmed`, `mailing_flag`, `item_number`) VALUES ('', 'Fido', 'Wido', '', '', 'Woofsville', '--', '', 'cooksey@cookseytalbottgallery.com', '12oregano', 'Y', 'N', 'N', 'Added by Admin', 'Added by Admin', '', 'Y', 'New Record', 23);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_MailingListNames`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_MailingListNames`;
+CREATE TABLE IF NOT EXISTS `APPDEV_MailingListNames` (
+  `Name` text NOT NULL,
+  `Description` text NOT NULL,
+  `Checked` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `APPDEV_MailingListNames`
+-- 
+
+INSERT INTO `APPDEV_MailingListNames` (`Name`, `Description`, `Checked`) VALUES ('Desktops', 'A weekly link to a nature photo desktop.', 'Y');
+INSERT INTO `APPDEV_MailingListNames` (`Name`, `Description`, `Checked`) VALUES ('Newsletter', 'A quarterly newsletter of photographic technique.', 'N');
+INSERT INTO `APPDEV_MailingListNames` (`Name`, `Description`, `Checked`) VALUES ('Events', 'Information about Cooksey''s shows and openings in the SF Bay area.', 'N');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_PasswordTargets`
+-- Deprecated from 2.1.0 onward
+
+DROP TABLE IF EXISTS `APPDEV_PasswordTargets`;
+CREATE TABLE IF NOT EXISTS `APPDEV_PasswordTargets` (
+  `TargetID` text NOT NULL,
+  `TargetPageName` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `APPDEV_PasswordTargets`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_Rights`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_Rights`;
+CREATE TABLE IF NOT EXISTS `APPDEV_Rights` (
+  `RightsID` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `APPDEV_Rights`
+-- 
+
+INSERT INTO `APPDEV_Rights` (`RightsID`) VALUES ('Blog');
+INSERT INTO `APPDEV_Rights` (`RightsID`) VALUES ('Administrator');
+INSERT INTO `APPDEV_Rights` (`RightsID`) VALUES ('SuperUser');
+INSERT INTO `APPDEV_Rights` (`RightsID`) VALUES ('Gallery');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_SimpleCounters`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_SimpleCounters`;
+CREATE TABLE IF NOT EXISTS `APPDEV_SimpleCounters` (
+  `PageFileName` varchar(32) NOT NULL default '',
+  `Count` int(4) NOT NULL default '0',
+  `PriorCount` int(4) NOT NULL default '0' COMMENT 'This has the prior reading stored in it',
+  PRIMARY KEY  (`PageFileName`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='This table supports simple page counters';
+
+-- 
+-- Dumping data for table `APPDEV_SimpleCounters`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_SystemRights`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_SystemRights`;
+CREATE TABLE IF NOT EXISTS `APPDEV_SystemRights` (
+  `pwRightsID` text NOT NULL,
+  `pwRecordNumber` int(8) unsigned NOT NULL auto_increment,
+  PRIMARY KEY  (`pwRecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+-- 
+-- Dumping data for table `APPDEV_SystemRights`
+-- 
+
+INSERT INTO `APPDEV_SystemRights` (`pwRightsID`, `pwRecordNumber`) VALUES ('Blog', 1);
+INSERT INTO `APPDEV_SystemRights` (`pwRightsID`, `pwRecordNumber`) VALUES ('Administrator', 2);
+INSERT INTO `APPDEV_SystemRights` (`pwRightsID`, `pwRecordNumber`) VALUES ('SuperUser', 3);
+INSERT INTO `APPDEV_SystemRights` (`pwRightsID`, `pwRecordNumber`) VALUES ('Gallery', 4);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_TestMailingList`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_TestMailingList`;
+CREATE TABLE IF NOT EXISTS `APPDEV_TestMailingList` (
+  `title` text COMMENT 'Mr-Ms etc...',
+  `first_name` text COMMENT 'First Name',
+  `last_name` text COMMENT 'Last Name',
+  `street_address` text COMMENT 'Street Address Line 1',
+  `street_address_2` text COMMENT 'Street Address Line 2',
+  `city` text COMMENT 'City',
+  `state` text COMMENT '2 Letter State ID',
+  `zip` text COMMENT 'Zip or Zip+4',
+  `email_address` text COMMENT 'E-Mail Address',
+  `password` varchar(100) NOT NULL default 'password' COMMENT 'Password',
+  `subscribed1` enum('Y','N') NOT NULL default 'Y' COMMENT 'List Subscription Flag 1',
+  `subscribed2` enum('Y','N') NOT NULL default 'Y' COMMENT 'List Subscription Flag 2',
+  `subscribed3` enum('Y','N') NOT NULL default 'Y' COMMENT 'List Subscription Flag 3',
+  `ip_address` text COMMENT 'IP of Joiner Station',
+  `host_name` text COMMENT 'Host Name of Joiner Station',
+  `creation_date` text COMMENT 'Record Creation Time',
+  `confirmed` enum('Y','N') NOT NULL default 'Y' COMMENT 'This Y when the user has confirmed their subscription',
+  `mailing_flag` text COMMENT 'This is marked up when the message is sent',
+  `item_number` int(11) unsigned NOT NULL auto_increment,
+  PRIMARY KEY  (`item_number`)
+) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
+
+-- 
+-- Dumping data for table `APPDEV_TestMailingList`
+-- 
+
+INSERT INTO `APPDEV_TestMailingList` (`title`, `first_name`, `last_name`, `street_address`, `street_address_2`, `city`, `state`, `zip`, `email_address`, `password`, `subscribed1`, `subscribed2`, `subscribed3`, `ip_address`, `host_name`, `creation_date`, `confirmed`, `mailing_flag`, `item_number`) VALUES ('', '', '', '', '', '', '--', '', 'cooksey@cookseytalbottgallery.com', 'months11', 'Y', 'N', 'N', 'Added by Admin', 'Added by Admin', '', 'Y', 'New Record', 19);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_UserInfo`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_UserInfo`;
+CREATE TABLE IF NOT EXISTS `APPDEV_UserInfo` (
+  `pwUserID` text NOT NULL,
+  `pwPassword` text NOT NULL,
+  `pwRightsID` enum('Administrator','Blog','SuperUser','Gallery') NOT NULL default 'Administrator' COMMENT 'This syncs with the rights table',
+  `pwEMail` text NOT NULL,
+  `pwFirstName` text NOT NULL,
+  `pwLastName` text NOT NULL,
+  `pwRecordNumber` int(8) unsigned NOT NULL auto_increment COMMENT 'I have added this in 2.1.x',
+  PRIMARY KEY  (`pwRecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=latin1 AUTO_INCREMENT=31 ;
+
+-- 
+-- Dumping data for table `APPDEV_UserInfo`
+-- 
+
+INSERT INTO `APPDEV_UserInfo` (`pwUserID`, `pwPassword`, `pwRightsID`, `pwEMail`, `pwFirstName`, `pwLastName`, `pwRecordNumber`) VALUES ('clark', 'foo', 'SuperUser', 'cooksey@cookseytalbottgallery.com', 'Clark', 'Kent', 4);
+INSERT INTO `APPDEV_UserInfo` (`pwUserID`, `pwPassword`, `pwRightsID`, `pwEMail`, `pwFirstName`, `pwLastName`, `pwRecordNumber`) VALUES ('blogtester', 'blogtester', 'Blog', 'cooksey@californiafriends.org', 'Ralph X.', 'Cooksey-Talbott', 5);
+INSERT INTO `APPDEV_UserInfo` (`pwUserID`, `pwPassword`, `pwRightsID`, `pwEMail`, `pwFirstName`, `pwLastName`, `pwRecordNumber`) VALUES ('cookseytalbott', 'cookseytalbott', 'Gallery', 'cooksey@californiafriends.org', 'Ralph', 'Cooksey-Talbott', 6);
+INSERT INTO `APPDEV_UserInfo` (`pwUserID`, `pwPassword`, `pwRightsID`, `pwEMail`, `pwFirstName`, `pwLastName`, `pwRecordNumber`) VALUES ('webmaster', 'woo', 'Administrator', 'cooksey@cookseytalbottgallery.com', 'Ralph', 'Cooksey-Talbott', 7);
+INSERT INTO `APPDEV_UserInfo` (`pwUserID`, `pwPassword`, `pwRightsID`, `pwEMail`, `pwFirstName`, `pwLastName`, `pwRecordNumber`) VALUES ('twoblog', 'twoblog', 'Blog', 'cooksey@cookseytalbottgallery.com', 'Two', 'BlogUser', 30);
+INSERT INTO `APPDEV_UserInfo` (`pwUserID`, `pwPassword`, `pwRightsID`, `pwEMail`, `pwFirstName`, `pwLastName`, `pwRecordNumber`) VALUES ('oneblog', '1blog', 'Blog', 'cooksey@cookseytalbottgallery.com', 'One', 'BlogUser', 29);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_UserPermissions`
+-- 
+
+DROP TABLE IF EXISTS `APPDEV_UserPermissions`;
+CREATE TABLE IF NOT EXISTS `APPDEV_UserPermissions` (
+  `pwUserID` text NOT NULL COMMENT 'The UserID from the UserInfo table',
+  `pwPermission` text NOT NULL COMMENT 'The table or permission name',
+  `pwRecordNumber` int(8) unsigned NOT NULL auto_increment COMMENT 'The record number',
+  PRIMARY KEY  (`pwRecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=39 DEFAULT CHARSET=latin1 COMMENT='This holds the users granular permissions' AUTO_INCREMENT=39 ;
+
+-- 
+-- Dumping data for table `APPDEV_UserPermissions`
+-- 
+
+
+-- --------------------------------------------------------
+

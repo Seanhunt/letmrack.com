@@ -1,0 +1,13 @@
+All CSS/design, HTML, Additional PHP, JavaScript, jQuery and graphics (unless otherwise noted)
+are all original in-house works of StartupWP.
+
+Some special, quality selected 3rd party tools are used throughout the theme, all of which
+have their own licensing details. However, please note for your peace of mind and clarity:
+
+- ALL theme elements, both in-house and 3rd party are fully GPL-compatible.
+- GPL is a General Public License for open source projects.
+- Allows you the freedoms (that we stand by) to use this theme on as many personal and
+commercial projects as you like and to both change, edit, add-to and customize as you like
+without attribution.
+
+Learn more about the GPL: https://www.gnu.org/licenses/gpl-faq.html

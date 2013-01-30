@@ -1,0 +1,52 @@
+I am going to update all the sites using this to the current
+level. This will fix all the sites where the RHS code contaminates the 
+client code.
+
+1) Set up testing dir
+2) put 2.1.6 in testing dir and upload
+3) conform local_info
+4) Update Schema, Add Vote Tables - I need to make an updater script
+5) Change PrintBanner to PrintBannerUI and update template
+6) Fix seo to have the text in the SEO template
+
+
+In this case I renamed the DB to OLD_ and made all new tables
+
+Update a 2.0 blog to the new structure, remember the link table
+
+INSERT INTO APPDEV_BLOG_TaxTips (blHeadline, blSubHead, blPostingDate, blCopy, blItemType) 
+SELECT Headline, SubHead, Date, Copy, ItemType FROM OLD_BLOG_TaxTips
+
+Update the links tables...
+
+INSERT INTO APPDEV_LINKS_TaxTips ( blLinkURL, blName, blDescription ) SELECT  LinkURL, Name, Description FROM OLD_TaxTipsLinks
+
+Update the mail database
+
+INSERT INTO APPDEV_MailDatabase SELECT * FROM OLD_MailDatabase
+
+Update the mailing list names
+
+INSERT INTO APPDEV_MailingListNames SELECT * FROM OLD_MailingListNames
+
+2.2.0.3
+
+Fix up blog tables and set sort flag
+
+ALTER TABLE `APPDEV_BLOG_TaxTips` ADD `blFileName` TEXT NOT NULL, ADD `blPath` TEXT NOT NULL;
+
+ALTER TABLE `APPDEV_BLOG_TaxTips` CHANGE `blSortType` `blSortType` ENUM( 'LIFO', 'RANDOM', 'FIXED' ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'LIFO'; 
+
+-- For LIFO blogs fix up the sort type or no items will appear
+
+UPDATE `APPDEV_BLOG_TaxTips` SET blSortType='LIFO' WHERE 1;
+
+010409
+
+2.2.0.6 Added large and small image size to the gallery profile table, these are referred to when the image is resampled
+
+ALTER TABLE `APPDEV_GalleryProfiles` 
+ADD `LargeImageSize` VARCHAR( 64 ) NOT NULL DEFAULT '500' AFTER `SortOrder`,
+ADD `SmallImageSize` VARCHAR( 64 ) NOT NULL DEFAULT '200' AFTER `LargeImageSize`, 
+ADD `ProfileImageSize` VARCHAR( 64 ) NOT NULL DEFAULT '300' AFTER `SmallImageSize`;
+

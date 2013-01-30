@@ -1,0 +1,244 @@
+newarkdays.org
+aplusartandframe.com
+alisonjackstax.com
+lamiframe.com
+petroliapalms.org
+californiafriends.org
+
+
+appdev_revision.php
+
+// PATCH .2	092207
+//			Added Open with retry routine to db_lib
+//
+
+
+
+// ****************************************************************************************
+// Start Patch
+// ****************************************************************************************
+
+// ----------------------------------------------------------------------------------------------------------------------
+// function OpenDatabase($debugMessage)
+//
+// this will iteratively try to open a connection with up to 50 retrys to 
+// connect and 50 retrys to select.
+// Each retry comes with a 250ms pause... sorry.
+// 
+// A really evil thing but at least it scales page performance rather then fails.
+//
+// 092107 BUG FIX
+// ----------------------------------------------------------------------------------------------------------------------
+function OpenDatabase($debugMessage)
+{
+static $databaseUserNumber = 0;
+global $gDatabaseConnectionID;
+global $gDatabaseName;
+global $gDatabaseUserName;
+global $gDatabasePassword;
+global $gHost;
+
+$debug	=	0;
+
+// open
+$id	=	mysql_connect($gHost,$gDatabaseUserName,$gDatabasePassword);
+
+if(!$id)
+	{
+	$timeOut	=	0;
+	
+	// if fail retry with pause
+	
+	do	{
+		usleep(250000);
+		
+		if($debug) print "******** RETRY CONNECT #: $timeOut ***************<br>";
+
+		$id	=	RetryDatabaseConnect();	
+
+		++$timeOut;
+		
+		}while($timeOut < 50 && $id==0);
+	
+	if(!$id)
+		{
+		$message		=	 "MySql Error Number: " . mysql_errno() . "<br>Unable to select database in OpenDatabase()<br>Error: " . mysql_error() . "<br>";
+		die($message);
+		}
+	
+	
+	$gDatabaseConnectionID	=	$id;
+	}
+else
+	$gDatabaseConnectionID	=	$id;
+
+$error	=	mysql_select_db($gDatabaseName);
+
+if(!$error)
+	{
+	$timeOut	=	0;
+
+	do	{
+		usleep(250000);
+
+		if($debug) print "+++++++++ RETRY SELECT #: $timeOut +++++++++++++++++<br>";
+
+		$error	=	mysql_select_db($gDatabaseName);
+
+		++$timeOut;
+		
+		}while($timeOut < 50 && !error);
+
+	// give up...
+	if(!$error)
+		{
+		$message		=	 "MySql Error Number: " . mysql_errno() . "<br>Unable to select database in OpenDatabase()<br>Error: " . mysql_error() . "<br>";
+		die($message);
+		}
+	}
+
+//if($debug) print "OpenDatabase() opened link: $id for user: $gDatabaseUserName<br>";
+	
+return $id;
+}
+
+
+
+
+// ----------------------------------------------------------------------------------------------------------------------
+// function RetryDatabaseConnect()
+//
+// Returns link ID on connect or 0 on fail, ID is never 0
+//
+// 092107 BUG FIX
+// ----------------------------------------------------------------------------------------------------------------------
+
+function RetryDatabaseConnect()
+{
+global $gDatabaseConnectionID;
+global $gDatabaseName;
+global $gDatabaseUserName;
+global $gDatabasePassword;
+global $gHost;
+
+//if($debug) print "RetryDatabaseConnect()";
+
+// open
+$id	=	mysql_connect($gHost,$gDatabaseUserName,$gDatabasePassword);
+
+if(!$id)
+	{
+	$message		=	 "Debug: $debugMessage<br>MySql Error Number: " . mysql_errno() . "<br>Unable to connect to database in OpenDatabase()<br>Error: " . mysql_error() . "<br>";
+
+	if($debug) print " returned FAIL<br>";
+
+	return 0;
+	}
+else
+	{
+	$gDatabaseConnectionID	=	$id;
+
+	if($debug) print " returned $id<br>";
+
+	return $id;
+	}
+}
+
+// ----------------------------------------------------------------------------------------------------------------------
+// function CloseDatabase()
+//
+// 092107 BUG FIX
+// ----------------------------------------------------------------------------------------------------------------------
+
+function CloseDatabase()
+{
+global $gDatabaseConnectionID;
+
+$debug	=	0;
+
+//if($debug) print "CloseDatabase() closing link: $gDatabaseConnectionID<br>";
+
+// close connection
+if($gDatabaseConnectionID)
+	{
+	$error					=	mysql_close($gDatabaseConnectionID);
+	$gDatabaseConnectionID	=	0;
+	}
+else
+	$error	=	mysql_close();
+
+
+if(!$error)
+	{
+	print "Error in CloseDatabase()<br>error: $error<br>Message:" . mysql_error() . "<br>";
+	}
+}
+
+// ----------------------------------------------------------------------------------------------------------------------
+// function GetTableNameByIndex($index,$rs) 
+// 091907 BUG FIX
+// ----------------------------------------------------------------------------------------------------------------------
+
+function GetTableNameByIndex($index,$rs) 
+{
+global $gDatabaseName;
+global $gDatabaseUserName;
+global $gDatabasePassword;
+global $gHost;
+
+$debug	=	0;
+
+if($debug) print "fubar($index)<br>";
+
+// seek
+mysql_data_seek($rs,$index);
+
+// fetch
+$row = @mysql_fetch_assoc($rs);
+
+//print_r($row);
+
+// get val
+$tableName = $row['Tables_in_' . $gDatabaseName]; 
+
+if($debug) print "tableName:  $tableName<br>";
+
+return $tableName;
+}
+
+// ****************************************************************************************
+// End Patch
+// ****************************************************************************************
+
+admin_home.php
+
+// *************************************************************************************
+// START patch 092207
+// *************************************************************************************
+
+OpenDatabase();
+
+for($i=0;$i<$numberOfTables;$i++)
+	{
+	$tableName		=	GetTableNameByIndex($i);
+	
+	//  show the user table to  the super user
+	if(strcmp($userTableName,$tableName)==0 && $superUser)
+		{
+		$tableArray[]	=	$tableName;
+		}
+
+	// dont show the user table to anyone but the super user
+	if(strcmp($userTableName,$tableName)!=0)
+		{
+		$tableArray[]	=	$tableName;
+		}
+	}
+
+
+CloseDatabase();	
+
+// *************************************************************************************
+// END patch 092207
+// *************************************************************************************
+

@@ -1,0 +1,443 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #666;
+	line-height: 14px;
+	background-position: 10px;
+	background-color: #FFF;
+}
+
+a:link 		{ color: #888; text-decoration: underline; font-weight: bold; }
+a:visited 	{ color: #aaa; text-decoration: underline; font-weight: bold; }
+a:hover 	{ color: #111;
+	text-decoration: none;
+	font-style: italic;
+	font-weight: bold;
+}
+a 	{
+	text-decoration: underline;
+	color: #666;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+	padding-left: 15px;
+}
+h2 {
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 15px;
+}
+h3 {
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 15px;
+}
+h4 {
+	font-size: 12px;
+	padding-left: 15px;
+}
+h5 {
+	font-size: 10px;
+	padding-left: 15px;
+}
+
+p {
+	padding-left: 10px;
+}
+
+
+
+/* ***************************************************************************
+** Class styles
+** ************************************************************************* */
+
+.rhs12BoldRed {
+	font-size: 12px;
+	color: #FF0000;
+	font-weight: bold;
+}
+.rhs14BoldRed {
+	font-size: 14px;
+	color: #FF0000;
+	font-weight: bold;
+}
+.rhs18BoldRed {
+	font-size: 18px;
+	color: #FF0000;
+	font-weight: bold;
+}
+.rhs24BoldRed {
+	font-size: 24px;
+	color: #FF0000;
+	font-weight: bold;
+}
+.rhs24BoldWhite {
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.rhs9Regular {
+	font-size: 9px;
+	font-weight: normal;
+}
+.rhs9Bold {
+	font-size: 9px;
+	font-weight: bold;
+}
+.rhs10Regular {
+	font-size: 10px;
+	font-weight: normal;
+}
+.rhs10Bold {
+	font-size: 10px;
+	font-weight: bold;
+}
+.rhs11Regular {
+	font-size: 11px;
+	font-weight: normal;
+}
+.rhs11Bold {
+	font-size: 11px;
+	font-weight: bold;
+}
+.rhs12Regular {
+	font-size: 12px;
+	font-weight: normal;
+}
+.rhs12Bold {
+	font-size: 12px;
+	font-weight: bold;
+}
+.rhs14Regular {
+	font-size: 14px;
+}
+.rhs14Bold {
+	font-size: 14px;
+	font-weight: bold;
+}
+.rhs15Regular {
+	font-size: 15px;
+}
+.rhs15Bold {
+	font-size: 15px;
+	font-weight: bold;
+}
+.rhs18BoldWhite {
+	font-size: 18px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.rhs18Bold {
+	font-size: 18px;
+	font-weight: bold;
+}
+.rhs18Regular {
+	font-size: 18px;
+	font-weight: normal;
+}
+.rhs24Bold {
+	font-size: 24px;
+	font-weight: bold;
+}
+.rhs24BoldWhite {
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.rhs24Regular {
+	font-size: 24px;
+	font-weight: normal;
+}
+.rhs30Bold {
+
+	font-size: 30px;
+	font-weight: bold;
+}
+.rhs30Regular {
+	font-size: 30px;
+	font-weight: normal;
+}
+
+/* These will be deprecated and replaced with the rhsXXX ones ***/
+
+
+.admin9Regular {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #333333;
+	font-weight: normal;
+}
+.admin9Bold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #333333;
+	font-weight: bold;
+
+}
+
+.admin10Regular {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	font-weight: normal;
+}
+.admin10Bold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	font-weight: bold;
+
+}
+
+
+.admin12Regular {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	font-weight: normal;
+}
+.admin12Bold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	font-weight: bold;
+
+}
+.admin12BoldRed {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FF0000;
+	font-weight: bold;
+
+}
+
+.admin14Regular {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333333;
+}
+.admin14Bold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333333;
+	font-weight: bold;
+
+}
+.admin15Regular {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #333333;
+}
+.admin15Bold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #333333;
+	font-weight: bold;
+
+}
+.admin15BoldRed {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FF0000;
+	font-weight: bold;
+
+}
+.admin15BoldGreen {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #00FF00;
+	font-weight: bold;
+
+}
+
+.admin18Bold {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #333333;
+	font-weight: bold;
+}
+.admin18BoldRed {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #FF0000;
+	font-weight: bold;
+}
+.admin18Regular {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #333333;
+	font-weight: normal;
+}
+.admin24Bold {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #333333;
+	font-weight: bold;
+}
+.admin24Regular {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #333333;
+	font-weight: normal;
+}
+.admin30Bold {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	color: #333333;
+	font-weight: bold;
+}
+.admin30Regular {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	color: #333333;
+	font-weight: normal;
+}
+
+
+a.boldLink10:link { color: #666666; text-decoration: underline; }
+a.boldLink10:visited { color: #444444; text-decoration: underline; }
+a.boldLink10:hover { color: #111111; text-decoration: none; font-size: 10px;}
+a.boldLink10 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #666666;
+}
+
+a.boldLink12:link { color: #333333; text-decoration: underline; }
+a.boldLink12:visited { color: #444444; text-decoration: underline; }
+a.boldLink12:hover { color: #111111; text-decoration: none; font-size: 12px;}
+a.boldLink12 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #666666;
+}
+
+a.footerLink:link { color: #666666; text-decoration: none; }
+a.footerLink:visited { color: #444444; text-decoration: none; }
+a.footerLink:hover { color: #555555; text-decoration: none; font-style: italic;}
+a.footerLink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #666666;
+}
+
+
+
+a.galleryUILink:link { color: #333333; text-decoration: underline; }
+a.galleryUILink:visited { color: #666666;  text-decoration: underline; }
+a.galleryUILink:hover { font-weight: bold; color: #111111; text-decoration: none; font-size: 15px;}
+a.galleryUILink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #666666;
+}
+
+a.boldLink14:link { color: #333333; text-decoration: underline; }
+a.boldLink14:visited { color: #444444; text-decoration: underline; }
+a.boldLink14:hover { color: #111111; text-decoration: none; font-size: 14px;}
+a.boldLink14 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #666666;
+}
+a.boldLink18:link { color: #333333; text-decoration: underline; }
+a.boldLink18:visited { color: #999999; text-decoration: none; }
+a.boldLink18:hover { color: #AAAAAA; text-decoration: none; font-size: 18px;}
+a.boldLink18 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #666666;
+}
+a.boldLink18White:link { color: #FFFFFF; text-decoration: underline; }
+a.boldLink18White:visited { color: #EEEEEE; text-decoration: underline; }
+a.boldLink18White:hover { color: #DDDDDD; text-decoration: none; font-size: 18px;}
+a.boldLink18White {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+a.boldLink24:link { color: #666666; text-decoration: underline; }
+a.boldLink24:visited { color: #999999; text-decoration: none }
+a.boldLink24:hover { color: #AAAAAA; text-decoration: none; font-size: 24px;}
+a.boldLink24 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #666666;
+}
+
+
+
+.whiteHeader24 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* ********************************************************************************** 
+** These styles control the back and help links in the admin sections page header
+** for the form type text linkage 
+********************************************************************************** */
+
+.adminUIHeader{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	color: #666666;
+}
+
+.adminUIHeader a:link 		{ color: #333333; text-decoration: underline; font-style:normal;}
+.adminUIHeader a:visited 	{ color: #666666; text-decoration: underline; font-style:normal;}
+.adminUIHeader a:hover 		{ color: #111111; text-decoration: none; font-style:normal; font-weight: bold;}
+.adminUIHeader a {
+	text-decoration: underline;
+	font-weight:normal;
+	font-style:normal;
+}
+
+.adminUIHeader p	{
+}
+ 

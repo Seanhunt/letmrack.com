@@ -1,0 +1,22 @@
+#ratings_bar {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:.7em;
+    font-weight:normal;
+	line-height: 150%
+}
+#ratings_bar a {
+	display:block;
+	width:18px;
+	height:18px;
+    float:left;
+    text-decoration:none;
+	background-image: url(http://www.cookseytalbottgallery.com/Testing/AppDev/images/vote/stars.gif);
+	background-repeat: no-repeat;
+	background-position: 1px 0;
+}
+#ratings_bar a:hover {
+    background-position: 1px -57px;;
+}
+#ratings_bar a:active {
+    background-position: 1px -76px;
+}

@@ -1,0 +1,56 @@
+1) I have added a more robust captcha system to fight the contact page spambots.
+
+---------------------------------------------------------------------------------------
+1) contact.php
+
+A) Add to the head of the contact page
+
+include 'RHS/captcha_lib.php';	
+
+$fileName					=	GetCaptchaFileName("small");
+
+B) To the contact page hidden tags add:
+
+<?php
+// NEW 2.1.9
+PrintCaptchaHiddenTags($fileName,"small");
+?>
+
+C) Add a row to the contact page with this in it:
+
+
+<table width="80%" border="0">
+<tr>
+	<td width="30%"><img src="images/captcha/<?php print $fileName; ?>" width="100" height="30">
+	</td>
+	<td width="70%" align="center" valign="middle"><input name="cr" type="text" id="cr" size="20">				
+	</td>
+</tr>
+</table>
+
+D) Update the images/captcha directory
+
+E) Update the DB with:
+
+CREATE TABLE `APPDEV_Captcha` (
+  `FileName` text NOT NULL COMMENT 'The captcha filename',
+  `PlainText` text NOT NULL COMMENT 'The text string shown in the file',
+  `Type` enum('small','large') NOT NULL COMMENT 'The type ',
+  `RecordNumber` int(2) NOT NULL auto_increment COMMENT 'The record number',
+  PRIMARY KEY  (`RecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1 COMMENT='This has info on captcha image files for captcha_lib' AUTO_INCREMENT=7 ;
+
+-- 
+-- Dumping data for table `APPDEV_Captcha`
+-- 
+
+INSERT INTO `APPDEV_Captcha` VALUES ('10.gif', 'fnogd', 'small', 1);
+INSERT INTO `APPDEV_Captcha` VALUES ('11.gif', 'ahkpv', 'small', 2);
+INSERT INTO `APPDEV_Captcha` VALUES ('12.gif', 'kdwpu', 'small', 3);
+INSERT INTO `APPDEV_Captcha` VALUES ('14.gif', 'pavo', 'small', 4);
+INSERT INTO `APPDEV_Captcha` VALUES ('1.gif', 'GIRAFFE', 'large', 5);
+INSERT INTO `APPDEV_Captcha` VALUES ('2.gif', 'ELEPHANT', 'large', 6);
+
+---------------------------------------------------------------------------------------
+
+

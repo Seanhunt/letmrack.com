@@ -1,0 +1,3 @@
+ALTER TABLE `APPDEV_GalleryProfiles` 
+ADD `ThumbsPageName` VARCHAR( 128 ) NOT NULL DEFAULT 'thumbs.php' COMMENT 'This is the thumbs page for this gallery' AFTER `Type` ,
+ADD `ImagePageName` VARCHAR( 128 ) NOT NULL DEFAULT 'image.php' COMMENT 'This is the image page for this gallery' AFTER `ThumbsPageName` 

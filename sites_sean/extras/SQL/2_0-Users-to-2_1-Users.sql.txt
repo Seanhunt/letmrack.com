@@ -1,0 +1,47 @@
+-- --------------------------------------------------------
+-- This will update the users part of a 2.0 database to 2.1 
+--  
+-- 
+-- --------------------------------------------------------
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `APPDEV_UserPermissions`
+-- 
+
+CREATE TABLE `APPDEV_UserPermissions` (
+  `pwUserID` text NOT NULL COMMENT 'The UserID from the UserInfo table',
+  `pwPermission` text NOT NULL COMMENT 'The table or permission name',
+  `pwRecordNumber` int(8) unsigned NOT NULL auto_increment COMMENT 'The record number',
+  PRIMARY KEY  (`pwRecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=latin1 COMMENT='This holds the users granular permissions' AUTO_INCREMENT=0 ;
+
+-- 
+-- Table structure for table `APPDEV_UserInfo`
+-- 
+
+CREATE TABLE `APPDEV_UserInfo` (
+  `pwUserID` text NOT NULL,
+  `pwPassword` text NOT NULL,
+  `pwRightsID` enum('Administrator','Blog','SuperUser','Gallery') NOT NULL default 'Administrator' COMMENT 'This syncs with the rights table',
+  `pwEMail` text NOT NULL,
+  `pwFirstName` text NOT NULL,
+  `pwLastName` text NOT NULL,
+  `pwRecordNumber` int(8) unsigned NOT NULL auto_increment COMMENT 'I have added this in 2.1.x',
+  PRIMARY KEY  (`pwRecordNumber`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=latin1 AUTO_INCREMENT=0 ;
+
+-- --------------------------------------------------------
+
+-- 
+-- This will upgrade the 2.0 Users Table to a 2.1 UserInfo table format
+-- It will not deal the blog table rights assignations
+-- 
+
+INSERT INTO 
+APPDEV_UserInfo (pwUserID, pwPassword, pwRightsID,pwEMail,pwFirstName,pwLastName) 
+SELECT UserID, Password, Type, EMail, FirstName, LastName
+FROM APPDEV_Users
+
+

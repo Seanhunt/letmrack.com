@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<style type="text/css">
+<!--
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #CCCCCC;
+}
+
+
+
+
+.checkbox	{
+		background-color: #FFF;
+		border: thin solid #333333;
+		margin-right: 6px;
+}
+
+.textfield 	{
+		background-color: #FFF;
+		border: thin solid #333333;
+		font-size: 14px;
+		color: #FFFFFF;
+		font-weight: bold;
+		margin-bottom:12px;		/* vertical spacing between text fields */
+}
+
+input.textfield:hover	{
+			border: thin dashed #666666;
+}
+
+label	{
+		float:left;
+		width:10em;
+		font-size:12px;
+}
+
+fieldset	{
+	border: 2px dotted #333333;
+}
+
+legend	{
+	font-size:14px;
+	font-weight: bold;
+	border: thin solid #333333;
+	padding-top: 3px;
+	padding-right: 6px;
+	padding-bottom: 3px;
+	padding-left: 6px;
+}
+
+.checkBoxArray label:hover	{
+			border: thin dashed #666666;
+}
+
+
+--></style>
+
+</head>
+
+<body>
+
+
+<form id="form1" name="form1" method="post" action="">
+<fieldset>
+<legend>My Form Set</legend>
+  <label for="Field1">First Name</label>
+  <input type="text" name="Field1" id="Field1" class="textfield" />
+  
+<br />
+  <label for="Field2">Last Name</label>
+  <input type="text" name="Field2" id="Field2" class="textfield" />
+  
+<br />
+  <label for="Field3">Address</label>
+  <input type="text" name="Field3" id="Field3" class="textfield" />
+  
+<br />
+
+<!-- START OF CHECK BOXES -->
+<div class="checkBoxArray">
+
+
+<label for="chkbox">CheckBox1</label>
+<input type="checkbox" name="chkbox" id="chkbox" class="checkbox" />
+
+<label for="chkbox2">CheckBox2</label>
+<input type="checkbox" name="chkbox2" id="chkbox2" class="checkbox" />
+
+<label for="chkbox3">CheckBox3</label>
+<input type="checkbox" name="chkbox3" id="chkbox3" class="checkbox" />
+
+
+</div>
+<!-- END OF CHECK BOXES -->
+
+<br />
+<br />
+    
+    <input type="submit" name="button" id="button" value=" Submit " />
+    <br />
+</fieldset>
+</form>
+</body>
+</html>

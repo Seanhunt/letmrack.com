@@ -1,0 +1,9 @@
+CREATE TABLE `APPDEV_Debug` (
+  `message` text NOT NULL COMMENT 'One of many lines of debug message',
+  `function` text NOT NULL,
+  `line` text NOT NULL,
+  `module` text NOT NULL,
+  `time_stamp` timestamp NOT NULL default CURRENT_TIMESTAMP,
+  `id_number` int(4) unsigned NOT NULL auto_increment,
+  PRIMARY KEY  (`id_number`)
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=latin1 COMMENT='This is the table for debug_lib.php' AUTO_INCREMENT=23 ;

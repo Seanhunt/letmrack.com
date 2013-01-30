@@ -1,0 +1,10 @@
+Update to 2.2.0.3
+
+ALTER TABLE `APPDEV_BLOG_TaxTips` ADD `blFileName` TEXT NOT NULL ,
+ADD `blPath` TEXT NOT NULL ;
+
+ALTER TABLE `APPDEV_BLOG_TaxTips` CHANGE `blSortType` `blSortType` ENUM( 'LIFO', 'RANDOM', 'FIXED' ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'LIFO'; 
+
+-- For LIFO blogs fix up the sort type or no items will appear
+
+UPDATE `APPDEV_BLOG_TaxTips` SET blSortType='LIFO' WHERE 1;

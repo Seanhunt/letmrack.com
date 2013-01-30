@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: 
+Disallow: /images/
+Disallow: /RHS/
+Disallow: /templates/
+Disallow: /shared/

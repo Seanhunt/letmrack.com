@@ -1,0 +1,117 @@
+.blogHeadline {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: bold;
+	color: #666666;
+}
+.blogSubHead {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #666666;
+}
+.blogCopy {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #666666;
+}
+.blogEventDate {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+	color: #666666;
+}
+.blogEventTime {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+	color: #666666;
+}
+.blogPostingDate {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: italic;
+	color: #666666;
+}
+.blogPosterID {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: italic;
+	color: #666666;
+}
+.blogItemNumber {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+}
+a.blogLinkName:link { color: #333333; text-decoration: underline; }
+a.blogLinkName:visited { color: #444444; text-decoration: underline; }
+a.blogLinkName:hover { font-style: italic; color: #111111; text-decoration: none;}
+a.blogLinkName {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #666666;
+}
+
+a.blogFileSharingLink:link { color: #333333; text-decoration: underline; }
+a.blogFileSharingLink:visited { color: #444444; text-decoration: underline; }
+a.blogFileSharingLink:hover { font-style: italic; color: #111111; text-decoration: none;}
+a.blogFileSharingLink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #666666;
+}
+
+.blogLinkDescription {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: italic;
+	font-weight: normal;
+	color: #666666;
+}
+.blogLinkPoster {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: #333333;
+}
+.blogTOCPoster {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: italic;
+	font-weight: normal;
+	color: #333333;
+}
+
+a.blogBodyLink:link { color: #333333; text-decoration: underline; }
+a.blogBodyLink:visited { color: #444444; text-decoration: underline; }
+a.blogBodyLink:hover { color: #111111; text-decoration: none; font-size: 12px;}
+a.blogBodyLink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #666666;
+}
+a.blogTOCLink:link { color: #333333; text-decoration: underline; }
+a.blogTOCLink:visited { color: #444444; text-decoration: underline; }
+a.blogTOCLink:hover { font-style: italic; color: #111111; text-decoration: none;}
+a.blogTOCLink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #666666;
+}

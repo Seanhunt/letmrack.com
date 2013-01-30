@@ -1,0 +1,101 @@
+/* Admin CSS
+  -------------------------------------------- */
+
+#wpbody .wrap ul.codereflinklist {
+      clear:both;
+}
+#wpbody .wrap ul.codereflinklist li {
+      display:inline;
+      float:left;
+      width:25%;
+}
+#wpbody .wrap ul.codereflinklist li ul {
+      font-size:8pt;
+}
+#wpbody .wrap ul.codereflinklist li ul li {
+      display:block;
+      float:none;
+      width:auto;
+}
+
+#wpbody .wrap #wpnj_distinctioncoderef {
+	width: 100%;
+}
+
+#wpbody #wpnj_distinctioncoderef h3 {
+	padding-top:30px;
+}
+
+#wpbody #wpnj_distinctioncoderef  div.coderefdetail {
+	width: 650px;
+	padding: 5px;
+	background-color: #fefefe;
+	border: 1px solid #bbb;
+	-webkit-box-shadow: 4px 4px 4px #999;
+	-moz-box-shadow: 4px 4px 4px #999;
+	box-shadow: 4px 4px 4px #999;
+}
+
+#wpbody #wpnj_distinctioncoderef h3 > div {
+	margin-bottom:50px;
+}
+
+#wpbody #wpnj_distinctioncoderef hr {
+	margin-top:50px;
+}
+
+#wpbody #wpnj_distinctioncoderef code {
+	background: #f8f8f8;
+	color: #777;
+	text-shadow: 1px 1px 0px #ccc;
+}
+
+#wpbody .wrap #wpnj_distinctioncoderef ul {
+	list-style-type:disc;
+	margin-left:25px;
+	line-height:1em;
+}
+
+#wpbody .wrap #wpnj_distinctioncoderef ul li {
+	line-height:1.3em;
+}
+#wpbody .wrap #wpnj_distinctioncoderef ul  ul li {
+	font-size: 0.8em;
+}
+
+#wpbody .wrap #wpnj_distinctioncoderef a {
+	text-decoration: none;
+	background-color: #63afd0;
+	color: #555;
+	padding: 0 2px 0 2px;
+	border: 1px solid #bbb;
+	-webkit-box-shadow: 1px 1px 1px #999;
+	-moz-box-shadow: 1px 1px 1px #999;
+	box-shadow: 1px 1px 1px #999;
+}
+
+.font-container {
+	float:left;
+	height:30px;
+	line-height: 30px;
+	margin-bottom: 10px;
+	width: 280px;
+}
+
+.font-container input[type="radio"]{
+	padding-top: 3px;
+	vertical-align: top;
+}
+
+.appearance_page_wpnj_distinction-settings .fonts-n-such {
+	height:2wpx;
+	font-size:24px;
+	font-style:normal;
+	line-height: 2wpx;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+.description {
+	margin-left:5px;
+}

@@ -1,0 +1,33 @@
+ALTER TABLE `APPDEV_BLOG_music` ADD `blFileName` TEXT NOT NULL COMMENT 'This is the name of the media file associated with the posting for MUSIC and MOVIE blogs',
+ADD `blPath` TEXT NOT NULL COMMENT 'This is the path to the media file';
+
+
+ALTER TABLE `APPDEV_BLOG_LifoBlog` ADD `blFileName` TEXT NOT NULL COMMENT 'This is the name of the media file associated with the posting for MUSIC and MOVIE blogs',
+ADD `blPath` TEXT NOT NULL COMMENT 'This is the path to the media file';
+
+
+ALTER TABLE `APPDEV_BLOG_CalendarBlog` ADD `blFileName` TEXT NOT NULL COMMENT 'This is the name of the media file associated with the posting for MUSIC and MOVIE blogs',
+ADD `blPath` TEXT NOT NULL COMMENT 'This is the path to the media file';
+
+
+ALTER TABLE `APPDEV_BLOG_SEO_Text` ADD `blFileName` TEXT NOT NULL COMMENT 'This is the name of the media file associated with the posting for MUSIC and MOVIE blogs',
+ADD `blPath` TEXT NOT NULL COMMENT 'This is the path to the media file';
+
+
+ALTER TABLE `APPDEV_BLOG_AdOne` ADD `blFileName` TEXT NOT NULL COMMENT 'This is the name of the media file associated with the posting for MUSIC and MOVIE blogs',
+ADD `blPath` TEXT NOT NULL COMMENT 'This is the path to the media file';
+
+
+ALTER TABLE `APPDEV_BLOG_front_page` ADD `blFileName` TEXT NOT NULL COMMENT 'This is the name of the media file associated with the posting for MUSIC and MOVIE blogs',
+ADD `blPath` TEXT NOT NULL COMMENT 'This is the path to the media file';
+
+
+ALTER TABLE `APPDEV_BLOG_music` CHANGE `blSortType` `blSortType` ENUM( 'RANDOM', 'FIXED', 'LIFO' ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'RANDOM' COMMENT 'This is for Ads it holds the sort type - if fixed refer to blSortOrder' ;
+ALTER TABLE `APPDEV_BLOG_LifoBlog` CHANGE `blSortType` `blSortType` ENUM( 'RANDOM', 'FIXED', 'LIFO' ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'RANDOM' COMMENT 'This is for Ads it holds the sort type - if fixed refer to blSortOrder'; 
+ALTER TABLE `APPDEV_BLOG_CalendarBlog` CHANGE `blSortType` `blSortType` ENUM( 'RANDOM', 'FIXED', 'LIFO' ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'RANDOM' COMMENT 'This is for Ads it holds the sort type - if fixed refer to blSortOrder'; 
+ALTER TABLE `APPDEV_BLOG_SEO_Text` CHANGE `blSortType` `blSortType` ENUM( 'RANDOM', 'FIXED', 'LIFO' ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'RANDOM' COMMENT 'This is for Ads it holds the sort type - if fixed refer to blSortOrder' ;
+ALTER TABLE `APPDEV_BLOG_AdOne` CHANGE `blSortType` `blSortType` ENUM( 'RANDOM', 'FIXED', 'LIFO' ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'RANDOM' COMMENT 'This is for Ads it holds the sort type - if fixed refer to blSortOrder' ;
+ALTER TABLE `APPDEV_BLOG_front_page` CHANGE `blSortType` `blSortType` ENUM( 'RANDOM', 'FIXED', 'LIFO' ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'RANDOM' COMMENT 'This is for Ads it holds the sort type - if fixed refer to blSortOrder'; 
+
+
+UPDATE TABLE_NAME SET blSortType='LIFO';

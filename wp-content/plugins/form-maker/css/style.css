@@ -1,0 +1,54 @@
+.field_buttons
+{
+background-color:#00AAF1;
+margin:1px;
+border-radius:0px;
+padding:5px;
+height:75px;
+width:87px;
+cursor:pointer;
+}
+#edit_div>table>tr
+{
+vertical-align:top;
+}
+
+#edit_div>table>tr>td
+{
+border-bottom:1px dotted #D1C8C8;
+padding-bottom:10px;
+}
+
+.field_buttons:hover
+{
+background-color:#0E83EB;
+}
+
+.element_toolbar
+{
+margin:0px;
+padding:0px;
+background-color:#F0F0F0
+}
+
+.element_toolbar img
+{
+margin:2px;
+}
+.no_spacing
+{
+padding-right:10px !important;
+float:left;
+border-spacing: 0px;
+}
+
+.toolbar_padding
+{
+padding-right: 20px;
+}
+
+.page_toolbar
+{
+width:30px;
+cursor:pointer;
+}

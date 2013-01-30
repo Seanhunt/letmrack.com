@@ -1,0 +1,63 @@
+Update Steps to 2.2.0
+
+The User types Blog and Gallery have been rolled into one Blog-Gallery
+
+Update the emum in the UserInfo to have the Blog-Gallery tag then in the 
+UserInfo table replace Blog and Gallery with Blog-Gallery
+
+Here is the SQL
+
+ALTER TABLE `APPDEV_UserInfo` CHANGE `pwRightsID` `pwRightsID` ENUM( 'Administrator', 'SuperUser', 'Blog-Gallery' ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'Administrator' COMMENT 'This syncs with the rights table';
+
+This actually nulls all Blog or Gallery types so the following will
+fix that mess...
+
+ALTER TABLE `APPDEV_UserInfo` CHANGE `pwRightsID` `pwRightsID` ENUM( 'Administrator', 'SuperUser', 'Blog-Gallery' ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'Administrator' COMMENT 'This syncs with the rights table';
+UPDATE APPDEV_UserInfo SET pwRightsID='Blog-Gallery' WHERE pwRightsID='';
+
+Add a field to the IL for a picture owner ID
+
+ALTER TABLE `APPDEV_ImageLibrary` ADD `OwnerID` VARCHAR( 128 ) NOT NULL COMMENT 'The ID of the user who uploaded the picture' AFTER `ArtistID` ;
+UPDATE APPDEV_ImageLibrary SET OwnerID=ArtistID WHERE 1;
+
+I have changed the ecommerce sizes table to make it much more generic and not limited to flat art
+There are the mods, they will not break an existing database
+
+ALTER TABLE `APPDEV_ImageSizes` CHANGE `Description` `DescriptionOne` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL COMMENT 'The description of that size'; 
+ALTER TABLE `APPDEV_ImageSizes` CHANGE `EditionType` `DescriptionTwo` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL COMMENT 'The type of edition';  
+
+Target mode
+
+ALTER TABLE `APPDEV_PasswordTargets` DROP `pwTargetID` 
+
+Join now is simpler, it wants a single email address and will gen a password. 
+This eliminates a bunch of possibility of user error.
+From the Join page remmove the following fields - PASS, PASSCONFIRM, EMAILCONFIRM
+
+
+ALTER TABLE `APPDEV_UserPermissions` ADD `pwModerator` TEXT NOT NULL AFTER `pwPermission` ,
+ADD `pwContributor` TEXT NOT NULL AFTER `pwModerator` ;
+
+UPDATE `APPDEV_UserPermissions` SET pwContributor='1' WHERE 1
+
+
+ALTER TABLE `APPDEV_BLOG_CalendarBlog` CHANGE `blEventDate` `blEventDate` DATETIME NULL DEFAULT NULL 
+COMMENT 'This is the event date if BlogType is CALENDAR';
+
+ 
+Apply this to ALL blogs for the LIFO/FIXED blog update.
+ 
+ALTER TABLE `APPDEV_BLOG_LifoBlog` CHANGE `blSortType` `blSortType` ENUM( 'RANDOM', 'FIXED', 'LIFO' ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT 'RANDOM' COMMENT 'This is for Ads it holds the sort type - if fixed refer to blSortOrder' 
+ 
+2.2.0.3
+
+I did bad when I implemented the MUSIC type blog and reused fields for things they were not ment for
+to keep the schema delta down, bad. All bad.
+
+ALTER TABLE `APPDEV_BLOG_music` ADD `blFileName` TEXT NOT NULL COMMENT 'This is the name of the media file associated with the posting for MUSIC and MOVIE blogs',
+ADD `blPath` TEXT NOT NULL COMMENT 'This is the path to the media file';
+
+The older DB have this set to RANDOM and it needs to be fixed as it was ignored for LIFO sorting.
+
+UPDATE TABLE_NAME SET blSortType='LIFO';
+ 
