@@ -48,10 +48,10 @@ Notes:
 */
 
 .slideshow {
-	width: 664px;
-	height: 504px;
+	width: 500px;
+	height: 500px;
 	margin: 0 auto;
-	background: url("../images/back.png") no-repeat scroll 0 0 transparent; 
+	background: url("$rel#back.png$") no-repeat scroll 0 0 transparent; 
 }
 .slideshow a img {
 	border: 0;
@@ -69,10 +69,10 @@ Notes:
 */
 
 .slideshow-images {
-	width: 640px;
-	height: 480px;
-	left: 12px;
-	top: 12px;
+	width: 500px;
+	height: 500px;
+	left: 0px;
+	top: 0px;
 }		
 .slideshow-images-visible { 
 	opacity: 1;
@@ -88,178 +88,4 @@ Notes:
 	left: 0;
 	top: 0;
 	position: static;
-}
-/**
-HTML:
-	<div class="slideshow-thumbnails">
-		<ul>
-			<li><a class="slideshow-thumbnails-active" /></li>
-			<li><a class="slideshow-thumbnails-inactive" /></li>
-			...
-			<li><a class="slideshow-thumbnails-inactive" /></li>
-		</ul>
-	</div>
-	
-Notes:
-	Customize the active / inactive classes to affect the thumbnails animation.
-	Use the !important keyword to override FX without affecting performance.
-*/
-
-.slideshow-thumbnails * {
-	margin: 0;
-	padding: 0;
-}
-.slideshow-thumbnails li {
-	float: left;
-	list-style: none;
-	margin: 5px 5px 5px 0;
-	position: relative;
-}
-.slideshow-thumbnails a {
-	display: block;
-	float: left;
-	padding: 5px;
-	position: relative; 
-}
-.slideshow-thumbnails a:hover {
-	background-color: #FF9 !important;
-	opacity: 1 !important;
-}
-.slideshow-thumbnails img {
-	display: block;
-}
-.slideshow-thumbnails-active {
-	background-color: #9FF;
-	opacity: 1;
-}
-.slideshow-thumbnails-inactive {
-	background-color: #FFF;
-	opacity: .5;
-}.slideshow-thumbnails {
-	bottom: -110px;
-	height: 110px;
-	left: 0;
-	position: absolute;
-	width: 100%;
-	overflow: auto;
-}
-.slideshow-thumbnails ul {
-	height: 90px;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 1890px;
-}
-.slideshow{
-	margin-bottom:110px;
-}
-/**
-HTML:
-	<div class="slideshow-captions">
-		...
-	</div>
-	
-Notes:
-	Customize the hidden / visible classes to affect the captions animation.
-*/
-
-.slideshow-captions {
-	background: #000;
-	bottom: 12px;
-	color: #FFF;
-	font: normal 12px/22px Arial, sans-serif;
-	left: 12px;
-	overflow: hidden;
-	position: absolute;
-	padding: 0 10px;
-	width: 620px;	/* 100% */
-	z-index: 10000;
-}
-.slideshow-captions-hidden {
-	opacity: 0;
-}
-.slideshow-captions-visible {
-	opacity: .7;
-}
-/**
-HTML:
-	<div class="slideshow-controller">
-		<ul>
-			<li class="first"><a /></li>
-			<li class="prev"><a /></li>
-			<li class="pause play"><a /></li>
-			<li class="next"><a /></li>
-			<li class="last"><a /></li>
-		</ul>
-	</div>
-	
-Notes:
-	Customize the hidden / visible classes to affect the controller animation.
-*/
-
-.slideshow-controller {
-	background: url(../images/controller.png) no-repeat;
-	height: 42px;
-	left: 50%;
-	margin: -21px 0 0 -119px;
-	overflow: hidden;
-	position: absolute;
-	bottom: 50%;
-	width: 238px;
-	z-index: 10000;
-}
-.slideshow-controller * {
-	margin: 0;
-	padding: 0;
-}
-.slideshow-controller-hidden { 
-	opacity: 0;
-}
-.slideshow-controller-visible {
-	opacity: 1;
-}
-.slideshow-controller a {
-	cursor: pointer;
-	display: block;
-	height: 18px;
-	overflow: hidden;
-	position: absolute;
-	top: 12px;
-}
-.slideshow-controller a.active {
-	background-position: 0 18px;
-}
-.slideshow-controller li {
-	list-style: none;
-}
-.slideshow-controller li.first a {
-	background-image: url(../images/controller-first.gif);
-	left: 33px;
-	width: 19px;
-}
-.slideshow-controller li.last a {
-	background-image: url(../images/controller-last.gif);
-	left: 186px;
-	width: 19px;
-}
-.slideshow-controller li.next a {
-	background-image: url(../images/controller-next.gif);
-	left: 145px;
-	width: 28px;
-}
-.slideshow-controller li.pause a {
-	background-image: url(../images/controller-pause.gif);
-	left: 109px;
-	width: 20px;
-}
-.slideshow-controller li.play a {
-	background-position: 20px 0;
-}
-.slideshow-controller li.play a.active {
-	background-position: 20px 18px;
-}
-.slideshow-controller li.prev a {
-	background-image: url(../images/controller-prev.gif);
-	left: 65px;
-	width: 28px;
 }
