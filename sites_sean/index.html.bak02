@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Welcome to Monarch Stables</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="keywords" content="horses, monarch stables, horses for sale, horse shows, arabian horses, american saddlebred horses, show and pleasure">
+<meta name="description" content="This is the homepage for Monarch Stables">
+<style type="text/css">
+<!--
+.border3pxblue{border: 3px solid #000066; background-color: #FFFFFF;}
+.border3pxbluebgtan{border: 3px solid #000066; background-color: #CC9966;}
+.border3pxbluebgwhttxt{border: 3px solid #000066; background-color: #FFFFFF;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal;font-weight: normal; color: 999999;}
+.borderbottom3pxblue{border-bottom: 3px solid #000066;}
+.verdana12pxbluereg{font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal;font-weight: normal; color: 000066;}
+.verdana12pxbluebold{font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal;font-weight: bold; color: 000066;}
+.verdana18pxredbold{font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18px; font-style: normal; font-weight: bold; color: CC0000;}
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<link href="monarch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="MM_preloadImages('images/sliced_images/navigation/images/navigation_alt_01.jpg','images/sliced_images/navigation/images/navigation_alt_02.jpg','images/sliced_images/navigation/images/navigation_alt_03.jpg','images/sliced_images/navigation/images/navigation_alt_04.jpg','images/sliced_images/navigation/images/navigation_alt_05.jpg','images/sliced_images/navigation/images/navigation_alt_06.jpg','images/sliced_images/navigation/images/navigation_alt_07.jpg','images/sliced_images/navigation/images/navigation_alt_08.jpg','images/sliced_images/navigation/images/navigation_alt_09.jpg','images/sliced_images/navigation/images/navigation_alt_10.jpg','images/sliced_images/navigation/images/navigation_alt_11.jpg')">
+<table width="800" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td><div align="center"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="30%"><div align="right"></div></td>
+    <td><div align="center"><img src="images/website_images/american_saddlebred_horses.gif" width="575" height="75"></div></td>
+  </tr>
+  <tr>
+    <td colspan="2"><table width="215" border="0" align="left" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/sliced_images/navigation/images/navigation_alt_01.jpg',1)"><img src="images/sliced_images/navigation/images/navigation_01.jpg" name="Image2" width="215" height="30" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td><a href="about/about_us.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','images/sliced_images/navigation/images/navigation_alt_02.jpg',1)"><img src="images/sliced_images/navigation/images/navigation_02.jpg" name="Image3" width="215" height="30" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td><a href="facilities/facilities.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','images/sliced_images/navigation/images/navigation_alt_03.jpg',1)"><img src="images/sliced_images/navigation/images/navigation_03.jpg" name="Image4" width="215" height="30" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td><a href="horse_shows/shows.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','images/sliced_images/navigation/images/navigation_alt_04.jpg',1)"><img src="images/sliced_images/navigation/images/navigation_04.jpg" name="Image5" width="215" height="31" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td><a href="accomplishments/accomplishments.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','images/sliced_images/navigation/images/navigation_alt_05.jpg',1)"><img src="images/sliced_images/navigation/images/navigation_05.jpg" name="Image6" width="215" height="50" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td><a href="training/training.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','images/sliced_images/navigation/images/navigation_alt_06.jpg',1)"><img src="images/sliced_images/navigation/images/navigation_06.jpg" name="Image7" width="215" height="30" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td><a href="barn_news/barn_news.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','images/sliced_images/navigation/images/navigation_alt_07.jpg',1)"><img src="images/sliced_images/navigation/images/navigation_07.jpg" name="Image8" width="215" height="30" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td><a href="for_sale/for_sale.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','images/sliced_images/navigation/images/navigation_alt_08.jpg',1)"><img src="images/sliced_images/navigation/images/navigation_08.jpg" name="Image9" width="215" height="29" border="0"></a></td>
+        </tr>
+        <tr>
+          <td><a href="for_sale/sold_horses.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','images/sliced_images/navigation/images/navigation_alt_09.jpg',1)"><img src="images/sliced_images/navigation/images/navigation_09.jpg" name="Image10" width="215" height="30" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td><a href="photo_gallery/photo_gallery.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','images/sliced_images/navigation/images/navigation_alt_10.jpg',1)"><img src="images/sliced_images/navigation/images/navigation_10.jpg" name="Image11" width="215" height="30" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td><a href="web_links/web_links.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','images/sliced_images/navigation/images/navigation_alt_11.jpg',1)"><img src="images/sliced_images/navigation/images/navigation_11.jpg" name="Image12" width="215" height="31" border="0"></a></td>
+        </tr>
+      </table>
+      <table width="500" border="0" cellspacing="2" cellpadding="2" height="500" align="left">
+        <tr valign="top"> 
+<!-- movie cade
+>          <td><script type="text/javascript">
+          <!--
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','500','height','500','src','slideshow','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','slideshow' ); //end AC code
+</script><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="500" height="500">
+            <param name="movie" value="slideshow.swf">
+            <param name="quality" value="high">
+            <embed src="slideshow.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="500" height="500"></embed>
+          </object>
+          -->
+          
+          </noscript></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="verdana12pxbluereg">&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td colspan="2" class="verdana12pxbluereg"><div align="center"><a href="index.html" class="verdana12pxbluereg">Home</a> - <a href="about/about_us.htm" class="verdana12pxbluereg">About Us</a> - <a href="facilities/facilities.htm" class="verdana12pxbluereg">Facilities</a> - <a href="horse_shows/shows.htm" class="verdana12pxbluereg">Horse Shows</a> - <a href="accomplishments/accomplishments.htm" class="verdana12pxbluereg">Accomplishments &amp; Awards</a> - <a href="training/training.htm" class="verdana12pxbluereg">Training &amp; Lessons</a><br><a href="barn_news/barn_news.htm" class="verdana12pxbluereg">Barn News</a> - <a href="for_sale/for_sale.htm" class="verdana12pxbluereg">Horses For Sale</a> - <a href="for_sale/sold_horses.htm" class="verdana12pxbluereg">Horses Sold</a> - <a href="photo_gallery/photo_gallery.htm" class="verdana12pxbluereg">Photo Gallery</a> - <a href="web_links/web_links.htm" class="verdana12pxbluereg">Web Links</a></div></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="verdana12pxbluereg">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="verdana12pxbluereg"><div align="right">Copyright &copy; 2011 
+    Monarch Stables, LLC. All Rights Reserved.</div></td>
+  </tr>
+</table>
+<br>
+</body>
+</html>
