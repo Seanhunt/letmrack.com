@@ -145,7 +145,7 @@ function VisualSlideShow(a) {
 	})
 }VisualSlideShow({
 	"duration" : 1000,
-	"delay" : 2000,
+	"delay" : 4000,
 	"id" : "show",
 	"width" : 500,
 	"height" : 500,
